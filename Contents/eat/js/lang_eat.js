@@ -19,10 +19,10 @@ ShowTime();
       writeCookie("lang","english");
       window.external.ChangeLanguage("en-gb");   
   });*/
- lan="ar-eg";
+
   //Change to Arabic
   $('#change-ar').click(function(){
-      lan="ar-eg";
+
   });
   //$('#btn').hide();
   //$('#leftmenu ul').hide();        
@@ -37,6 +37,23 @@ ShowTime();
 
      
 function changeEatToAr(){
+  $("#restau").text("مطاعم");
+  $('#c3').html("دجاج كنتاكي");
+  $('#c4').html("ماكدونالدز");
+  $('#c5').html("سبايس كيتشن");
+  $('#c6').html("بلنتي");
+  $('#c61').html("نور");
+  $('#c62').text("تيكرداذ");
+  $('#c63').text("لونا");
+  $('#c7').text("مازون ");
+  $('#c8').text("كافيه نيرو");
+  $('#c9').text("قهوة كاريبو");
+  $('#c10').text("قهوة القهوجي");
+  $('#c11').text("نادي المسافرين");
+  $('#c12').text("كيكس اند بيكس");
+  $('#c13').text("سي سايد بارك");
+
+
   $('#c3').unbind();$('#c4').unbind();$('#c5').unbind();$('#c6').unbind();$('#c61').unbind();$('#c62').unbind();
   $('#c3').click(function(){
     $('.part2 #icon').attr("src","photo/KFC_logo.png");
@@ -53,13 +70,9 @@ function changeEatToAr(){
   $('#c4').click(function(){
     $('.part2 #icon').attr("src","photo/Mcdonalds.png");
     $('.bdy #title').text("ماكدونالدز");
-                $('.bdy #location').text("Location:");
-
-                $('.bdy #desc').text("لمحبي البرجر والماكولات السريعة، استمتع بمذاق ماكدونالدز الشهي مع حركة  الطائرات");
-                //$("#btn").show();
-                //$("#btn").attr('dir','photo/costa-drinks.png');
-
-                $("#mapBtn").hide();
+    $('.bdy #location').text("Location:");
+    $('.bdy #desc').text("لمحبي البرجر والماكولات السريعة، استمتع بمذاق ماكدونالدز الشهي مع حركة  الطائرات");
+    $("#mapBtn").hide();
                 
               });
               $('#c5').click(function(){
@@ -181,23 +194,24 @@ function changeEatToAr(){
                 
               
               });
-              $('#c14').click(function(){
-                $('.part2 #icon').attr("src","photo/hall.png");
-                $('.bdy #title').text("Prime Class Lounge");
-                $('.bdy #location').text("Location:");
-                $('.bdy #desc').text("استرخي، تناول وغيره، استمتع بافضل صالة كبار الشخصيات وانت في مكان واحد.");
-               
-              
-              });
-              $('#c15').click(function(){
-                $('.part2 #icon').attr("src","photo/hall.png");
-                $('.bdy #title').text("Aerotel Muscat Hotel");
-                $('.bdy #location').text("Location:");
-                $('.bdy #desc').text("هل لديك وقت طويل حتى موعد رحلتلك القادمة وتريد النوم بدون اي ازعاج؟ ما عليك الا ان تقوم بزيارة فندق ايروتل مسقط للراحة او السباحة في حوض داخل الفندق.");              
-              });
 
 }
 function changeEatToEn(){
+  $("#restau").text("Restaurants");
+  $('#c3').text("KFC");
+  $('#c4').text("McDonalds");
+  $('#c5').text("Spice Kitchen");
+  $('#c6').text("Plenty");
+  $('#c61').text("Noor");
+  $('#c62').text("Tickerdaze");
+  $('#c63').text("Luna");
+  $('#c7').text("Mazoon");
+  $('#c8').text("Café Nero");
+  $('#c9').text("Caribou Coffee");
+  $('#c10').text("Qahwaji Coffee");
+  $('#c11').text("Travelers Club");
+  $('#c12').text("Cakes & Bakes");
+  $('#c13').text("Seaside Park");
   $('#c3').unbind();$('#c4').unbind();$('#c5').unbind();$('#c6').unbind();$('#c61').unbind();$('#c62').unbind();
   $('#c3').click(function(){
     $('.part2 #icon').attr("src","photo/KFC_logo.png");
@@ -326,31 +340,18 @@ function changeEatToEn(){
     $("#mapBtn").show()
     
   });
-  $('#c14').click(function(){
-    $('.part2 #icon').attr("src","photo/hall.png");
-    $('.bdy #title').text("Prime Class Lounge");
-    $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("CIP Passenger? Relax, dine, nap, shower, play and more in our world class lounge.");
-   
-  });
-  $('#c15').click(function(){
-    $('.part2 #icon').attr("src","photo/hall.png");
-    $('.bdy #title').text("Aerotel Muscat Hotel");
-    $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("have long layover or want to sleep without any disturbance? Then visit Aerotel Muscat and you will enjoy the best rooms or swim in an In-Door swimming pool.");
 
-  });
 }
 
-$('#content_eat').click(function(){
+$('#eat-button').click(function(){
       $('#home-wrapper').hide();
       $('#eat-wrapper').show();
-      if(lan=="en-gb"){
-          alert(lan);
+      if(readCookie("lang")=="english"){
+         
           changeEatToEn();
         }
-      else if(lan=="ar-eg"){
-        alert(lan);
+      else if(readCookie("lang")=="arabic"){
+        
         changeEatToAr();
 
       }

@@ -19,8 +19,12 @@
 <script src="Scripts/lang.js"></script>
 
 <!--eat page JS & CSS files-->
-<script src="contents/eat/js/lang_eat.js"></script>
-<script src="contents/eat/css/eat.css"></script>
+<script src="Contents/eat/js/lang_eat.js"></script>
+<link rel="stylesheet" href="Contents/eat/css/eat.css"></script>
+
+<!--eat page JS & CSS files-->
+<script src="Contents/shop/js/lang_shop.js"></script>
+<link rel="stylesheet" href="Contents/shop/css/shop.css"></script>
   
 <link rel="stylesheet" href="boots/css/bootstrap.min.css">
 
@@ -83,7 +87,7 @@ UpdateSession(9);
         -->
         <div class="row nopadding nomargin">
           <div class="col-sm-6 nopadding">
-            <a  href="#" >
+            <a id="eat-button" href="#" >
                     <img class="child nopadding" src="images/icon/eat-3.png">
                     <div id="content_eat" class="icon-title" style="">المأكولات <br> والمشروبات</div>
                     
@@ -91,7 +95,7 @@ UpdateSession(9);
             
           </div>
           <div class="col-sm-6 nopadding nomargin right" style="position: absolute;right: 0">
-            <a onclick="FC_ContentsCall('shop')" href="#" style="position: absolute;right: 0">
+            <a id="shop-button" href="#" style="position: absolute;right: 0">
                   <img class="child nopadding" src="images/icon/shop.png">
                   <div id="content_shop" class="icon-title" style="right: 0">التسوق</div>
                 </a>
@@ -166,6 +170,7 @@ UpdateSession(9);
 
         </div>
       </div>
+      <!-- ///////////////Eat Page//////////////// -->
       <div id="eat-wrapper" class="wrap" style="display: none;">
         <div class="col-sm-5">
           <div class="part1" style="">
@@ -220,6 +225,53 @@ UpdateSession(9);
       <div id="dialog-box-map">
         
       </div>
+        <!-- ///////////////Eat Page ends here//////////////// -->
+          <!-- ///////////////Shop Page Starts//////////////// -->
+
+              <div id="shop-wrapper" class="wrap" style="display: none;" >
+               <div class="col-sm-5">
+                  <div class="part1" style="">
+                      <div id="leftmenu">
+                          <h3 id="shop">محلات</h3>
+                          
+                            <img class="shop-icon" src="Contents/shop/photo/shop-icon.png">
+                          
+                          <ul class="list1">
+                            <li class="odd"><a id="s1" href="#">الخمور والتبغ والحلويات</a></li>
+                            <li class="even"><a id="s2" href="#">سوق مسقط</a></li>
+                            <li class="odd"><a id="s3" href="#">العطور ومستحضرات التجميل</a></li>
+                            <li class="even"><a id="s4" href="#">بوتيك أمواج</a></li>
+                            <li class="odd"><a id="s5" href="#">أحدث صيحات المجوهرات</a></li>
+                            <li class="even"><a id="s6" href="#">مملكة الأطفال</a></li>
+                            <li class="odd"><a id="s7" href="#">متجر جورميت للمأكولات</a></li>
+                            <li class="even"><a id="s8" href="#">متاجر الرصيف</a></li>
+                            <li class="odd"><a id="s9" href="#">متجر الوافدين</a></li>
+                            <li class="even"><a id="s10" href="#">شارع الأزياء الفاخرة</a></li>
+                            <li class="odd"><a id="s11" href="#">شارع الأزياء الرئيس</a></li>
+                            <li class="even"><a id="s12" href="#">النظارات الشمسية</a></li>   
+                            <li class="odd"><a id="s13" href="#">الأجهزة الإلكترونية</a></li>    
+                          </ul>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm-7">
+                  <div class="part2" id="content">
+                    <div class="shop-image">
+                      <img id="icon" src="Contents/shop/photo/LTC.png" class="icon">
+                    </div>
+                      <div class="bdy">
+                        <div id="title">الخمور والتبغ والحلويات</div>
+                        <!--<div id="location"> </div>-->
+                        <div id="desc"><p>أنشئ متجر السوق الحرة للخمور والتبغ والحلويات بمسقط على مساحة 955 متر مربع وذلك على الجانب الأيمن حيث دخول الركاب المغادرين من مسقط إلى صالة المغادرة. كما يشتمل هذا المتجر على تجربة التمتع بالعلامة للتجارية الكاملة والآثار المصممة خصيصا لماركات ويسكي سكوتش الأكثر شهرة بما في ذلك جوني ووكر وجون ديوار.</p><p> تحتوي منطقة التبغ على مكان خاص بسيجار هوميدور والذي يحتوي على سيجار ملفوف يدويا من كوبا وهندوراس ونيكاراغوا وجمهورية الدومينيكان. كما تشتمل منطقة السجائر على علامات تجارية عالمية مثل مارلبورو و إل إم</p><p>وعلى الجانب الآخر، سيسعد الركاب بتجربة مليئة بالشوكولاتة النقية مع التمتع بالكثير من العروض من العلامات التجارية المختلفة مثل بتيل والرفاعي.</p></div>
+                        
+                        <button type="button" id="mapBtn" class="btn btn-success" dir="Contents/shop/photo/maps/passenger-terminal-building-departure(Level-02).png">خريطة</button>
+                      </div>
+
+                  </div>
+               </div>
+              </div>  
+
+              <!-- ///////////////Shop Page Starts//////////////// -->
     </div>
   </div>
   <footer>

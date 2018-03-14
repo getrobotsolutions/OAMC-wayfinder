@@ -1,0 +1,198 @@
+.maps{
+                background-color: darkgrey;
+    height: 400px;
+    width: 1080px;
+      }
+    .wrap{
+       margin-top:90px;
+    }
+    .part1{
+          
+    height: 920px;
+    
+    margin-left: -15px;
+    }
+    .part2{
+        background-color:#008a97;
+        height:750px;
+        width: 615px;
+        padding: 15px;
+        z-index:0;
+        position: absolute;
+    }
+        
+    .titl1{
+                font-size: 50px;
+    font-family: OpenSans-Regular;
+    font-style: bold;
+    padding-top: 90px;
+    padding-left: 295px;
+    }  
+    .txt1{
+             margin-top: 80px;
+    font-family: OpenSans-Regular;
+    font-style: unset;
+    font-size: 27px;
+    margin-left: 127px;
+    padding-right: 142px;
+    text-align: center;
+    line-height: 31px;
+    color: #00003F;
+    }
+     .txt2{
+      padding-top: 3px;
+      font-family:OpenSans-Regular;
+      font-size:10px;
+      display:inline;
+    }
+    ul{
+      list-style-type: none;
+    }
+    ul.list1{
+         padding-top: 2px;
+        line-height: 64px;
+        font-size: 30px;
+        /*text-align: center;*/
+        margin-left: -60px;
+        font-weight: 500;
+        font-family: inherit;
+    }
+    ul.list1 li:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 0px;
+        background: grey;
+    }
+    ul.list2{
+            padding-top: 2px;
+            padding-left: 64px;
+            line-height: 64px;
+            font-size: 30px;
+            /* text-align: center; */
+            margin-left: -60px;
+            font-weight: 500;
+            font-family: inherit;
+    }
+    ul.list2 li:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 0px;
+        background: grey;
+    }
+    a,a:hover { text-decoration : none; color : #000; }
+    #leftmenu h3 {
+        margin:0;
+        font-family: OpenSans-Regular;
+        font-size: 34px;
+        font-weight: 600;
+        padding:20px 45px;
+       
+        cursor:pointer;
+        background-color:#008a97;
+        color:#ffffff;
+        text-align:left;
+    }
+    #leftmenu h3:hover {
+        /*background-color:#236b8e;*/
+    }
+    #leftmenu h5 {
+        margin:0;
+        font-family:OpenSans-Regular;
+        font-weight: 500;
+        padding:30px 80px;
+        border-top:1px solid #153F65;
+        border-bottom:1px solid #236b8e;
+        cursor:pointer;
+        background-color:#153F65;
+        color:#ffffff;
+        text-align:left;
+    }
+     #leftmenu h5:hover {
+        background-color:#4e88a4;
+    }
+    #leftmenu > ul {
+        margin:0;
+        padding:0;
+    }
+    #leftmenu > ul li {
+        padding-left:0px;
+        list-style-type:none;
+    }
+    #leftmenu > ul li a {
+      color: #008a97;
+      font-weight: bold;
+      font-size: 30px;
+      padding-left: 80px;
+      text-decoration:none;
+    }
+    #leftmenu > ul li a:hover {
+        text-decoration:underline;
+    }
+    #leftmenu .current {
+        color:#006699;
+        text-decoration:underline;
+    }
+    .sub{
+      background-color:green;
+    }
+    .h5, h5 {
+        font-size: 21px;
+    }
+    .bdy{
+        
+       text-align: right;
+        width: 580px;
+        padding-right: 25px;
+       
+        z-index: -1;
+        line-height: 40px;
+        position: absolute;
+        color: white;
+    }
+    #title{
+         font-size: 30px;
+    margin-top: 20px;
+    font-weight: 100;
+    padding-left: 55px;
+    font-family: OpenSans-Regular;
+   
+    }
+    #location{
+        font-size: 15px;
+        font-family:cursive;
+        font-weight: 200;
+    padding-left: 60px;
+    }
+    #desc{
+        font-size: 14px;
+    font-weight: 200;
+    padding-left: 55px;
+    font-family: OpenSans-Light;
+    line-height: 17px;
+    padding-bottom: 20px;
+    text-align: right;
+    }
+    #mapBtn{
+
+      margin-left: 55px;background-color: #f5a800;border-color: #f5a800;
+
+    }
+    .shop-icon {
+    position: absolute;
+    top: -38px;
+    z-index: 1;
+    width: 150px;
+    right: -10px;
+}
+.shop-image{
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+li.odd{background-color: #00c2de1f;}
+li.even{background-color: #f3ebf9;}
+#change-ar{color: rgb(255, 255, 255);
