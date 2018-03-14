@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	
+}
+
+div.main {
+	/*(background-image: url("../Image/Bkgrd2.jpg");*/
+	background-repeat: no-repeat;
+	    height: 1051px;
+		width: 1067px;
+	    background-color: #4CA0C5;
+}
+
+div.settingsection {
+	height: 217px;
+	vertical-align: middle;
+	width: 20%;
+	float: left;
+}
+
+div.setting {
+	padding: 46px;
+	height: 120px;
+	width: 150px;
+	height: 120px;
+}
+.header{height: 445px;width: 1067px;}
+.footer #slider{background-color: #4CA0C5; padding-top: 110px; padding-bottom: 70px;}
+#slider img{height:350px !important;}

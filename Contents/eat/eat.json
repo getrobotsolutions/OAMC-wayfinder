@@ -1,0 +1,130 @@
+{
+	"Hotels": [
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "KFC",
+			"NAME_AR": "بلنتي",
+			"IMAGE": "photo/KFC_logo.png",
+			"DESC_EN": "well known fried chicken concept for the best taste and if you are in hurry.",
+			"DESC_AR": "اشهى قطع الدجاج المقلية لمن لا يملك الوقت الكافي للحاق بالطائرة.",
+			"MAP_SRC": "photo/maps/aribou-Coffee.jpg"
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "McDonalds",
+			"NAME_AR": "نور",
+			"IMAGE": "photo/Mcdonalds.png",
+			"DESC_EN": "For burger and fast food lovers, enjou mcdonalds with movement of planes next to you.",
+			"DESC_AR": "لمحبي البرجر والماكولات السريعة، استمتع بمذاق ماكدونالدز الشهي مع حركة  الطائرات",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "تيكرداذ",
+			"IMAGE": "photo/spice-kitchen.png",
+			"DESC_EN": "Indian Cuisine in a fast food concept for spicy food lovers.",
+			"DESC_AR": "لمحبي الماكولات الهندية والحارة، ندعوكم للاستمتاع بالطعام في ردهة المطاعم.",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "Plenty",
+			"NAME_AR": "لونا",
+			"IMAGE": "photo/plenty.png",
+			"DESC_EN": "Healthy Concious? We have what you need. Just drop in and you calories will be maintained by us.",
+			"DESC_AR": "تهتم بصحتك؟ ما عليك الا زيارتنا والاستمتاع بالطعام ونحن سنقوم بحساب السعرات الحرارية عنك.",
+			"MAP_SRC": "photo/maps/passenger-terminal-building-departure(Level-02).png"
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "مازون",
+			"IMAGE": "",
+			"DESC_EN": "",
+			"DESC_AR": "",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "كافيه نيرو",
+			"IMAGE": "",
+			"DESC_EN": "",
+			"DESC_AR": "",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "قهوة كاريبو",
+			"IMAGE": "",
+			"DESC_EN": "",
+			"DESC_AR": "",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "قهوة القهوجي",
+			"IMAGE": "",
+			"DESC_EN": "",
+			"DESC_AR": "",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "نادي المسافرين",
+			"IMAGE": "",
+			"DESC_EN": "",
+			"DESC_AR": "",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "كيكس اند بيكس",
+			"IMAGE": "",
+			"DESC_EN": "",
+			"DESC_AR": "",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "سي سايد بارك",
+			"IMAGE": "",
+			"DESC_EN": "",
+			"DESC_AR": "",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "دجاج كنتاكي",
+			"IMAGE": "",
+			"DESC_EN": "",
+			"DESC_AR": "",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "ماكدونالدز",
+			"IMAGE": "",
+			"DESC_EN": "",
+			"DESC_AR": "",
+			"MAP_SRC": ""
+		},
+		{
+			"CATEGORY": "Hotels",
+			"NAME_EN": "",
+			"NAME_AR": "سبايس كيتشن",
+			"IMAGE": "",
+			"DESC_EN": "",
+			"DESC_AR": "",
+			"MAP_SRC": ""
+		}
+	]
+}

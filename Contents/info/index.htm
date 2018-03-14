@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html" charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+
+<!--<script language="JavaScript" type="text/javascript"
+  src="Scripts/FlashPlayer.js"></script>-->
+<script language="JavaScript" type="text/javascript"
+  src="../../Scripts/BaseCommand.js"></script>
+<script language="JavaScript" type="text/javascript"
+  src="../../Scripts/BaseEvent.js"></script>
+<script language="JavaScript" type="text/javascript"
+  src="../../Scripts/LogConsole.js"></script>
+
+
+<script language="JavaScript" type="text/javascript"
+  src="../../maincontents.js"></script>
+ <script src="../../jquery/jquery-3.2.1.min.js"></script>
+ <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+ <script src="../../boots/js/bootstrap.min.js"></script>
+ <!-- <script src="../../Scripts/speech.js"></script>
+  <script src="../../Scripts/lang.js"></script>-->
+  <script src="js/lang_info.js"></script>
+  <!-- <script src="sheetjs/dist/xlsx.full.min.js"></script>  -->
+
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../../css/style_riyadh.css">
+
+<style>
+.bd ul{display: block !important;}
+    .bmg{
+          background-image: none;
+              height: 1154px;
+    }
+    .img-home {
+          position: absolute;
+          z-index: 99;
+          margin-top: -64px;
+           cursor: pointer;
+          height: 66px;
+          
+    }
+
+      tbody {
+          display:block;
+          /*height:1000px;*/
+          overflow:auto;
+      }
+      thead, tbody tr {
+          display:table;
+          width:100%;
+          table-layout:fixed;
+      }
+      thead {
+          width: calc( 101.5% - 1em )
+      }
+      .maps{
+                background-color: darkgrey;
+                height: 500px;
+                width: 1080px;
+      }
+     
+    .wrap{
+        padding-top: 70px;
+    }
+    .part1{
+          /*background-color: #e4e4e4;*/
+          height: 904px;
+          margin-top: 22px;
+          margin-left: -15px;
+    }
+    .part2{
+      background-repeat: no-repeat;
+      background-size: 550px 313px !important;
+       /*background-color: #f6f6f6;*/
+        height: 703px;
+        width: 551px;
+        /* padding-right: 182px; */
+        margin-left: -50px;
+        z-index: 0;
+        margin-top: 83px;
+        position: absolute; 
+    }
+    .part2 #list1{height: 685px;}
+        
+    .titl1{
+                font-size: 50px;
+    font-family: OpenSans-Light;
+    font-style: bold;
+    padding-top: 125px;
+    padding-left: 205px;
+    }  
+    .txt1{
+             margin-top: 80px;
+    font-family: OpenSans-Light;
+    font-style: unset;
+    font-size: 27px;
+    margin-left: 127px;
+    padding-right: 142px;
+    text-align: center;
+    line-height: 31px;
+    color: #00003F;
+    }
+     .txt2{
+      padding-top: 3px;
+      font-family:OpenSans-Light;
+      font-size:10px;
+      display:inline;
+    }
+    ul{
+      list-style-type: none;
+    }
+    ul.list1{
+                  padding-top: -3px;
+                  line-height: 41px;
+                      width: 577px;
+                  font-size: 20px;
+                   text-align: center; 
+                  margin-top: -3px;
+                  margin-left: -39px;
+                  font-weight: 500;
+                  font-family: inherit;
+    }
+    ul.list1 li:after {
+/*        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 0px;
+        background: grey;*/
+    }
+    ul.list2{
+            padding-top: 2px;
+            padding-left: 64px;
+            line-height: 64px;
+            font-size: 30px;
+            /* text-align: center; */
+            margin-left: -60px;
+            font-weight: 500;
+            font-family: inherit;
+    }
+    ul.list2 li:after {
+       /* content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 0px;
+        background: grey;*/
+    }
+    a,a:hover { text-decoration : none; color : #000; }
+    #leftmenu h3 {
+       margin: 0;
+      font-family: junction;
+      font-size: 27px;
+      font-weight: 200;
+      padding: 0px 30px;
+      border-top: 1px solid #154055;
+      border-bottom: 1px solid #236b8e;
+      cursor: pointer;
+      background-color: #2B547E;
+      color: #ffffff;
+      text-align: left;
+      width: 540px;
+    }
+    #leftmenu h3:hover {
+        background-color:#236b8e;
+    }
+    #leftmenu h5 {
+           margin: 0;
+          font-family: junction;
+          font-weight: 100;
+          padding: 7px 78px;
+          border-top: 1px solid #153F65;
+          border-bottom: 1px solid #236b8e;
+          cursor: pointer;
+          background-color: #153F65;
+          color: #ffffff;
+          text-align: left;
+          width: 540px;
+    }
+     #leftmenu h5:hover {
+        background-color:#4e88a4;
+    }
+    #leftmenu > ul {
+        margin:0;
+        padding:0;
+    }
+    #leftmenu > ul li {
+        padding-left:0px;
+        list-style-type:none;
+    }
+    #leftmenu > ul li a {
+        color:#666666;
+        font-weight:200;
+        font-family:vollkorn;
+            font-size: 24px;
+         padding-left: 80px;
+        text-decoration:none;
+    }
+    #leftmenu > ul li a:hover {
+        text-decoration:underline;
+    }
+    #leftmenu .current {
+        color:#006699;
+        text-decoration:underline;
+    }
+    .sub{
+      background-color:green;
+    }
+    .h5, h5 {
+        font-size: 21px;
+    }
+    .bdy{
+        /*background-color: whitesmoke;*/
+     /*   height: 290px;
+        width: 625px;*/
+        height: 483px;
+            width: 539px;
+        padding-right: 25px;
+        /*margin-left: 4px;*/
+        margin-top: 310px;
+        z-index: -1;
+        line-height: 40px;
+        position: absolute;
+    }
+    #title{
+         font-size: 30px;
+    margin-top: 20px;
+    font-weight: 100;
+    padding-left: 55px;
+    font-family: OpenSans-Regular;
+   
+    }
+    #location{
+        font-size: 15px;
+        font-family:OpenSans-Light;
+        font-weight: 200;
+    padding-left: 60px;
+    }
+    #desc{
+        font-size: 14px;
+    font-weight: 200;
+    padding-left: 55px;
+    font-family: OpenSans-Light;
+    line-height: 17px;
+    padding-bottom: 20px;
+    }
+   /* #btn{
+      margin-left: 55px;
+    }*/
+    #icon{
+        /*height: 400px;
+        width: 400px;*/
+        padding-top: 80px;
+        padding-left: 176px;
+    }
+ /*   #wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0 -300px 200px -200px #fff inset;
+    }*/
+    #btn1,#btn3,#btn5,#btn7{
+          height: 105px;
+          margin-top: 44px;
+          width: 160px;
+          margin-left:-12px;
+          background-color: #008a97;
+      }
+      #btn2,#btn4,#btn6,#btn8{        
+          height: 105px;
+          margin-top: 44px;
+          width: 160px;
+          margin-left: 71px;
+          background-color: #008a97;
+      }
+    .prim_1{
+          padding-top: 18px;
+      }
+      .row {
+          margin-left: 80px;
+          padding-bottom: 5px;
+      }
+      /*Navigation Side Menu*/
+      .hr-ver-menu-wrapper{     width:549px; font-family:arial; }
+      .hr-ver-menu-wrapper .v-menu-title{color: #fff;
+          background-color: #008a97;
+              font-size: 22px;
+              font-family: OpenSans-Regular;
+              font-weight: 400;
+          text-align: center;
+          padding: 5px 0;
+          width: 548px;}
+      .hr-ver-menu{width:548px;}
+      .hr-ver-menu li{position:relative;}
+      .hr-ver-menu li a{    text-decoration: none;    font-size: 15px;       display: block;       background: #DBA41B;
+             color: #FFFFFF;
+          padding: 5px 8px 5px 28px;    border-bottom: 1px solid gainsboro;}
+      .hr-ver-menu li a:hover{background-color: #DBA41B;}
+      /*.hr-ver-menu .hr_tog{background:blue;height:17px; width:17px; display:inline-block;position:absolute;left:6px;top:0;
+          margin-top: 5px;}*/
+/*      .hr-ver-menu .hr_tog.pl-active{background:green}
+*/      .hr-ver-menu ul{display:none;}
+      .hr-ver-menu ul li a{    background: #F6FBFF; padding-left:35px;}
+      .hr-ver-menu li a.hr-active{    background: #DBA41B;    color: #FFFFFF;}
+
+      .bd{font-family:OpenSans-Light; font-size:15px; line-height: 21px;font-weight:100;}
+      .add,.ph{font-family:OpenSans-Light; font-size:14px; line-height: 22px;font-weight:100; display: none;}
+       #change-us, #change-ar{color:#008a97;padding: 0px 10px; border-radius: 5px;text-decoration: none;}
+ .active{
+    color: rgb(255, 255, 255) !important;
+    background: #008a97;
+  }
+
+
+ #dialog-overlay {
+
+  /* set it to fill the whil screen */
+  width:100%; 
+  height:100%;
+  
+  /* transparency for different browsers */
+  filter:alpha(opacity=50); 
+  -moz-opacity:0.5; 
+  -khtml-opacity: 0.5; 
+  opacity: 0.5; 
+  background:#000; 
+
+  /* make sure it appear behind the dialog box but above everything else */
+  position:absolute; 
+  top:0; left:0; 
+  z-index:3000; 
+
+  /* hide it by default */
+  display:none;
+}
+
+
+#dialog-box {
+  
+  /* css3 drop shadow */
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
+  /* css3 border radius */
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  
+  background:#eee;
+  /* styling of the dialog box, i have a fixed dimension for this demo */ 
+  width:700px; 
+  
+  
+  /* make sure it has the highest z-index */
+  position:absolute; 
+  top: 5% !important;
+  z-index:5000; 
+
+  /* hide it by default */
+  display:none;
+}
+
+#dialog-box .dialog-content {
+  /* style the content */
+  max-height: 1650px;
+  overflow: scroll;
+  text-align:left; 
+  padding:10px; 
+  margin:13px;
+  color:#666; 
+  font-family:arial;
+  font-size:11px; 
+}
+
+a.button {
+  /* styles for button */
+  margin:10px auto 0 auto;
+  text-align:center;
+  display: block;
+  width:50px;
+  padding: 5px 10px 6px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1;
+  
+  /* button color */
+  background-color:#034671;
+  
+  /* css3 implementation :) */
+  /* rounded corner */
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  
+  /* drop shadow */
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  
+  /* text shaow */
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+  position: relative;
+  cursor: pointer;
+  
+}
+</style>
+
+
+<link href="../../css/Setting.css" rel="stylesheet" type="text/css" />
+<link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../css/font-awesome-4.7.0/css/font-awesome.min.css">
+<script src="../../Scripts/lang1.js"></script>
+<!--<script language="JavaScript" type="text/javascript" src="../../Scripts/FlashPlayer.js"></script>-->
+  <script type="text/javascript">
+UpdateSession(6);
+        
+  $(document).ready(function(){
+    if(readCookie("lang")=="english"){
+      window.external.ChangeLanguage("en-gb");
+      //PlaySpeech("Here is some information to make your journey more enjoyable.");
+      $('#change-us').addClass('active');
+      $('#change-ar').removeClass('active');
+      
+    }
+    else if (readCookie("lang")=="arabic") {
+      $('#change-us').removeClass('active');
+      $('#change-ar').addClass('active');
+      window.external.ChangeLanguage("ar-eg");
+      //PlaySpeech("إليك بعض المعلومات لتجعلك تستمتع برحلتك بشكل أكبر.");
+      
+    }
+  });
+  </script>
+</head>
+<body>
+
+    <div class="jumbotron text-center">
+      <p id="currentDate"></p><br>
+      <span class="col-sm-8">
+         <img src="../../images/logo.jpg" class="img-responsive" alt="Responsive image" style="width: 521px;">
+      </span>
+      <div class="col-sm-4 text-right">
+         <span id="content_air"></span>
+         <span id="temp"></span>
+      </div>     
+    </div>
+
+    
+
+    <div class="row" style="padding: 0;margin: 0;border:2px solid #008a97;">
+      <div class="col-sm-4" style=" border-top: 62px solid #008a97;border-right: 36px solid #ffffff00;">
+        <img src="../../images/home-white-icon.png" onclick="GoHome()" class="img-home" alt="Responsive image">
+      </div>
+      <div class="col-sm-8" style="font-size: 40px;padding-top: 20px;color: #008a97;font-weight: bold;">
+        <a href="#"  id="change-us" style="">ENGLISH</a>|<a  id="change-ar" href="#" style="">عربى</a>
+      </div>
+    </div>
+
+
+    <div class="body1">
+      <div class="bmg">       
+           
+            
+            <div class="wrap" >
+               <div class="col-sm-6">
+                  
+                  <div class="part1"> 
+                   
+                      <div class="row prim_1">
+                        <div class="col-sm-3">
+                           <button id="btn1" type="button" class="btn btn-primary ">
+                            <i class="fa fa-info fa-4x" aria-hidden="true"></i>
+                          
+
+                           </button>
+                        </div>
+                         <div class="col-sm-3">
+                            <button id="btn2" type="button" class="btn btn-primary " >
+                               <img src="photo/hotel-icon.png" width="68">
+                              
+                            </button>
+                         </div>
+                      </div>
+                      <div class="row">  
+                        <div class="col-sm-3"> 
+                           <button id="btn3" type="button" class="btn btn-primary ">
+                            <img src="photo/lounge-icon.png" width="68">
+                             
+                           </button>
+                        </div>
+                        <div class="col-sm-3">
+                            <button id="btn4" type="button" class="btn btn-primary ">
+                             <img src="photo/nursery.png" width="68">
+                            </button>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                           <button id="btn5" type="button" class="btn btn-primary ">
+                             <img src="photo/Atms.png" width="68">
+                           </button>
+                        </div>
+                        <div class="col-sm-3">
+                           <button id="btn6" type="button" class="btn btn-primary ">
+                            <img src="photo/Currency-exchange.png" width="68">                            
+                           </button>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-3">
+                           <button id="btn7" type="button" class="btn btn-primary ">
+                             <img src="photo/payphones.png" width="68">
+                           </button>
+                        </div>
+                        <div class="col-sm-3">
+                           <button id="btn8" type="button" class="btn btn-primary ">
+                            <img src="photo/Luggage-wrapping.png" width="68">
+                           </button>
+                        </div>
+                       </div>
+                  </div> <!-- part 1 div ends here -->
+                </div>
+
+               <div class="col-sm-6">
+                  <div class="part2" id="content">
+                    <img id="icon" src="photo/info.png" class="icon">
+
+                    <h2>Click below to see facts and figures about our new airport.</h2>
+                    <button id="factFig">Facts & Figures</button>
+
+                    <div class="hr-ver-menu-wrapper bdy" id="list1">
+                        <div class="v-menu-title">Ticket Sale</div>
+                        <ul id="info" class="hr-ver-menu" style="width: 539px; height: 630px; overflow: auto">
+                              <li><a id="info0" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt0"></li><hr>
+                                  <li class="add" id="add0"></li>
+                                  <li class="ph" id="ph0"></li>
+                                </ul>
+                              </li>
+                        </ul>
+                        <ul id="hotel" class="hr-ver-menu" style="width: 539px; height: 630px; overflow: auto">
+                              <li><a id="hotel1" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt1"></li><hr>
+                                  <li class="add" id="add1"></li>
+                                  <li class="ph" id="ph1"></li>
+                                </ul>
+                              </li>
+                             
+                        </ul>
+                        <ul id="lounges" class="hr-ver-menu" style="width: 539px; height: 630px; overflow: auto">
+                              <li><a id="lounges2" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt2"></li><hr>
+                                  <li class="add" id="add2"></li>
+                                  <li class="ph" id="ph2"></li>
+                                </ul>
+                              </li>
+                              <li><a id="lounges3" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt3"></li><hr>
+                                  <li class="add" id="add3"></li>
+                                  <li class="ph" id="ph3"></li>
+                                </ul>
+                              </li>
+                              <li><a id="lounges4" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt4"></li><hr>
+                                  <li class="add" id="add4"></li>
+                                  <li class="ph" id="ph4"></li>
+                                </ul>
+                              </li>
+                             
+                        </ul>
+                        <ul id="nursery" class="hr-ver-menu" style="width: 539px; height: 630px; overflow: auto">
+                              <li><a id="nursery5" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt5"></li><hr>
+                                  <li class="add" id="add5"></li>
+                                  <li class="ph" id="ph5"></li>
+                                </ul>
+                              </li>
+                        </ul>
+                        <ul id="atm" class="hr-ver-menu" style="width: 539px; height: 630px; overflow: auto">
+                              <li><a id="atm6" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt6"></li><hr>
+                                  <li class="add" id="add6"></li>
+                                  <li class="ph" id="ph6"></li>
+                                </ul>
+                              </li>
+                        </ul>
+                        <ul id="cr" class="hr-ver-menu" style="width: 539px; height: 630px; overflow: auto">
+                              <li><a id="cr7" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt7"></li><hr>
+                                  <li class="add" id="add7"></li>
+                                  <li class="ph" id="ph7"></li>
+                                </ul>
+                              </li>
+                              <li><a id="cr8" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt8"></li><hr>
+                                  <li class="add" id="add8"></li>
+                                  <li class="ph" id="ph8"></li>
+                                </ul>
+                              </li>
+                        </ul>
+                        <ul id="payphones" class="hr-ver-menu" style="width: 539px; height: 630px; overflow: auto">
+                              <li><a id="payphones9" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt9"></li><hr>
+                                  <li class="add" id="add9"></li>
+                                  <li class="ph" id="ph9"></li>
+                                </ul>
+                              </li>
+                        </ul>
+                        <ul id="wr" class="hr-ver-menu" style="width: 539px; height: 630px; overflow: auto">
+                              <li><a id="wr10" href="#"></a>
+                                <ul>
+                                  <li class="bd" id="bdyt10"></li><hr>
+                                  <li class="add" id="add10"></li>
+                                  <li class="ph" id="ph10"></li>
+                                </ul>
+                              </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+<footer>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <div class="carousel-inner " id="slide" role="listbox">
+          <div class="item active">
+            <img class="fixed-height" src="../../images/1.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="fixed-height" src="../../images/2.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+        
+          <div class="item">
+            <img class="fixed-height" src="../../images/3.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+       
+          <div class="item">
+            <img class="fixed-height" src="../../images/4.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="fixed-height" src="../../images/5.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+
+      
+        </div>
+
+        <!-- Left and right controls -->
+        <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>-->
+    </div>
+    <img src="../../images/bottom-line.png">
+  </footer>
+  <div id="dialog-overlay"></div>
+      <div id="dialog-box">
+        
+      </div>
+</body>
+</html>

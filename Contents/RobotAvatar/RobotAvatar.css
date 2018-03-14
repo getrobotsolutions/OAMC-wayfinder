@@ -1,0 +1,124 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../../css/Fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans-Light;
+    src: url(../../css/Fonts/OpenSans-Light.ttf);
+}
+body{
+	font-family: 'OpenSans-Light' !important;
+/*font-weight: bold;*/
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.home {
+	text-align: right;
+	width: 1020px;
+	height : 100px;
+	padding: 25px;
+	position: absolute;
+	height: 100px;
+}
+.main{    background-color: #dba41b;
+    min-height: 1150px;}
+.bg {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 500px;
+}
+.bg img{
+	width: 1080px;
+}
+
+.canvas {
+	position: absolute;
+	left: 180px;
+	top: 660px;
+}
+
+.frame {
+	position: absolute;
+	left: 215px;
+	top: 670px;
+}
+
+#frame {
+	/* display: none; */
+	width: 280px;
+	
+}
+
+.number {
+	position: absolute;
+	left: 370px;
+	top: 849px;
+}
+
+#number {
+	/* display: none; */
+	
+}
+
+.shot {
+	position: absolute;
+	left: 284px;
+	top: 774px;
+}
+.shot img{
+	width: 280px;
+}
+
+
+.delete {
+	position: absolute;
+	right: 10px;
+	top: 1139px;
+}
+.delete img{
+	width: 250px;
+}
+.img-home {
+	position: absolute;
+	z-index: 99;
+	margin-top: -64px;
+	cursor: pointer;
+	height: 66px;
+}
+footer {
+	position: absolute;
+	bottom: 372px !important;
+}
+.title{
+	background-color: #dba41b;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+#change-us, #change-ar{text-decoration: none;}
+.deltext{
+
+color: white;
+    position: absolute;
+    top: 400px;
+    right: 0;
+    font-size: 44px;
+    width: 288px;
+    line-height: 41px;
+    text-align: center;
+    }
+
+     a {
+    color: #008a97 !important;
+}
+ #change-us, #change-ar{padding: 0px 10px 5px 10px !important; border-radius: 5px;text-decoration: none;}
+ .active{
+    color: rgb(255, 255, 255) !important;
+ background: #008a97 !important;
+  }

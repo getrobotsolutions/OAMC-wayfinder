@@ -1,0 +1,161 @@
+<html>
+<head>
+	<script src="sheetjs/dist/xlsx.full.min.js"></script>	
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<style>
+		.tabs-left, .tabs-right {
+  border-bottom: none;
+  padding-top: 2px;
+}
+.tabs-left {
+  border-right: 1px solid #ddd;
+}
+.tabs-right {
+  border-left: 1px solid #ddd;
+}
+.tabs-left>li, .tabs-right>li {
+  float: none;
+  margin-bottom: 2px;
+}
+.tabs-left>li {
+  margin-right: -1px;
+}
+.tabs-right>li {
+  margin-left: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: #ddd;
+  border-right-color: transparent;
+}
+
+.tabs-right>li.active>a,
+.tabs-right>li.active>a:hover,
+.tabs-right>li.active>a:focus {
+  border-bottom: 1px solid #ddd;
+  border-left-color: transparent;
+}
+.tabs-left>li>a {
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+  display:block;
+}
+.tabs-right>li>a {
+  border-radius: 0 4px 4px 0;
+  margin-right: 0;
+}
+	/*	.maps{
+			height: 275px;
+		    width: 1350px;
+		    padding-bottom: 19px;
+		    margin-bottom: 5px;
+		    background-color: darkgrey;
+		}
+*/
+	</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<script>
+		$(document).ready(function() {
+		
+		
+		
+
+
+		});
+	</script>
+</head>
+
+<body>
+	<script>
+		// /* set up XMLHttpRequest */
+		// var url = "data/Book1.xls";
+		// var oReq = new XMLHttpRequest();
+		// oReq.open("GET", url, true);
+		// oReq.responseType = "arraybuffer";
+
+		// oReq.onload = function(e) {
+		// 	  var arraybuffer = oReq.response;
+
+		// 	  /* convert data to binary string */
+		// 	  var data = new Uint8Array(arraybuffer);
+		// 	  var arr = new Array();
+		// 	  for(var i = 0; i != data.length; ++i) arr[i] = String.fromCharCode(data[i]);
+		// 	  var bstr = arr.join("");
+
+		// 	  /* Call XLSX */
+		// 	  var workbook = XLSX.read(bstr, {type:"binary"});
+
+		// 	  /* DO SOMETHING WITH workbook HERE */
+		// 	  var first_sheet_name = workbook.SheetNames[0];
+		// 	  /* Get worksheet */
+		// 	  var worksheet = workbook.Sheets[first_sheet_name];
+		// 	  //console.log(XLSX.utils.sheet_to_json(worksheet,{raw:true}));
+
+		// 	  var data_all = XLSX.utils.sheet_to_json(worksheet,{raw:true});
+
+		// 	  console.log(data_all);
+		// }
+
+		// oReq.send();
+	</script>
+
+	<div class="maps"> </div>
+	
+	 <div  class="col-sm-6">
+        <h3>Left Tabs</h3>
+        <hr/>
+        <div class="col-xs-3"> <!-- required for floating -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-left sideways">
+            <li class="active"><a href="#home-v" data-toggle="tab">Home</a></li>
+            <li><a href="#profile-v" data-toggle="tab">Profile</a></li>
+            <li><a href="#messages-v" data-toggle="tab">Messages</a></li>
+            <li><a href="#settings-v" data-toggle="tab">Settings</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-9">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="home-v">Home Tab.</div>
+            <div class="tab-pane" id="profile-v">Profile Tab.</div>
+            <div class="tab-pane" id="messages-v">Messages Tab.</div>
+            <div class="tab-pane" id="settings-v">Settings Tab.</div>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+
+      <div  class="col-sm-6">
+        <h3>Right Tabs</h3>
+        <hr/>
+        <div class="col-xs-9">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="home-vr">Home Tab.</div>
+            <div class="tab-pane" id="profile-vr">Profile Tab.</div>
+            <div class="tab-pane" id="messages-vr">Messages Tab.</div>
+            <div class="tab-pane" id="settings-vr">Settings Tab.</div>
+          </div>
+        </div>
+
+        <div class="col-xs-3"> <!-- required for floating -->
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs tabs-right sideways">
+            <li class="active"><a href="#home-vr" data-toggle="tab">Home</a></li>
+            <li><a href="#profile-vr" data-toggle="tab">Profile</a></li>
+            <li><a href="#messages-vr" data-toggle="tab">Messages</a></li>
+            <li><a href="#settings-vr" data-toggle="tab">Settings</a></li>
+          </ul>
+        </div>
+
+</body>
+</html>

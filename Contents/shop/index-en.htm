@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html" charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=11" />
+
+
+<!--<script language="JavaScript" type="text/javascript"
+  src="Scripts/FlashPlayer.js"></script>-->
+<script language="JavaScript" type="text/javascript"
+  src="../../Scripts/BaseCommand.js"></script>
+<script language="JavaScript" type="text/javascript"
+  src="../../Scripts/BaseEvent.js"></script>
+<script language="JavaScript" type="text/javascript"
+  src="../../Scripts/LogConsole.js"></script>
+
+<script type="text/javascript">
+  if(readCookie("lang")=="arabic"){
+    //alert("worked");
+    location.href='index.html';
+    
+  }
+  else if(readCookie("lang")=="english"){
+    window.external.ChangeLanguage("en-gb");
+  }
+  function GoHome()
+{
+  //if(flagPictureAvatar == "true") DeleteRobotFace();  //사진 아바타 삭제
+  location.href = "../../maincontents.htm";
+}
+</script>
+
+ <script src="../../jquery/jquery-3.2.1.min.js"></script>
+
+ <script src="../../boots/js/bootstrap.min.js"></script>
+  <script src="js/lang_shop-en.js"></script>
+
+  <link rel="stylesheet" href="../../boots/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../../css/style_riyadh.css">
+
+<style>
+    .bmg{
+          background-image: none;
+          height: 1040px;
+    }
+    .img-home {
+          position: absolute;
+    top: -60px;
+    z-index: 99;
+    height: 62px;
+    }
+
+      tbody {
+          display:block;
+          height:1000px;
+          overflow:auto;
+      }
+      thead, tbody tr {
+          display:table;
+          width:100%;
+          table-layout:fixed;
+      }
+      thead {
+          width: calc( 101.5% - 1em )
+      }
+      .maps{
+                background-color: darkgrey;
+    height: 400px;
+    width: 1080px;
+      }
+
+    .wrap{
+       margin-top:115px;
+    }
+    .part1{
+          
+    height: 920px;
+    
+    margin-left: -15px;
+    }
+    .part2{
+        background-color:#008a97;
+        height: 750px;
+        width: 615px;
+        padding: 15px;
+        z-index:0;
+        position: absolute;
+    }
+        
+    .titl1{
+                font-size: 50px;
+    font-family: OpenSans-Regular;
+    font-style: bold;
+    padding-top: 90px;
+    padding-left: 295px;
+    }  
+    .txt1{
+             margin-top: 80px;
+    font-family: OpenSans-Regular;
+    font-style: unset;
+    font-size: 27px;
+    margin-left: 127px;
+    padding-right: 142px;
+    text-align: center;
+    line-height: 31px;
+    color: #00003F;
+    }
+     .txt2{
+      padding-top: 3px;
+      font-family:OpenSans-Regular;
+      font-size:10px;
+      display:inline;
+    }
+    ul{
+      list-style-type: none;
+    }
+    ul.list1{
+         padding-top: 2px;
+        line-height: 64px;
+        font-size: 30px;
+        /*text-align: center;*/
+        margin-left: -60px;
+        font-weight: 500;
+        font-family: inherit;
+    }
+    ul.list1 li:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 0px;
+        background: grey;
+    }
+    ul.list2{
+            padding-top: 2px;
+            padding-left: 64px;
+            line-height: 64px;
+            font-size: 30px;
+            /* text-align: center; */
+            margin-left: -60px;
+            font-weight: 500;
+            font-family: inherit;
+    }
+    ul.list2 li:after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 0px;
+        background: grey;
+    }
+    a,a:hover { text-decoration : none; color : #000; }
+    #leftmenu h3 {
+        margin:0;
+        font-family: OpenSans-Regular;
+        font-size: 34px;
+        font-weight: 600;
+        padding:20px 45px;
+       
+        cursor:pointer;
+        background-color:#008a97;
+        color:#ffffff;
+        text-align:left;
+    }
+    
+    #leftmenu h5 {
+        margin:0;
+        font-family:OpenSans-Regular;
+        font-weight: 500;
+        padding:30px 80px;
+        border-top:1px solid #153F65;
+        border-bottom:1px solid #236b8e;
+        cursor:pointer;
+        background-color:#153F65;
+        color:#ffffff;
+        text-align:left;
+    }
+     
+    #leftmenu > ul {
+        margin:0;
+        padding:0;
+    }
+    #leftmenu > ul li {
+        padding-left:0px;
+        list-style-type:none;
+    }
+    #leftmenu > ul li a {
+      color: #008a97;
+      font-weight: bold;
+      font-size: 30px;
+      padding-left: 80px;
+      text-decoration:none;
+    }
+    #leftmenu > ul li a:hover {
+        text-decoration:underline;
+    }
+    #leftmenu .current {
+        color:#006699;
+        text-decoration:underline;
+    }
+    .sub{
+      background-color:green;
+    }
+    .h5, h5 {
+        font-size: 21px;
+    }
+    .bdy{
+        width: 580px;
+        padding-right: 25px;
+        z-index: -1;
+        line-height: 40px;
+        position: absolute;
+        color: white;
+    }
+    #title{
+      font-size: 30px;
+      margin-top: 20px;
+      font-weight: 100;
+    padding-left: 55px;
+    font-family: OpenSans-Regular;
+   
+    }
+    #location{
+        font-size: 15px;
+        font-family:cursive;
+        font-weight: 200;
+    padding-left: 60px;
+    }
+    #desc{
+        font-size: 14px;
+    font-weight: 200;
+    padding-left: 55px;
+    font-family: OpenSans-Light;
+    line-height: 17px;
+    padding-bottom: 20px;
+    }
+    #mapBtn{
+
+      margin-left: 55px;background-color: #f5a800;border-color: #f5a800;
+
+    }
+    #icon{
+      
+      margin-top: 10px;
+      /*height: 300px;*/
+      width: 500px;
+    }
+ #dialog-overlay {
+
+  /* set it to fill the whil screen */
+  width:100%; 
+  height:100%;
+  
+  /* transparency for different browsers */
+  filter:alpha(opacity=50); 
+  -moz-opacity:0.5; 
+  -khtml-opacity: 0.5; 
+  opacity: 0.5; 
+  background:#000; 
+
+  /* make sure it appear behind the dialog box but above everything else */
+  position:absolute; 
+  top:0; left:0; 
+  z-index:3000; 
+
+  /* hide it by default */
+  display:none;
+}
+
+    #dialog-box {
+  
+  /* css3 drop shadow */
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
+  /* css3 border radius */
+  -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+  
+  background:#eee;
+  /* styling of the dialog box, i have a fixed dimension for this demo */ 
+  width:850px; 
+  
+  /* make sure it has the highest z-index */
+  position:absolute; 
+  top:20% !important;
+  z-index:5000; 
+  
+
+  /* hide it by default */
+  display:none;
+}
+
+#dialog-box .dialog-content {
+  /* style the content */
+  max-height: 1200px;
+  overflow: hidden;
+  text-align:left; 
+  padding:10px; 
+  margin:13px;
+  color:#666; 
+  font-family:arial;
+  font-size:11px; 
+  max-height: 1200px;
+  overflow: scroll;
+}
+
+a.button {
+  /* styles for button */
+  margin:10px auto 0 auto;
+  text-align:center;
+  display: block;
+  width:50px;
+  padding: 5px 10px 6px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1;
+  
+  /* button color */
+  background-color:#034671;
+  
+  /* css3 implementation :) */
+  /* rounded corner */
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  
+  /* drop shadow */
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  
+  /* text shaow */
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+  border-bottom: 1px solid rgba(0,0,0,0.25);
+  position: relative;
+  cursor: pointer;
+  
+}
+
+a.button:hover {
+  /*background-color: #c33100;  */
+}
+
+/* extra styling */
+#dialog-box .dialog-content p {
+  font-weight:700; margin:0;
+}
+
+#dialog-box .dialog-content ul {
+  margin:10px 0 10px 20px; 
+  padding:0; 
+  height:50px;
+}
+.shop-icon {
+    position: absolute;
+    top: -38px;
+    z-index: 1;
+    width: 150px;
+    right: -10px;
+}
+.shop-image{
+  background-color: white;
+  padding: 10px;
+  text-align: center;
+}
+li.odd{background-color: #00c2de1f;}
+li.even{background-color: #f3ebf9;}
+#change-us{color: rgb(255, 255, 255);
+    background: #008a97;
+        padding: 0px 10px;
+    border-radius: 5px;
+}
+</style>
+
+
+<link href="../../css/Setting.css" rel="stylesheet" type="text/css" />
+<link href="../../css/Language.css" rel="stylesheet" type="text/css" />
+<link href="../../css/Main.css" rel="stylesheet" type="text/css" />
+<script src="../../Scripts/lang1.js"></script>
+<!--<script language="JavaScript" type="text/javascript" src="../../Scripts/FlashPlayer.js"></script>-->
+
+  <script type="text/javascript" >
+    //PlaySpeech('Spend some time at some of our great shops.');
+      
+  </script>
+</head>
+<body>
+ <div class="jumbotron text-center">
+      <p id="currentDate"></p><br>
+      <span class="col-sm-8">
+         <img src="../../images/logo.jpg" class="img-responsive" alt="Responsive image" style="width: 521px;">
+      </span>
+      <div class="col-sm-4 text-right">
+          <span id="content_air"></span>
+          <span id="temp"></span>
+
+      </div>     
+    </div>
+
+    <div class="row" style="padding: 0;margin: 0;border:2px solid #008a97;">
+      <div class="col-sm-4" style=" border-top: 62px solid #008a97;border-right: 36px solid #ffffff00;">
+        <img src="../../images/home-white-icon.png" onclick="GoHome()" class="img-home" alt="Responsive image">
+      </div>
+      <div class="col-sm-8" style="font-size: 40px;padding-top: 23px;color: #008a97;font-weight: bold;">
+        <a href="#"  id="change-us" style="">ENGLISH</a>|<a  id="change-ar" href="#" style="color: #008a97 !important;">غير اللغة |</a>
+      </div>
+    </div>
+    <div class="body1">
+      <div class="bmg">
+            <div class="wrap" >
+               <div class="col-sm-5">
+                  <div class="part1" style="">
+                      <div id="leftmenu">
+                          <h3 id="shop">Shops</h3>
+                            <img class="shop-icon" src="photo/shop-icon.png">
+                          
+                          <ul class="list1">
+
+                            <li class="odd"><a id="s1" href="#">Electronics</a></li>
+                            <li class="even"><a id="s2" href="#">LTC</a></li>
+                            <li class="odd"><a id="s3" href="#">Muscat Market</a></li>
+                            <li class="even"><a id="s4" href="#">Perfume and Cosmetics </a></li>
+
+                            <!--<li class="odd"><a id="s1" href="#">Amouage</a></li>
+                            <li class="even"><a id="s2" href="#">La Moda</a></li>
+                            <li class="odd"><a id="s3" href="#">Le Tabac</a></li>
+                            <li class="even"><a id="s4" href="#">Lacoste</a></li>-->
+
+                            <li class="odd"><a id="s5" href="#">Amouage Boutique</a></li>
+                            <li class="even"><a id="s6" href="#">Fashion Jewellery</a></li>
+                            <li class="odd"><a id="s7" href="#">Kids Kingdom</a></li>
+                            <li class="even"><a id="s8" href="#">Gourmet Store</a></li>
+                            <li class="odd"><a id="s9" href="#">Pier Stores</a></li>
+                            <li class="even"><a id="s10" href="#">Arrivals Store</a></li>
+                            <li class="odd"><a id="s11" href="#">Luxury Fashion Avenue</a></li>  
+                            <li class="even"><a id="s12" href="#">High Street Fashion</a></li>
+                            <li class="odd"><a id="s13" href="#">Sunglasses</a></li>       
+                          </ul>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-sm-7">
+                  <div class="part2" id="content">
+                    <div class="shop-image">
+                      <img id="icon" src="photo/elctronics.png" class="icon ">
+                    </div>
+                      <div class="bdy">
+                        <div id="title">Electronics</div>
+                        <!--<div id="location"> </div>-->
+                        <div id="desc">Our store offers a range of the latest electronics in an exciting shopping experience that have been selected especially for the discerning traveler. The store combines the best brands, latest innovations and a trendsetting shopping environment all specifically tailored to travelers. Here you will find the latest smartphones and gadgets from Apple, Samsung and Bose.</div>
+                        
+                        <button type="button" id="mapBtn" class="btn btn-success" dir="photo/maps/passenger-terminal-building-departure(Level-02).png">Map</button>
+                      </div>
+
+                  </div>
+               </div>
+              </div>     
+      </div>
+    </div>
+<footer>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <div class="carousel-inner " id="slide" role="listbox">
+          <div class="item active">
+            <img class="fixed-height" src="../../images/1.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="fixed-height" src="../../images/2.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+        
+          <div class="item">
+            <img class="fixed-height" src="../../images/3.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+       
+          <div class="item">
+            <img class="fixed-height" src="../../images/5.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img class="fixed-height" src="../../images/5.png" width="460" height="345">
+            <div class="carousel-caption">
+              <h3></h3>
+              <p></p>
+            </div>
+          </div>
+
+      
+        </div>
+
+        <!-- Left and right controls -->
+        <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>-->
+    </div>
+    <img src="../../images/bottom-line.png">
+  </footer>
+  <div id="dialog-overlay"></div>
+      <div id="dialog-box">
+        
+      </div>
+</body>
+</html>

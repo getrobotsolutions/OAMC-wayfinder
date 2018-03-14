@@ -1,0 +1,244 @@
+<html>
+	<head>
+		<title>RUH Flight Arrival/Departures</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+
+			  var today = new Date();
+			  var date = today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate();
+//			  var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+			  var time = today.getHours()
+			  // var url = "https://api.flightstats.com/flex/flightstatus/"+date+"/"+time;
+			  // console.log(url);	
+
+			  var url = "https://api.flightstats.com/flex/flightstatus/rest/v2/jsonp/airport/status/RUH/arr/"+date+"/"+time+"?appId=f8a8a638&appKey=f6fc472c1ce879d669ec26f48888450b&utc=false&numHours=1&maxFlights=10&callback=?";
+//			  console.log(url);
+
+
+			  $.ajax({
+			  		  type: "GET",
+
+					  // url: "https://api.flightstats.com/flex/flightstatus/rest/v2/jsonp/airport/status/RUH/arr/2017/8/19/18?appId=f8a8a638&appKey=f6fc472c1ce879d669ec26f48888450b&utc=false&numHours=1&maxFlights=5&callback=?",
+					  url:url,
+					  dataType: "JSONP",
+					  success: function(data) {
+					    console.log(data);	
+
+					    var airport = "King Khaled International Airport(RUH)";
+					     var finalF = data.flightStatuses;
+					     //var finalF= flights.slice(1,5);
+					     // jQuery.each(finalF,function(index,item){
+					     	for(i=0;i<finalF.length;i++)
+					     	{
+//					     	console.log(finalF);
+//					     	console.log(finalF[0].departureAirportFsCode);
+
+					     	var origin = finalF[i].departureAirportFsCode;
+					     	var airline = finalF[i].carrierFsCode;
+					     	var flight = finalF[i].flightNumber;
+					     	var arrival = finalF[i].arrivalDate.dateLocal;
+					     	
+
+					     	var terminal;
+					     	if("airportResources" in finalF[i])
+					     	{	
+					     		if("arrivalTerminal" in finalF[i].airportResources)
+					     		{
+					     			terminal = finalF[i].airportResources.arrivalTerminal;
+					     		}
+					     	}
+					     	// console.log(finalF[i].delays);
+
+					     	var delay_arr, delay_dep,delay;
+					     	if("delays" in finalF[i])
+					     		{	
+					     			delay_arr = finalF[i].delays.arrivalGateDelayMinutes;
+					     			delay_dep = finalF[i].delays.departureGateDelayMinutes;
+					     		}
+					     		else{delay_arr=0;delay_dep=0;}
+
+					        if(delay_arr || delay_dep || (delay_arr&&delay_dep)){	
+					       				 delay = delay_arr + delay_dep;
+								}
+							else{delay=0}
+
+
+					     	var status;
+					     	// var status = finalF[i].delayMinutes;
+					     		
+					     	//Date and Time conversion
+					     	var arrTime = arrival.substring(11,16);
+						     	var H = +arrTime.substr(0, 2);
+								var h = H % 12 || 12;
+								var ampm = H < 12 ? " AM" : " PM";
+								arrTime = h + arrTime.substr(2, 3) + ampm;
+					     	
+					     	// if(delay>60){delay/=60;}
+
+					     	if(delay>0){status= "DELAYED ("+ delay +")";}
+					     	else if(delay==0){status="ON TIME";}
+					     	//console.log(status);
+
+
+					     	$('.origin'+i).html(origin);
+					     	$('.airline'+i).html(airline);
+					     	$('.flight'+i).html(flight+" (Terminal "+terminal+")");
+					     	$('.arrival'+i).html(arrTime);
+					     	$('.status'+i).html(status);
+
+					     
+					     }
+ 							//$(".element").html(el.join(""));
+					     	// $("#clienti").bootstrapTable({
+					     		
+					     	// });
+
+					     // });
+
+					    $(".conditions").html(airport+"<br>"+"Upcoming flight Arrivals:"+"<br>");
+
+
+					  },
+				
+					});
+			});
+		</script>
+
+		<style>
+		  .FArr{
+		  	margin-top:20px;
+		  	margin-right:20px;
+		  	margin-left:20px;
+		  }
+		  .jumbotron{
+		  	padding-left:20px;
+		  	font-size: 20px;
+		  	font-family: comic;
+		  }
+		</style>
+	</head>
+	<body>
+		
+
+	<div class="jumbotron conditions">
+		
+
+
+	</div>
+
+	<ul class="nav nav-tabs">
+	  <li role="presentation" class="active"><a href="#">Arrivals</a></li>
+	  <li role="presentation"><a href="fdep.html">Departures</a></li>
+	</ul>
+
+	<div class= "fArr">
+			<table class="table table-striped">
+			  <thead>
+			    <tr class="bg-primary">
+			      <th>SN</th>
+			      <th>Origin</th>
+			      <th>Airline</th>
+			      <th>Flight</th>
+   			      <th>Arrival</th>
+			      <th>Status(min)</th>
+
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td class="origin0"></td>
+			      <td class="airline0"></td>
+			      <td class="flight0"></td>
+   			      <td class="arrival0"></td>
+			      <td class="status0"></td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">2</th>
+			      <td class="origin1"></td>
+			      <td class="airline1"></td>
+			      <td class="flight1"></td>
+   			      <td class="arrival1"></td>
+			      <td class="status1"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td class="origin2"></td>
+			      <td class="airline2"></td>
+			      <td class="flight2"></td>
+   			      <td class="arrival2"></td>
+			      <td class="status2"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">4</th>
+			      <td class="origin3"></td>
+			      <td class="airline3"></td>
+			      <td class="flight3"></td>
+   			      <td class="arrival3"></td>
+			      <td class="status3"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">5</th>
+			      <td class="origin4"></td>
+			      <td class="airline4"></td>
+			      <td class="flight4"></td>
+   			      <td class="arrival4"></td>
+			      <td class="status4"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">6</th>
+			      <td class="origin5"></td>
+			      <td class="airline5"></td>
+			      <td class="flight5"></td>
+   			      <td class="arrival5"></td>
+			      <td class="status5"></td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">7</th>
+			      <td class="origin6"></td>
+			      <td class="airline6"></td>
+			      <td class="flight6"></td>
+   			      <td class="arrival6"></td>
+			      <td class="status6"></td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">8</th>
+			      <td class="origin7"></td>
+			      <td class="airline7"></td>
+			      <td class="flight7"></td>
+   			      <td class="arrival7"></td>
+			      <td class="status7"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">9</th>
+			      <td class="origin8"></td>
+			      <td class="airline8"></td>
+			      <td class="flight8"></td>
+   			      <td class="arrival8"></td>
+			      <td class="status8"></td>
+			    </tr>
+			    <tr>
+			      <th scope="row">10</th>
+			      <td class="origin9"></td>
+			      <td class="airline9"></td>
+			      <td class="flight9"></td>
+   			      <td class="arrival9"></td>
+			      <td class="status9"></td>
+			    </tr>
+
+
+			  </tbody>
+			</table>
+		</div>
+
+
+
+	</body>
+</html>
