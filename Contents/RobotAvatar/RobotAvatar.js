@@ -9,7 +9,7 @@ var deletePic="Image/Avatar_delete_none.png";
 var deletePicNor="Image/Avatar_delete_nor.png";
 
   $(document).ready(function(){
-ShowTime();
+
 	$('#change-us').click(function(){
 		writeCookie("lang","english");
 		$('#change-us').addClass('active');

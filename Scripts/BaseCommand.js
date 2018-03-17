@@ -400,25 +400,3 @@ today = mm+"/"+dd+"/"+yyyy + " " +today.getHours() + ":" + today.getMinutes()+":
         }
       });
 }
-function ShowTime()  
-        {  
-            var dt = new Date();  
-            //formatAMPM(dt);
-            //var localeSpecificTime = dt.toLocaleTimeString();
-            //localeSpecificTime=localeSpecificTime.replace(/:\d+ /, ' ');
-            //document.getElementById("content_air") .innerHTML = dt.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) ;//dt.getHours(00) + ":" + dt.getMinutes(00);//localeSpecificTime; 
-            document.getElementById("content_air") .innerHTML = formatAMPM(dt);//dt.getHours() + ":" + dt.getMinutes();//localeSpecificTime; 
-
-            window.setTimeout("ShowTime()", 30000); // Here 1000(milliseconds) means one 1 Sec  
-        }
-function formatAMPM(date) {
-
-  var hours = date.getHours();
-  var minutes = date.getMinutes();
-  var ampm = hours >= 12 ? 'PM' : 'AM';
-  hours = hours % 12;
-  hours = hours ? hours : 12; // the hour '0' should be '12'
-  minutes = minutes < 10 ? '0'+minutes : minutes;
-  var strTime = hours + ':' + minutes + ' ' + ampm;
-  return strTime;
-}
