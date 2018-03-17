@@ -64,13 +64,13 @@
     $('.bdy #desc').text("This store is an unexpected delight for passengers of all ages, no matter what type of trip they are on. The store will stock classic toy favourites from brands such as Lego, Mattel and Disney. The key feature in this store is our life size Sinbad Sailor made entirely of Lego located on our Omani Dhow. The store will also include an interactive environment offering kids a fun in store experience while their parents shop");
     $("#mapBtn").show();
     $("#mapBtn").attr('dir','photo/maps/passenger-terminal-building-departure(Level-02).png');
-              });
-              $('#s8').click(function(){
-                $('.part2 #icon').attr("src","photo/gourmet-store.png");
-                $('.bdy #title').text("Gourmet Store");
-                $('.bdy #location').text("Location:");
-                $('.bdy #desc').text("This store is a treasure trove aimed at passengers buying luxury sweet and savory edible products either as gifts or as treats for themselves. It will contain the best of Oman and the Gulf regions foodie delights.");
-              });
+  });
+  $('#s8').click(function(){
+    $('.part2 #icon').attr("src","photo/gourmet-store.png");
+    $('.bdy #title').text("Gourmet Store");
+    $('.bdy #location').text("Location:");
+    $('.bdy #desc').text("This store is a treasure trove aimed at passengers buying luxury sweet and savory edible products either as gifts or as treats for themselves. It will contain the best of Oman and the Gulf regions foodie delights.");
+  });
               $('#s9').click(function(){
                 $('.part2 #icon').attr("src","photo/Pure Gold.jpg");
                 $('.bdy #title').text("Pier Stores (North, South and West)");
@@ -105,7 +105,36 @@
                 $('.bdy #location').text("Location:");
                 $('.bdy #desc').html("Our Spectrum Sunglasses concept store caters to the needs of the international, brand savvy, style conscious traveler who wishes to indulge in an accessible luxury or lifestyle accessory. </br>Spectrum supplies an array of the most iconic and up to date fashionable luxury styles, while also providing cutting edge high performance technology eyewear");
               });
+  $('#s14').click(function(){
+    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.bdy #title').text("Wh Smith");
 
+    $('.bdy #desc').text("In a hurry to catch a flight?! Grab a snack or book to read on your way to your gate.");
+  });
+  $('#s15').click(function(){
+    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.bdy #title').text("Souvinier Shop");
+
+    $('.bdy #desc').text("Looking for the perfect memorable gift? Check out the local and traditional fine collectables and souvenirs.");
+  });
+  $('#s16').click(function(){
+    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.bdy #title').text("Be relax");
+
+    $('.bdy #desc').text("Relaxing in 10 minuts and being spoiled will make a change on your next journey ");
+  });
+  $('#s17').click(function(){
+    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.bdy #title').text("Gallery Argan");
+
+    $('.bdy #desc').text("Where you could buy luxury jewelries and a handy gift for your loved ones.");
+  });
+  $('#s18').click(function(){
+    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.bdy #title').text("Muscat Pharmacy");
+
+    $('.bdy #desc').text("Your store to get range of pharmacitals products, baby care and health products. ");
+  });
               //Change to English
               $('#change-us').click(function(){
                

@@ -20,7 +20,7 @@
 /*                        parts_p = jQuery.grep(parts_p, function(n){ return (n); });
 console.log(parts_p);
 */                         
-                        fname = parts_p[0]+" "+parts_p[1];
+                        fname = parts_p[0].substr(0,7)+" "+parts_p[1];
                         /*console.log(fname);*/
                         flight = parts_p[4];
 
@@ -62,7 +62,7 @@ console.log(parts_p);
                         gate = details[0].Gate;*/
 
 
-                        $('<p>'+fname+" "+lname+'</p>').appendTo('.name');
+                        $('<p style="text-align:center;">'+fname+" "+lname+'</p>').appendTo('.name');
                         $('<p>'+arline+" "+flight1+'</p>').appendTo('.airline');
                         $('<p>'+dest+'</p>').appendTo('.dest'); 
                         $('<p>'+source+'</p>').appendTo('.src');
@@ -230,13 +230,13 @@ console.log(parts_p);
                       }   
 
                       else{
-                      /* alert("Please put the Barcode scanner on the right position and try again.        يرجى وضع الماسح الضوئي الباركود على المكان الصحيح وحاول مرة أخرى.");*/
-                        //location.reload();
+                      alert("Please put the Barcode scanner on the right position and try again.");
+                        location.reload();
                       }                     
               });
                  
                     setTimeout(function() {
                       $('#submit').trigger('click');
-                      }, 20000);
+                      }, 5000);
                  
         });

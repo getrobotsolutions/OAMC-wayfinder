@@ -15,7 +15,7 @@ $(document).ready(function(){
                 $('#airline').text("Airline");
                 $('#terminal').text("Terminal");
                 $('#arrival').text("Arrival");
-                $('#status').text("Status (min)");
+                $('#status').text("Status");
    
               });
 
@@ -31,7 +31,7 @@ $(document).ready(function(){
                 $('#airline').text("شركة طيران");
                 $('#terminal').text("طرفية");
                 $('#arrival').text("وصول");
-                $('#status').text("االحالة ) دقيقة)");
+                $('#status').text("دقيقة");
 
               });
 
@@ -136,7 +136,7 @@ $(document).ready(function(){
                       $('.arrival'+i).html(depTime);
                       $('.status'+i).html(flight_status);
                       
-                      var dir = 'images/airlines/'+airline+'.jpg';
+                      var dir = '../../images/airlines/'+airline+'.jpg';
                       $('#img'+i).attr('src',dir).height(100).width(100);
 
                       $('img').filter(function(index){return $(this).attr('src')==='';}).hide();

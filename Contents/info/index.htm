@@ -423,7 +423,7 @@ UpdateSession(6);
   $(document).ready(function(){
     if(readCookie("lang")=="english"){
       window.external.ChangeLanguage("en-gb");
-      //PlaySpeech("Here is some information to make your journey more enjoyable.");
+      PlaySpeech("Here is some information to make your journey more enjoyable.");
       $('#change-us').addClass('active');
       $('#change-ar').removeClass('active');
       
@@ -432,7 +432,7 @@ UpdateSession(6);
       $('#change-us').removeClass('active');
       $('#change-ar').addClass('active');
       window.external.ChangeLanguage("ar-eg");
-      //PlaySpeech("إليك بعض المعلومات لتجعلك تستمتع برحلتك بشكل أكبر.");
+      PlaySpeech("إليك بعض المعلومات لتجعلك تستمتع برحلتك بشكل أكبر.");
       
     }
   });

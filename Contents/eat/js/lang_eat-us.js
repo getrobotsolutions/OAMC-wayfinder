@@ -17,7 +17,6 @@ ShowTime();
 
   });
 
-
   /*$('#restau').text("Restaurants");
   $('#c3').text("KFC");
   $('#c4').text("McDonalds");
@@ -32,7 +31,7 @@ ShowTime();
     $('.part2 #icon').attr("src","photo/KFC_logo.png");
     $('.bdy #title').text("KFC");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("well known fried chicken concept for the best taste and if you are in hurry.");
+    $('.bdy #desc').text("Well known fried chicken concept for the best taste and if you are in hurry.");
     
 
     $("#mapBtn").attr('dir','photo/maps/aribou-Coffee.jpg');
@@ -43,7 +42,7 @@ ShowTime();
 
     $('.bdy #title').text("McDonalds");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("for burger and fast food lovers, enjou mcdonalds with movement of planes next to you.");
+    $('.bdy #desc').text("For burger and fast food lovers, enjou mcdonalds with movement of planes next to you.");
    
 
     $("#mapBtn").hide();
@@ -82,7 +81,7 @@ ShowTime();
     $('.part2 #icon').attr("src","photo/Tickerdaze.png");
     $('.bdy #title').text("Tickerdaze");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("casual dinning with sports and bubbly beverages. Enjoy matches before boarding you fligth.");
+    $('.bdy #desc').text("Casual dinning with sports and bubbly beverages. Enjoy matches before boarding you fligth.");
     $("#mapBtn").attr('dir','photo/maps/passenger-terminal-building-departure(Level-02).png');
     $("#mapBtn").show();
   });
@@ -90,7 +89,7 @@ ShowTime();
     $('.part2 #icon').attr("src","photo/luna.png");
     $('.bdy #title').text("Luna");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("ala cart Tapas Restaurant with Fine Beverages and quite zones with beautiful view of Muscat Beaches.");
+    $('.bdy #desc').text("Ala cart Tapas Restaurant with Fine Beverages and quite zones with beautiful view of Muscat Beaches.");
     $("#mapBtn").attr('dir','photo/maps/passenger-terminal-building-departure(Level-02).png');
     $("#mapBtn").show();
   });
@@ -107,7 +106,7 @@ ShowTime();
 
     $('.bdy #title').text("Café Nero");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("want to try the best coffee? Visit Café Nero and you will not regret it");
+    $('.bdy #desc').text("Want to try the best coffee? Visit Café Nero and you will not regret it");
     
     $("#mapBtn").attr('dir','photo/maps/south-pier-departure(level-02).png');
     $("#mapBtn").show();
@@ -116,7 +115,7 @@ ShowTime();
     $('.part2 #icon').attr("src","photo/Caribou-Coffee.png");
     $('.bdy #title').text("Caribou Coffee");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("ACaffeine Junkie? Boost your energy with Caribou Coffee");
+    $('.bdy #desc').text("Caffeine Junkie? Boost your energy with Caribou Coffee");
     $("#mapBtn").attr('dir','photo/maps/north-pier-departure(level-02).png');
     $("#mapBtn").show();
 
@@ -150,7 +149,7 @@ ShowTime();
     $('.part2 #icon').attr("src","photo/seaside-park.png");
     $('.bdy #title').text("Seaside Park");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("kids heaven and amazing play ground and snacks.");
+    $('.bdy #desc').text("Kids heaven and amazing play ground and snacks.");
     $("#mapBtn").attr('dir','photo/maps/north-pier-departure(level-02).png');
     $("#mapBtn").show()
     
@@ -166,7 +165,7 @@ ShowTime();
     $('.part2 #icon').attr("src","photo/hall.png");
     $('.bdy #title').text("Aerotel Muscat Hotel");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("have long layover or want to sleep without any disturbance? Then visit Aerotel Muscat and you will enjoy the best rooms or swim in an In-Door swimming pool.");
+    $('.bdy #desc').text("Have long layover or want to sleep without any disturbance? Then visit Aerotel Muscat and you will enjoy the best rooms or swim in an In-Door swimming pool.");
 
   });
               

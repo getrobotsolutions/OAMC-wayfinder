@@ -14,7 +14,7 @@ ul{list-style-type: none;}
 body {
 	margin: 0px;
 	padding: 0px;
-	/*background-image: url("../../Images/photo_bg.png");*/
+	background-image: url("../../Images/photo_bg.png");
 	background-repeat: no-repeat;
 	overflow : hidden;
 	background-position-y: 130px;
@@ -39,7 +39,7 @@ canvas  {
 }
 
 .pannel {
-	/*margin-top: 375px;*/
+	margin-top: 375px;
 	
 	text-align: center;
 }

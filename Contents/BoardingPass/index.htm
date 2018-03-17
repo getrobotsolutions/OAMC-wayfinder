@@ -208,13 +208,15 @@
     if(readCookie("lang")=="english"){
       $('#change-us').addClass('active');
       $('#change-ar').removeClass('active');
-      //window.external.ChangeLanguage("en-gb");
-      //PlaySpeech("Scan your boarding pass to receive updated information.");
+      window.external.ChangeLanguage("en-gb");
+      window.external.SetVolume(1);
+      PlaySpeech("Scan your boarding pass to receive updated information.");
       
     }
     else if (readCookie("lang")=="arabic") {
       //window.external.ChangeLanguage("ar-eg");
-      //PlaySpeech("قم بوضع بطاقة ركوبك على الماسح لتحصل على المعلومات المحدثة.");
+      //window.external.SetVolume(0.4);
+      //PlaySpeech("مرر تذكرة صعود الطائرة");
       $('#change-us').removeClass('active');
       $('#change-ar').addClass('active');
       
@@ -281,7 +283,7 @@
             </div>
 
             <div class="inst-img">
-              <p style="background-color: #dba41b;color: white;font-size: 73px;line-height: 129px;padding: 20px;margin: 10% 20% 10% 2%;;">يرجى مسح بطاقة الصعود على الماسح الضوئي</p>
+              <p style="background-color: #dba41b;color: white;font-size: 73px;line-height: 129px;padding: 20px;margin: 10% 20% 10% 2%;">مرر تذكرة صعود الطائرة</p>
               <!--<img src="../../images/gif/test2.jpg" class="inst">
              <img src="../../images/gif/test1.jpg" class="inst">
              -->

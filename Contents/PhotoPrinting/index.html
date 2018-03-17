@@ -64,14 +64,16 @@
   		ShowTime();
   		if(readCookie("lang")=="english"){
   			window.external.ChangeLanguage("en-gb");
-      		//PlaySpeech("Its time to smile.");
+  			window.external.SetVolume(1);
+      		PlaySpeech("Its time to smile.");
       		$('#change-us').addClass('active');
       		$('#change-ar').removeClass('active');
       
     	}
     	else if (readCookie("lang")=="arabic") {
-    		window.external.ChangeLanguage("ar-eg");
-    		//PlaySpeech("حان الوقت لتبتسم.");
+    		/*window.external.ChangeLanguage("ar-eg");
+    		window.external.SetVolume(0.4);
+    		PlaySpeech("حان الوقت لتبتسم.");*/
       		$('#change-us').removeClass('active');
       		$('#change-ar').addClass('active');
       		$('body').css('background-image','url(Image/photo_bg_ar.png)');

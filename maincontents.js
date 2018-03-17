@@ -20,67 +20,97 @@ function FC_ContentsCall(strContentsName, strLanguage)
 	if(strContentsName == "eat")   
 	{		
 		//location.href = "Contents/eat/index.htm";
+		document.getElementById('home-wrapper').style.display = "none";
+		document.getElementById('iframe-one').style.display = "";
+		document.getElementsByName('iframe-one')[0].src = "Contents/eat/index.htm";
+		
+		//document.getElementById('iframe-one').contentWindow.location.reload(true);
 	}
 	if(strContentsName == "shop")
 	{
-		location.href = "Contents/shop/index.htm";
+		//location.href = "Contents/shop/index.htm";
+		document.getElementById('home-wrapper').style.display = "none";
+		document.getElementById('iframe-one').style.display = "";
+		document.getElementsByName('iframe-one')[0].src = "Contents/shop/index.htm";
 	}
 	if(strContentsName == "info")
 	{
-		location.href = "Contents/info/index.htm";
+		//location.href = "Contents/info/index.htm";
 	}
 	if(strContentsName == "TerminalMap")
 	{
-		location.href = "Contents/TerminalMap/index.htm";
+		//location.href = "Contents/TerminalMap/index.htm";
+		document.getElementById('home-wrapper').style.display = "none";
+		document.getElementById('iframe-one').style.display = "";
+		document.getElementsByName('iframe-one')[0].src = "TerminalMap/index.htm";
 	}
 	if(strContentsName == "selfie")
 	{
-		location.href = "Contents/sefie/index.htm";
+		//location.href = "Contents/sefie/index.htm";
 	}
 	if(strContentsName == "share")
 	{
-		location.href = "Contents/share/index.htm";
+		//location.href = "Contents/share/index.htm";
 	}
 
 	if(strContentsName == "Flights")
 	{
-		location.href = "Contents/Flights/index.htm";
+		//location.href = "Contents/Flights/flights_dep.htm";
+		document.getElementById('home-wrapper').style.display = "none";
+		document.getElementById('iframe-one').style.display = "";
+		document.getElementsByName('iframe-one')[0].src = "Contents/Flights/flights_dep.htm";
 	}
 	if(strContentsName == "BoardingPass")
 	{
-		location.href = "Contents/BoardingPass/index.htm";
+		//location.href = "Contents/BoardingPass/index.htm";
+		document.getElementById('home-wrapper').style.display = "none";
+		document.getElementById('iframe-one').style.display = "";
+		document.getElementsByName('iframe-one')[0].src = "Contents/BoardingPass/index.htm";
 	}
 	if(strContentsName == "sub_flights"){
-		location.href = "../Flights/index.htm"
+		//location.href = "../Flights/index.htm"
 	}
 	if(strContentsName == "sub_boardingpass"){
-		location.href = "../BoardingPass/index.htm"
+		//location.href = "../BoardingPass/index.htm"
 	}
 	if(strContentsName == "sub_terminalmap"){
-		location.href = "../TerminalMap/index.htm"
+		//location.href = "../TerminalMap/index.htm"
 	}
 	if(strContentsName == "RobotAvatar")   
 	{		
-		location.href = "Contents/RobotAvatar/index.htm";
+		//location.href = "Contents/RobotAvatar/index.htm";
+		document.getElementById('home-wrapper').style.display = "none";
+		document.getElementById('iframe-one').style.display = "";
+		document.getElementsByName('iframe-one')[0].src = "Contents/RobotAvatar/index.htm";
 	}
 	//[포토 프린트 서비스]---
 	if(strContentsName == "PhotoPrinting")   
 	{
 
-		location.href = "Contents/PhotoPrinting/index.html";
-
+		//location.href = "Contents/PhotoPrinting/index.html";
+		document.getElementById('home-wrapper').style.display = "none";
+		document.getElementById('iframe-one').style.display = "";
+		document.getElementById('footer').style.display = "none";
+		document.getElementsByName('iframe-one')[0].src = "Contents/PhotoPrinting/index.html";
+		document.getElementById('bmg').style.height="1600px";
 	}
 	//[음성인식 서비스]---
 	if(strContentsName == "RobotDance")   
 	{
 		
-		location.href = "Contents/RobotDance/RobotDance.htm";
+		//location.href = "Contents/RobotDance/RobotDance.htm";
 	}
 }
 function GoHome()
 {
 	//if(flagPictureAvatar == "true")	DeleteRobotFace();	//사진 아바타 삭제
-	//location.href = "maincontents.htm";
+	//location.href = "../../maincontents.htm";
+	document.getElementById('home-wrapper').style.display = "";
+	document.getElementById('iframe-one').src = "Contents/eat/index.htm";
+	document.getElementById('iframe-one').style.display = "none";
+	document.getElementById('footer').style.display = "";
+	document.getElementById('bmg').style.height="1144px";
+
 }
 
 //------------------------------------------------------------
@@ -205,7 +235,7 @@ function OnJoystickControlled(strPara){
         SetVolume(0.4);
         window.external.PlaySpeech("نحنُ سُعداءٌ بإنضِمامِنا إلى مطاراتْ عُمْان");
 	}
-	if(btn_info[2] == '1'){
+	/*if(btn_info[2] == '1'){
 		window.external.ChangeLanguage("en-gb");
 		SetVolume(1);
 		window.external.PlaySpeech("Good evening your excellence's, and our distinguished guests.");
@@ -215,7 +245,7 @@ function OnJoystickControlled(strPara){
 		SetVolume(1);
 		window.external.PlaySpeech("طبعاً ، تفضلْ دكتورْ مُؤمنْ");
 		
-	}
+	}*/
 
 	if(btn_info[4] == '1'){
 		SetHeadYaw(-35, 23);       
@@ -247,5 +277,50 @@ function OnJoystickControlled(strPara){
 
 //-[End Cookie Control]------------------------------------------------------//
 $(document).ready(function(){
-
+  //Change to English
+	/*$('#change-us').click(function(){
+      
+        /*$('#change-ar').css("background", "#f8f8f8");
+        $('#change-fr').css("background", "#f8f8f8");
+        $('#change-sp').css("background", "#f8f8f8");
+        $('#change-ch').css("background", "#f8f8f8");
+        $('#change-ko').css("background", "#f8f8f8");
+	    $(this).css("background", "#e7e7e7");
+        $('.fly').text("Flights");
+    	$('.scan').text("Scan your Boarding-pass");
+        $('.map').text("Terminal Map");
+        $('#content_term').text("Terminal A");
+        $('#content_air').text("");
+        $('#content_fly').text("Press here to start");
+        $('#content_eat').text("Eat");
+        $('#content_shop').text("Shop");
+        $('#content_info').text("Information");
+        $('#content_map').html("Terminal <br> Map");
+		$('#content_flights').html("Flight <br> Information");
+		$('#content_scan').html("Scan Your <br> Boarding-pass");
+		$('#content_selfie').text("Take Photo");
+        $('#content_avatar').text("Avatar");
+        $('#content_share').text("SHARE");
+        $('#content_explore').text("Explore our concessions");
+	});
+              //Change to Arabic
+    $('#change-ar').click(function(){
+                
+        /*$('#change-us').css("background", "#f8f8f8");
+        $('#change-fr').css("background", "#f8f8f8");
+        $('#change-sp').css("background", "#f8f8f8");
+        $('#change-ch').css("background", "#f8f8f8");
+        $('#change-ko').css("background", "#f8f8f8");
+        $(this).css("background", "#e7e7e7");
+        $('#content_term').text("محطة A");
+        $('#content_air').text("");
+        $('#content_fly').text("ملاح");
+        $('#content_eat').text("تأكل");
+        $('#content_shop').text("متجر");
+        $('#content_info').text("معلومات");
+        $('#content_dance').text("رقص");
+        $('#content_selfie').text("تصوير");
+        $('#content_share').text("شارك");
+      	$('#content_explore').text("استكشاف تنازلات لدينا");
+    }); */             
 });

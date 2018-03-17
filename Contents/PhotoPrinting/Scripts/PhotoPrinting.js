@@ -1,16 +1,15 @@
 ﻿//---------------------------------------------------------------------------//
 //-- 로드 & 언로드 ------------------------------------------------------------//
 //---------------------------------------------------------------------------//
-var isRobot = true;
 function JSMain()
 {
     // 언어 쿠키값 로드
-	//c_language = readCookie("Language");
-    //if (c_language == null)
-        //c_language = "en-us";
+	c_language = readCookie("Language");
+    if (c_language == null)
+        c_language = "en-us";
     
     // 언어에 따른 이미지 세팅
-    //SetImage(c_language);
+    SetImage(c_language);
     
     // FaceTracking Off & 실시간 카메라 영상 디스플레이
 	if (isRobot) 
@@ -25,7 +24,7 @@ function JSMain()
 function GoHome()
 {
     //if(flagPictureAvatar == "true")   DeleteRobotFace();  //사진 아바타 삭제
-    //location.href = "../../maincontents.htm";
+    location.href = "../../maincontents.htm";
 }
 function JSUnload() 
 {
@@ -72,7 +71,7 @@ function TakePhoto()
     isPhotoTaken = false;
     
     // 촬영 버튼 이미지 변경 & 숨김
-    document.getElementById("btn_start").src = "Contents/PhotoPrinting/Images/start_btn_press_en";//+c_language+".png";
+    document.getElementById("btn_start").src = "Images/start_btn_press_"+c_language+".png";
     document.getElementsByClassName("photo_start")[0].style.display = "none";
     
     // 카운트 다운 이미지 보이기 & 카운트다운
@@ -203,19 +202,20 @@ function SendEmail()
     document.getElementsByClassName("email_state")[0].style.display = "block";    
     
     // 메일 전송에 필요한 정보
-    var addr = message;
-    var subject = "Welcome to the FUTURE ROBOT booth.";
-    var body = "Thank you for visiting us.";
-    /*var mail_server = "smtp.gmail.com";
-    var mail_addr_sender = "futurerobot0724@gmail.com";
-    var pswd = "frmac123";
+    //var addr = message;
+    var addr = "paul@robotaisolutions.com";
+    var subject = "Welcome to the Muscat International Airport.";
+    var body = "Email : " + message;
+    var mail_server = "smtp.gmail.com";
+    var mail_addr_sender = "amgenrobot@gmail.com";
+    var pswd = "@amgenrobot2018";
     var port = 587;
-    var ssl = "true";*/
-    var mail_server = "mail.getrobotsolutions.com";
+    var ssl = "true";
+    /*var mail_server = "mail.getrobotsolutions.com";
     var mail_addr_sender = "tamoor@getrobotsolutions.com";
     var pswd = "@tam2016";
     var port = 587;
-    var ssl = "false";
+    var ssl = "false";*/
     
     // 이미지 파일명 지정 및 저장
     var d = new Date();

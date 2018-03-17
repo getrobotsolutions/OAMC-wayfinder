@@ -33,7 +33,7 @@
                 $('#airline').text("Airline");
                 $('#terminal').text("Terminal");
                 $('#arrival').text("Arrival");
-                $('#status').text("Status (min)");
+                $('#status').text("Status");
     //PlaySpeech("Keep up to date with our flights and arrivals.");
 
   }
@@ -134,15 +134,15 @@ thead {
         <img src="../../images/home-white-icon.png" onclick="GoHome()" class="img-home" alt="Responsive image">
       </div>
       <div class="col-sm-8" style="font-size: 40px;padding-top: 20px;color: #008a97;font-weight: bold;">
-        <a href="#"  id="change-us" style="color: #008a97 !important;">ENGLISH</a>|<a  id="change-ar" href="#" style="color: #008a97 !important;">غير اللغة</a> |
+        <a href="#"  id="change-us" style="">ENGLISH</a>|<a  id="change-ar" href="#" style="">غير اللغة</a> |
       </div>
     </div>
   <div class="bmg">  
     <div class="icon1">
       <div class="container">
         <ul class="nav nav-tabs">
-          <li role="presentation"><a id="arr" href="index.htm">القادمون</a></li>
           <li role="presentation" class="active"><a id="dep" href="flights_dep.htm">المغادرون</a></li>
+          <li role="presentation"><a id="arr" href="index.htm">القادمون</a></li>
         </ul>
         
         <div id="loading" style="display:none">
@@ -156,9 +156,9 @@ thead {
                 <th id="flight">طيران</th>
                 <th id="origin">الأصل</th>
                 <th id="airline">شركة طيران</th>
-                <th id="terminal">طرفية</th>
+                <!-- <th id="terminal">طرفية</th> -->
                 <th id="arrival">وصول</th>
-                <th id="status">الحالة ) دقيقة)</th>
+                <th id="status">دقيقة</th>
 
               </tr>
             </thead>
@@ -170,7 +170,7 @@ thead {
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" src="" id="img0" >
                 </td>
 
-                <td class="flight0"></td>
+                <!-- <td class="flight0"></td> -->
                   <td class="arrival0"></td>
                 <td class="status0"></td>
               </tr>
@@ -181,7 +181,7 @@ thead {
                 <!-- <td class="airline1"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" src="" id="img1" >
                 </td>
-                <td class="flight1"></td>
+                <!-- <td class="flight1"></td> -->
                   <td class="arrival1"></td>
                 <td class="status1"></td>
               </tr>
@@ -191,7 +191,7 @@ thead {
                 <!-- <td class="airline2"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" src="" id="img2" >
                 </td>
-                <td class="flight2"></td>
+                <!-- <td class="flight2"></td> -->
                   <td class="arrival2"></td>
                 <td class="status2"></td>
               </tr>
@@ -201,7 +201,7 @@ thead {
                 <!-- <td class="airline3"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" src="" id="img3" >
                 </td>
-                <td class="flight3"></td>
+                <!-- <td class="flight3"></td> -->
                   <td class="arrival3"></td>
                 <td class="status3"></td>
               </tr>
@@ -211,7 +211,7 @@ thead {
                 <!-- <td class="airline4"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" src="" id="img4">
                 </td>
-                <td class="flight4"></td>
+                <!-- <td class="flight4"></td> -->
                   <td class="arrival4"></td>
                 <td class="status4"></td>
               </tr>
@@ -221,7 +221,7 @@ thead {
                 <!-- <td class="airline5"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" src="" id="img5" >
                 </td>
-                <td class="flight5"></td>
+                <!-- <td class="flight5"></td> -->
                   <td class="arrival5"></td>
                 <td class="status5"></td>
               </tr>
@@ -233,7 +233,7 @@ thead {
                 <td> 
                  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" src="" id="img6" >
                 </td>
-                <td class="flight6"></td>
+                <!-- <td class="flight6"></td> -->
                   <td class="arrival6"></td>
                 <td class="status6"></td>
               </tr>
@@ -244,7 +244,7 @@ thead {
                 <!-- <td class="airline7"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" src="" id="img7" >
                 </td>
-                <td class="flight7"></td>
+                <!-- <td class="flight7"></td> -->
                   <td class="arrival7"></td>
                 <td class="status7"></td>
               </tr>
@@ -254,7 +254,7 @@ thead {
                 <!-- <td class="airline8"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" src="" id="img8" >
                 </td>
-                <td class="flight8"></td>
+                <!-- <td class="flight8"></td> -->
                   <td class="arrival8"></td>
                 <td class="status8"></td>
               </tr>
@@ -264,7 +264,7 @@ thead {
                 <!-- <td class="airline9"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" src="" id="img9" >
                 </td>
-                <td class="flight9"></td>
+               <!--  <td class="flight9"></td> -->
                   <td class="arrival9"></td>
                 <td class="status9"></td>
               </tr>
@@ -274,7 +274,7 @@ thead {
                 <!-- <td class="airline10"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" id="img10" >
                 </td>
-                <td class="flight10"></td>
+                <!-- <td class="flight10"></td> -->
                   <td class="arrival10"></td>
                 <td class="status10"></td>
               </tr>
@@ -284,7 +284,7 @@ thead {
                 <!-- <td class="airline11"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" id="img11" >
                 </td>
-                <td class="flight11"></td>
+                <!-- td class="flight11"></td> -->
                   <td class="arrival11"></td>
                 <td class="status11"></td>
               </tr>
@@ -294,7 +294,7 @@ thead {
                 <!-- <td class="airline12"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" id="img12" >
                 </td>
-                <td class="flight12"></td>
+               <!--  <td class="flight12"></td> -->
                   <td class="arrival12"></td>
                 <td class="status12"></td>
               </tr>
@@ -304,7 +304,7 @@ thead {
                 <!-- <td class="airline13"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'" id="img13" >
                 </td>
-                <td class="flight13"></td>
+                <!-- <td class="flight13"></td> -->
                   <td class="arrival13"></td>
                 <td class="status13"></td>
               </tr>
@@ -314,7 +314,7 @@ thead {
                 <!-- <td class="airline14"></td> -->
                 <td>  <img class="img-circle" onerror="this.src='../../images/airlines/arrival.jpg'"id="img14" >
                 </td>
-                <td class="flight14"></td>
+                <!-- <td class="flight14"></td> -->
                   <td class="arrival14"></td>
                 <td class="status14"></td>
               </tr>

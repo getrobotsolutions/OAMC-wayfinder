@@ -28,7 +28,8 @@
     $(document).ready(function(){
     if(readCookie("lang")=="english"){
       window.external.ChangeLanguage("en-gb");
-      //PlaySpeech("Look your best because now you are about to be a robot.");
+      window.external.SetVolume(1);
+      PlaySpeech("Look your best because now you are about to be a robot.");
       $('#change-us').addClass('active');
       $('#change-ar').removeClass('active');
       $('.title').text("Robot Avatar");
@@ -43,8 +44,9 @@
       
     }
     else if (readCookie("lang")=="arabic") {
-      window.external.ChangeLanguage("ar-eg");
-      //PlaySpeech("أظهر بأفضل شكل لأنك على وشك أن تصبح رجلاً آلياً.");
+      /*window.external.ChangeLanguage("ar-eg");
+      window.external.SetVolume(0.4);
+      PlaySpeech("أظهر بأفضل شكل لأنك على وشك أن تصبح رجلاً آلياً.");*/
       $('#change-us').removeClass('active');
       $('#change-ar').addClass('active');
       $('.title').text("الصّورة الرّمزية");
