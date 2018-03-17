@@ -216,7 +216,7 @@ console.log(parts_p);
             });                
   
             $( function() {
-                  $('.submit').click(function(e) {
+                  $('.scan').click(function(e) {
                       e.preventDefault();
                       var bar_code = $("#bar_code").val(); 
                       console.log(bar_code);
@@ -236,7 +236,7 @@ console.log(parts_p);
               });
                  
                     setTimeout(function() {
-                      $('#submit').trigger('click');
+                      $('#scan').trigger('click');
                       }, 5000);
                  
         });

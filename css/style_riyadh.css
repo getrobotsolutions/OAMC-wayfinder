@@ -189,11 +189,12 @@
           margin-left: -183px;
           padding-top: 11px;
     }
-    #content_air{
+    #content_air,#content_date{
      font-size: 40px;
     color: #73787c;
     margin-right: 10px;
     height: 35px;
+    margin-bottom: 5px;
     }
     #HF{
           height: 346px;
@@ -431,7 +432,8 @@
         width: 183px;
     float: right;
     margin-right: 10px;
-    font-size: 17px;}
+    font-size: 17px;
+  }
 body{
   /*margin:120px auto;
   display:block;

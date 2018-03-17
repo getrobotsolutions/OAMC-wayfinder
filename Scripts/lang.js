@@ -249,8 +249,8 @@ function ShowTime()
             //var localeSpecificTime = dt.toLocaleTimeString();
             //localeSpecificTime=localeSpecificTime.replace(/:\d+ /, ' ');
             //document.getElementById("content_air") .innerHTML = dt.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true }) ;//dt.getHours(00) + ":" + dt.getMinutes(00);//localeSpecificTime; 
-            document.getElementById("content_air") .innerHTML = formatAMPM(dt);//dt.getHours() + ":" + dt.getMinutes();//localeSpecificTime; 
-
+            document.getElementById("content_air") .innerHTML = formatAMPM(dt) ;//dt.getHours() + ":" + dt.getMinutes();//localeSpecificTime; 
+            document.getElementById("content_date") .innerHTML = formatDate(dt);
             window.setTimeout("ShowTime()", 30000); // Here 1000(milliseconds) means one 1 Sec  
         }
 function formatAMPM(date) {
@@ -264,6 +264,17 @@ function formatAMPM(date) {
   dayName = date.toString().split(' ')[0];
   hours = hours <10? '0' +hours : hours;
   minutes = minutes < 10 ? '0'+minutes : minutes;
-  var strTime = ' ' + hours + ':' + minutes + ' ' + dayName+ ' ';// + ampm;
+  var strTime = ' ' + hours + ':' + minutes + ' ' + dayName;// + ampm;
   return strTime;
+}
+
+function formatDate(date){
+
+  var m_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  var month = m_names[date.getMonth()];
+  var day = date.getDate();
+
+  var output = (month<10 ? '0' : '') + month + ' ' +(day<10 ? '0' : '') + day+', '+ date.getFullYear() ;
+  return output;
 }
