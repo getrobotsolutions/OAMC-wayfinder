@@ -943,3 +943,19 @@ a.button:hover {
   height:50px;
 }
 /*//////////Eat page css ends here/////////////*/
+
+
+/*////////boarding passs css////////*/
+.inst-img{text-align: center;}
+#boarding-wrapper #wrapper{
+      height: 1px;
+    z-index: -1;
+    position: absolute;
+}
+#boarding-wrapper .page-header{border: none;}
+.arrow {
+    position: absolute;
+    top: 450px;
+    right: 0px;
+    width: 218px;
+}

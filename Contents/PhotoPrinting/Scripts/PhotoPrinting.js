@@ -1,15 +1,16 @@
 ﻿//---------------------------------------------------------------------------//
 //-- 로드 & 언로드 ------------------------------------------------------------//
 //---------------------------------------------------------------------------//
+var isRobot = true;
 function JSMain()
 {
     // 언어 쿠키값 로드
-	c_language = readCookie("Language");
-    if (c_language == null)
-        c_language = "en-us";
+	//c_language = readCookie("Language");
+    //if (c_language == null)
+        //c_language = "en-us";
     
     // 언어에 따른 이미지 세팅
-    SetImage(c_language);
+    //SetImage(c_language);
     
     // FaceTracking Off & 실시간 카메라 영상 디스플레이
 	if (isRobot) 
@@ -24,7 +25,7 @@ function JSMain()
 function GoHome()
 {
     //if(flagPictureAvatar == "true")   DeleteRobotFace();  //사진 아바타 삭제
-    location.href = "../../maincontents.htm";
+    //location.href = "../../maincontents.htm";
 }
 function JSUnload() 
 {
@@ -71,7 +72,7 @@ function TakePhoto()
     isPhotoTaken = false;
     
     // 촬영 버튼 이미지 변경 & 숨김
-    document.getElementById("btn_start").src = "Images/start_btn_press_"+c_language+".png";
+    document.getElementById("btn_start").src = "Contents/PhotoPrinting/Images/start_btn_press_en";//+c_language+".png";
     document.getElementsByClassName("photo_start")[0].style.display = "none";
     
     // 카운트 다운 이미지 보이기 & 카운트다운

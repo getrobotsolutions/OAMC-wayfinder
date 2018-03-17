@@ -102,7 +102,7 @@ thead {
   if(readCookie("lang")=="english"){
     $('#change-us').addClass('active');
     $('#change-ar').removeClass('active');
-
+    
     $('#arr').text("Arrivals");
     $('#dep').text("Departures");
     $('#flight').text("Flight");
@@ -120,11 +120,7 @@ thead {
     window.external.ChangeLanguage("ar-eg");
     //PlaySpeech("تعرف على مواعيد رحلاتنا و مواعيد الوصول أولاً بأول.");
   }
-  /*else if(readCookie("lang")=="arabic"){
-    
-    responsiveVoice.speak("تعرف على مواعيد رحلاتنا و مواعيد الوصول أولاً بأول.", "Arabic Male");
-    responsiveVoice.cancel();
-  }*/
+  
 });
 function GoHome()
 {

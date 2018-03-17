@@ -136,7 +136,7 @@ $(document).ready(function(){
                       $('.arrival'+i).html(depTime);
                       $('.status'+i).html(flight_status);
                       
-                      var dir = '../../images/airlines/'+airline+'.jpg';
+                      var dir = 'images/airlines/'+airline+'.jpg';
                       $('#img'+i).attr('src',dir).height(100).width(100);
 
                       $('img').filter(function(index){return $(this).attr('src')==='';}).hide();

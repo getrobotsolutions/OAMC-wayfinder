@@ -25,8 +25,17 @@
 <!--eat page JS & CSS files-->
 <script src="Contents/shop/js/lang_shop.js"></script>
 <link rel="stylesheet" href="Contents/shop/css/shop.css"></script>
+
+<script src="Contents/Flights/js/flights.js"></script>
+<!--<script src="Contents/Flights/js/flights_dep.js"></script>-->
+
+<script src="Contents/BoardingPass/js/scanner.js"></script>
   
 <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" type="text/css" href="Contents/PhotoPrinting/Styles/Css/PhotoPrinting.css">
+<script language="JavaScript" type="text/javascript" src="Contents/PhotoPrinting/Scripts/PhotoPrinting.js"></script>
 
 
 
@@ -70,7 +79,7 @@ UpdateSession(9);
     </div>
     <div class="row" style="padding: 0;margin: 0;border:2px solid #008a97;">
       <div class="col-sm-4" style="margin-top: -2px; border-top: 62px solid #008a97;border-right: 36px solid #ffffff00;">
-        <img src="images/home-white-icon.png" onclick="GoHome()" class="img-home" alt="Responsive image"></div>
+        <img src="images/home-white-icon.png" id="GoHome" class="img-home" alt="Responsive image"></div>
       <div class="col-sm-8" style="font-size: 40px;padding-top: 22px;color: #008a97;font-weight: bold;">
         <a href="#"  id="change-us"  style=";">ENGLISH</a>|<a  id="change-ar" href="#" style="" class="">عربى</a>
       </div>
@@ -78,13 +87,11 @@ UpdateSession(9);
 
   <div class="bmg bmg1" >
     <div class="icon1" id="main-wrapper">
-      <div id="home-wrapper" class="container nopadding nomargin" style="padding-top: 100px !important; padding-bottom: 100px !important; ">
-        <!--
-        --------------------------------------------We are removing this only till SUNDAY-----------------------------
+      <div id="home-wrapper" class="container nopadding nomargin" style="padding-top: 50 !important; padding-bottom: 100px !important; ">
+        
         <div class="row">
           <div id="content_fly" class="alert alert-success" role="alert" style="background-color: #f6ad11;box-shadow: 0px 1px #969693;border-radius: 50px;font-size:57px; margin-left: 50px;">اضغط هنا للبدء</div>
         </div>
-        -->
         <div class="row nopadding nomargin">
           <div class="col-sm-6 nopadding">
             <a id="eat-button" href="#" >
@@ -105,7 +112,7 @@ UpdateSession(9);
         <div class="row nopadding nomargin">
           <div class="col-sm-6 nopadding">
               
-                  <a onclick="FC_ContentsCall('Flights','')" href="#">
+                  <a id="flights-button"  href="#">
                     <img class="child nopadding" src="images/icon/flight info 2.png">
                     <div id="content_flights" class="icon-title" style="">رحلات طيران</div>
                   </a>
@@ -113,7 +120,7 @@ UpdateSession(9);
           </div>
           <div class="col-sm-6 nopadding right">
               
-                  <a onclick="FC_ContentsCall('BoardingPass','')" href="#" class="right">
+                  <a id="scan-button" href="#" class="right">
                     <img class="child nopadding" src="images/icon/Boarding Pass 3.png">
                     <div id="content_scan" class="icon-title" style="top:40px;right: 0px;font-size: 30px;">مسح الصعود <br> تمريرة الخاص بك</div>
                   </a>
@@ -149,7 +156,7 @@ UpdateSession(9);
         <div class="row nopadding nomargin">
           <div class="col-sm-6 nopadding ">
              
-                <a onclick="FC_ContentsCall('PhotoPrinting','')" href="#">
+                <a id="buton-pp" href="#">
                   <img class="child nopadding" src="images/icon/PP.png">
                   <div id="content_selfie" class="icon-title" style="font-size: 30px;">تصوير</div>
                 </a>
@@ -161,7 +168,7 @@ UpdateSession(9);
               
                 <a onclick="FC_ContentsCall('RobotAvatar', '')" href="#" class="right">
                   <img class="child nopadding" src="images/icon/RA.png" >
-                  <div id="content_avatar" class="icon-title" style="right: 0px; font-size: 30px;">>نموذج</div>
+                  <div id="content_avatar" class="icon-title" style="right: 0px; font-size: 30px;">نموذج</div>
                 </a>
               
           
@@ -271,7 +278,557 @@ UpdateSession(9);
                </div>
               </div>  
 
-              <!-- ///////////////Shop Page Starts//////////////// -->
+              <!-- ///////////////Shop Page Ends//////////////// -->
+              <!-- ///////////////Flights Page Starts//////////////// -->
+
+
+        <div class="container" id="flights-wrapper" style="display: none;">
+        <ul id="tmenu" class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#">القادمون</a></li>
+          <li role="presentation"><a id="dep" href="#">المغادرون</a></li>
+        </ul>
+        
+        <div id="loading" style="display:none">
+          <img src="images/airlines/loading.gif">
+        </div>
+
+        <div class= "fArr">
+          <table class="table table-striped" id="table1">
+            <thead>
+              <tr class="bg-primary">
+                <th id="flight">طيران</th>
+                <th id="origin">الأصل</th>
+                <th id="airline">شركة طيران</th>
+                <th id="terminal">طرفية</th>
+                <th id="arrival">وصول</th>
+                <th id="status">الحالة ) دقيقة)</th>
+
+              </tr>
+            </thead>
+            <tbody class="tbdy">
+              <tr>
+                <th class="row0"></th>
+                <td class="origin0"></td>
+               <!--  <td class="airline0"></td> -->
+                <td>  <img class="img-circle" src="" id="img0" >
+                </td>
+
+                <td class="flight0"></td>
+                  <td class="arrival0"></td>
+                <td class="status0"></td>
+              </tr>
+
+              <tr>
+                <th class="row1"></th>
+                <td class="origin1"></td>
+                <!-- <td class="airline1"></td> -->
+                <td>  <img class="img-circle" src="" id="img1" >
+                </td>
+                <td class="flight1"></td>
+                  <td class="arrival1"></td>
+                <td class="status1"></td>
+              </tr>
+              <tr>
+                <th class="row2"></th>
+                <td class="origin2"></td>
+                <!-- <td class="airline2"></td> -->
+                <td>  <img class="img-circle" src="" id="img2" >
+                </td>
+                <td class="flight2"></td>
+                  <td class="arrival2"></td>
+                <td class="status2"></td>
+              </tr>
+              <tr>
+                <th class="row3"></th>
+                <td class="origin3"></td>
+                <!-- <td class="airline3"></td> -->
+                <td>  <img class="img-circle" src="" id="img3" >
+                </td>
+                <td class="flight3"></td>
+                  <td class="arrival3"></td>
+                <td class="status3"></td>
+              </tr>
+              <tr>
+                <th class="row4"></th>
+                <td class="origin4"></td>
+                <!-- <td class="airline4"></td> -->
+                <td>  <img class="img-circle" src="" id="img4" >
+                </td>
+                <td class="flight4"></td>
+                  <td class="arrival4"></td>
+                <td class="status4"></td>
+              </tr>
+              <tr>
+                <th class="row5"></th>
+                <td class="origin5"></td>
+                <!-- <td class="airline5"></td> -->
+                <td>  <img class="img-circle" src="" id="img5" >
+                </td>
+                <td class="flight5"></td>
+                  <td class="arrival5"></td>
+                <td class="status5"></td>
+              </tr>
+
+              <tr>
+                <th class="row6"></th>
+                <td class="origin6"></td>
+                <!-- <td class="airline6"></td> -->
+                <td> 
+                 <img class="img-circle" src="" id="img6" >
+                </td>
+                <td class="flight6"></td>
+                  <td class="arrival6"></td>
+                <td class="status6"></td>
+              </tr>
+
+              <tr>
+                <th class="row7"></th>
+                <td class="origin7"></td>
+                <!-- <td class="airline7"></td> -->
+                <td>  <img class="img-circle" id="img7" >
+                </td>
+                <td class="flight7"></td>
+                  <td class="arrival7"></td>
+                <td class="status7"></td>
+              </tr>
+              <tr>
+                <th class="row8"></th>
+                <td class="origin8"></td>
+                <!-- <td class="airline8"></td> -->
+                <td>  <img class="img-circle" id="img8" >
+                </td>
+                <td class="flight8"></td>
+                  <td class="arrival8"></td>
+                <td class="status8"></td>
+              </tr>
+              <tr>
+                <th class="row9"></th>
+                <td class="origin9"></td>
+                <!-- <td class="airline9"></td> -->
+                <td>  <img class="img-circle" id="img9" >
+                </td>
+                <td class="flight9"></td>
+                  <td class="arrival9"></td>
+                <td class="status9"></td>
+              </tr>
+              <tr>
+                <th class="row10"></th>
+                <td class="origin10"></td>
+                <!-- <td class="airline10"></td> -->
+                <td>  <img class="img-circle" id="img10" >
+                </td>
+                <td class="flight10"></td>
+                  <td class="arrival10"></td>
+                <td class="status10"></td>
+              </tr>
+              <tr>
+                <th class="row11"></th>
+                <td class="origin11"></td>
+                <!-- <td class="airline11"></td> -->
+                <td>  <img class="img-circle" id="img11" >
+                </td>
+                <td class="flight11"></td>
+                  <td class="arrival11"></td>
+                <td class="status11"></td>
+              </tr>
+              <tr>
+                <th class="row12"></th>
+                <td class="origin12"></td>
+                <!-- <td class="airline12"></td> -->
+                <td>  <img class="img-circle" id="img12" >
+                </td>
+                <td class="flight12"></td>
+                  <td class="arrival12"></td>
+                <td class="status12"></td>
+              </tr>
+              <tr>
+                <th class="row13"></th>
+                <td class="origin13"></td>
+                <!-- <td class="airline13"></td> -->
+                <td>  <img class="img-circle" id="img13" >
+                </td>
+                <td class="flight13"></td>
+                  <td class="arrival13"></td>
+                <td class="status13"></td>
+              </tr>
+              <tr>
+                <th class="row14"></th>
+                <td class="origin14"></td>
+                <!-- <td class="airline14"></td> -->
+                <td>  <img class="img-circle" id="img14" >
+                </td>
+                <td class="flight14"></td>
+                  <td class="arrival14"></td>
+                <td class="status14"></td>
+              </tr>
+
+
+
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+      <div class="container" id="flights-departure-wrapper" style="display: none;">
+        <ul class="nav nav-tabs">
+          <li role="presentation"><a id="arr" href="#">القادمون</a></li>
+          <li role="presentation" class="active"><a href="#">المغادرون</a></li>
+        </ul>
+        
+        <div id="loading" style="display:none">
+          <img src="images/airlines/loading.gif">
+        </div>
+
+        <div class= "fArr">
+          <table class="table table-striped" id="table1">
+            <thead>
+              <tr class="bg-primary">
+                <th id="flight">طيران</th>
+                <th id="origin">الأصل</th>
+                <th id="airline">شركة طيران</th>
+                <th id="terminal">طرفية</th>
+                <th id="arrival">وصول</th>
+                <th id="status">الحالة ) دقيقة)</th>
+
+              </tr>
+            </thead>
+            <tbody class="tbdy">
+              <tr>
+                <th class="row0"></th>
+                <td class="origin0"></td>
+               <!--  <td class="airline0"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" src="" id="img0" >
+                </td>
+
+                <td class="flight0"></td>
+                  <td class="arrival0"></td>
+                <td class="status0"></td>
+              </tr>
+
+              <tr>
+                <th class="row1"></th>
+                <td class="origin1"></td>
+                <!-- <td class="airline1"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" src="" id="img1" >
+                </td>
+                <td class="flight1"></td>
+                  <td class="arrival1"></td>
+                <td class="status1"></td>
+              </tr>
+              <tr>
+                <th class="row2"></th>
+                <td class="origin2"></td>
+                <!-- <td class="airline2"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" src="" id="img2" >
+                </td>
+                <td class="flight2"></td>
+                  <td class="arrival2"></td>
+                <td class="status2"></td>
+              </tr>
+              <tr>
+                <th class="row3"></th>
+                <td class="origin3"></td>
+                <!-- <td class="airline3"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" src="" id="img3" >
+                </td>
+                <td class="flight3"></td>
+                  <td class="arrival3"></td>
+                <td class="status3"></td>
+              </tr>
+              <tr>
+                <th class="row4"></th>
+                <td class="origin4"></td>
+                <!-- <td class="airline4"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" src="" id="img4">
+                </td>
+                <td class="flight4"></td>
+                  <td class="arrival4"></td>
+                <td class="status4"></td>
+              </tr>
+              <tr>
+                <th class="row5"></th>
+                <td class="origin5"></td>
+                <!-- <td class="airline5"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" src="" id="img5" >
+                </td>
+                <td class="flight5"></td>
+                  <td class="arrival5"></td>
+                <td class="status5"></td>
+              </tr>
+
+              <tr>
+                <th class="row6"></th>
+                <td class="origin6"></td>
+                <!-- <td class="airline6"></td> -->
+                <td> 
+                 <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" src="" id="img6" >
+                </td>
+                <td class="flight6"></td>
+                  <td class="arrival6"></td>
+                <td class="status6"></td>
+              </tr>
+
+              <tr>
+                <th class="row7"></th>
+                <td class="origin7"></td>
+                <!-- <td class="airline7"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" src="" id="img7" >
+                </td>
+                <td class="flight7"></td>
+                  <td class="arrival7"></td>
+                <td class="status7"></td>
+              </tr>
+              <tr>
+                <th class="row8"></th>
+                <td class="origin8"></td>
+                <!-- <td class="airline8"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" src="" id="img8" >
+                </td>
+                <td class="flight8"></td>
+                  <td class="arrival8"></td>
+                <td class="status8"></td>
+              </tr>
+              <tr>
+                <th class="row9"></th>
+                <td class="origin9"></td>
+                <!-- <td class="airline9"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" src="" id="img9" >
+                </td>
+                <td class="flight9"></td>
+                  <td class="arrival9"></td>
+                <td class="status9"></td>
+              </tr>
+              <tr>
+                <th class="row10"></th>
+                <td class="origin10"></td>
+                <!-- <td class="airline10"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" id="img10" >
+                </td>
+                <td class="flight10"></td>
+                  <td class="arrival10"></td>
+                <td class="status10"></td>
+              </tr>
+              <tr>
+                <th class="row11"></th>
+                <td class="origin11"></td>
+                <!-- <td class="airline11"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" id="img11" >
+                </td>
+                <td class="flight11"></td>
+                  <td class="arrival11"></td>
+                <td class="status11"></td>
+              </tr>
+              <tr>
+                <th class="row12"></th>
+                <td class="origin12"></td>
+                <!-- <td class="airline12"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" id="img12" >
+                </td>
+                <td class="flight12"></td>
+                  <td class="arrival12"></td>
+                <td class="status12"></td>
+              </tr>
+              <tr>
+                <th class="row13"></th>
+                <td class="origin13"></td>
+                <!-- <td class="airline13"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'" id="img13" >
+                </td>
+                <td class="flight13"></td>
+                  <td class="arrival13"></td>
+                <td class="status13"></td>
+              </tr>
+              <tr>
+                <th class="row14"></th>
+                <td class="origin14"></td>
+                <!-- <td class="airline14"></td> -->
+                <td>  <img class="img-circle" onerror="this.src='images/airlines/arrival.jpg'"id="img14" >
+                </td>
+                <td class="flight14"></td>
+                  <td class="arrival14"></td>
+                <td class="status14"></td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+<!--///////////Flights ends here //////-->
+
+<div class="container" id="boarding-wrapper" style="display: none;">
+            <div class="page-header">
+              <h3></h3>
+            </div>
+           <!--  <div class="shadow"></div> -->
+            
+            
+
+            <div id="wrapper" >
+              <form>
+              <!-- <input type="text" id="bar_code" value>  -->
+               <textarea class="form-control" rows="5" id="bar_code"></textarea>
+             <!--  <button type="button" id="submit" class="btn btn-primary btn-md">Submit</button> -->
+              <button type="button" id="submit" class="btn btn-primary submit" data-toggle="modal" data-target="#myModal">
+                Submit
+              </button>
+              </form>
+            </div>
+
+            <div class="inst-img">
+              <p style="background-color: #dba41b;color: white;font-size: 73px;line-height: 129px;padding: 20px;margin: 10% 20% 10% 2%;;">يرجى مسح بطاقة الصعود على الماسح الضوئي</p>
+              <!--<img src="../../images/gif/test2.jpg" class="inst">
+             <img src="../../images/gif/test1.jpg" class="inst">
+             -->
+             <p style="background-color: #008a97;color: white;font-size: 73px;line-height: 129px;padding: 20px;margin: 10% 20% 10% 2%;;">Please Scan Your Boarding Pass on the Scanner.</p>
+            
+                        <img class="arrow" src="images/gif/right.png">
+            </div>
+
+            <div class="wrapper1 wrap1">
+              
+                <div class="wlc">Welcome</div><br>
+                 <div id="txt-name" class="name"></div><br>
+                 <div id="txt-airline" class="airline"></div><br>
+                 
+                
+                <div id="txt-src" class="src"></div><img class="plane" src="images/icon/plane.jpg">
+                <div id="txt-dest" class="dest"></div><br>
+                <div class="dep">Estimated Depature</div>
+                <div class="txt-dep"></div> 
+                <!-- Seat : <div id="txt" class="seat"></div><br> -->
+                <div class="checkin">Checkin</div>
+                <div class="txt-checkin"></div>
+                <div class="txtgate">Gate</div> 
+                <div id="txt-gate" class="gate"></div>
+               <!--  <div class="map1" >
+                    <div class="btn-map" style="background-color: rgba(0, 0, 0, .7);">
+                     <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                     <div class="txt-map">Show on map</div>
+                    </div>
+                </div> -->
+            </div>       
+        </div>
+
+    <!--//////////Boarding pass ends here /////////-->
+    <!--//////////Take a Photo //////////////-->
+  <div id="take-photo-wrapper" style="display: none;">
+    
+    <div id="container">
+      <div id="contents">
+        <div class="pannel">
+          <img src="Contents/PhotoPrinting/Images/Pannel-outline.png">
+          <canvas id="camImage" width="910" height="682" ></canvas>
+        </div>
+        <div class="frame" >
+          <img id="frame" src="" alt="">
+        </div>
+        <div class="photo_start" style="display: block;">
+          <img id="btn_start" src="Contents/PhotoPrinting/Images/start_btn_nor_en-us.png" alt="" style="opacity: 0.9;">
+                    <div style="position: absolute; top: 0px; left: 0px; width: 910px; height: 682px; z-index: 101; opacity: 0; background-image: url('Images/start_btn_nor_en-us.png')" onclick="TakePhoto()"></div>
+        </div>
+        <p><img class="number_img" id="number_img" style="display: none;" src="Contents/PhotoPrinting/Images/3.png"></p>
+        <div class="email_state" style="display: none;">
+          <img id="email_state" src="Contents/PhotoPrinting/Images/email_sending_en-us.png" alt="">
+        </div>
+        
+        <ul class="photo_btn">
+          <li><img src="Contents/PhotoPrinting/Images/btn_nor_email_en-us.png" id="email-photo" alt="이메일보내기" onclick="ShowKeyboard()"></li>
+          <li><!--<img src="Images/btn_nor_print_en-us.png" alt="포토프린트" onclick="PrintPhoto()">--></li>
+          <li><img src="Contents/PhotoPrinting/Images/btn_nor_retake_en-us.png" id="retake-photo" alt="다시촬영하기" onclick="Retake()"></li>
+        </ul>
+        <dl class="photo_frame">
+          <dd><img src="Contents/PhotoPrinting/Images/btn_frame01.png" alt="프레임1" onclick="SelectFrame(1)"></dd>
+          <dd><img src="Contents/PhotoPrinting/Images/btn_frame02.png" alt="프레임2" onclick="SelectFrame(2)"></dd>
+          <dd><img src="Contents/PhotoPrinting/Images/btn_frame03.png" alt="프레임3" onclick="SelectFrame(3)"></dd>
+          <dd><img src="Contents/PhotoPrinting/Images/btn_frame04.png" alt="프레임4" onclick="SelectFrame(4)"></dd>
+        </dl>
+        
+        <div id="keyboard" class="keyboard" style="display: none">
+          <div class="top">
+            <font class="address" size="6px"><a id="address"></a></font>
+            <img src="Contents/PhotoPrinting/Images/keyboard/send.png" onclick="SendEmail()"> &nbsp;
+            <img src="Contents/PhotoPrinting/Images/keyboard/cancel.png" onclick="HideKeyboard()">
+          </div>
+          <div class="wrap" >
+            <div class="line01">
+              <img src="Contents/PhotoPrinting/Images/keyboard/1.png" onclick="keyboard('1')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/2.png" onclick="keyboard('2')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/3.png" onclick="keyboard('3')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/4.png" onclick="keyboard('4')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/5.png" onclick="keyboard('5')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/6.png" onclick="keyboard('6')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/7.png" onclick="keyboard('7')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/8.png" onclick="keyboard('8')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/9.png" onclick="keyboard('9')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/0.png" onclick="keyboard('0')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/delete.png" onclick="keyboard('bs')">
+            </div>
+
+            <div class="line02">
+              <img src="Contents/PhotoPrinting/Images/keyboard/q.png" onclick="keyboard('q')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/w.png" onclick="keyboard('w')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/e.png" onclick="keyboard('e')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/r.png" onclick="keyboard('r')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/t.png" onclick="keyboard('t')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/y.png" onclick="keyboard('y')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/u.png" onclick="keyboard('u')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/i.png" onclick="keyboard('i')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/o.png" onclick="keyboard('o')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/p.png" onclick="keyboard('p')">
+            </div>
+
+            <div class="enter" >
+              <img src="Contents/PhotoPrinting/Images/keyboard/enter.png" onclick="send('1')">
+            </div>
+
+            <div class="line03">
+              <img src="Contents/PhotoPrinting/Images/keyboard/a.png" onclick="keyboard('a')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/s.png" onclick="keyboard('s')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/d.png" onclick="keyboard('d')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/f.png" onclick="keyboard('f')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/g.png" onclick="keyboard('g')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/h.png" onclick="keyboard('h')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/j.png" onclick="keyboard('j')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/k.png" onclick="keyboard('k')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/l.png" onclick="keyboard('l')">
+            </div>
+
+            <div class="line04">
+              <img src="Contents/PhotoPrinting/Images/keyboard/z.png" onclick="keyboard('z')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/x.png" onclick="keyboard('x')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/c.png" onclick="keyboard('c')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/v.png" onclick="keyboard('v')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/b.png" onclick="keyboard('b')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/n.png" onclick="keyboard('n')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/m.png" onclick="keyboard('m')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/..png" onclick="keyboard('.')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/exclamation.png" onclick="keyboard('!')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/question.png" onclick="keyboard('?')">
+            </div>
+
+            <div class="line05">
+              <img src="Contents/PhotoPrinting/Images/keyboard/-.png" onclick="keyboard('-')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/_.png" onclick="keyboard('_')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/spacebar.png" onclick="keyboard(' ')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/@.png" onclick="keyboard('@')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/gmail.png" onclick="keyboard('gmail.com')">
+              <img src="Contents/PhotoPrinting/Images/keyboard/com.png" onclick="keyboard('.com')">
+            </div>
+          </div>
+        </div>
+      </div><img src="../../images/bottom-line.png" style="    bottom: 730px;
+    position: relative;">
+      <!-- //contents -->
+    </div>
+    <!-- //container -->
+  </div>
+
+  <!--////////Take a Photo Ends here /////////-->
+
     </div>
   </div>
   <footer>

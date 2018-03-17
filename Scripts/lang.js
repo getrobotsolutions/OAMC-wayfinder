@@ -3,6 +3,24 @@ $(document).ready(function(){
 
 
   ShowTime();
+  $("#GoHome").click(function(){
+    $('#home-wrapper').show();
+    $('#eat-wrapper').hide();
+    $('#shop-wrapper').hide();
+    $('#flights-wrapper').hide();
+    $('#boarding-wrapper').hide();
+  });
+$("#scan-button").click(function(){
+  $('#home-wrapper').hide();
+  $('#boarding-wrapper').show();
+
+});
+$("#buton-pp").click(function(){
+  $('#home-wrapper').hide();
+  $('#take-photo-wrapper').show();
+
+});
+
 
 
 

@@ -80,7 +80,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
 function GoHome()
 {
 	//if(flagPictureAvatar == "true")	DeleteRobotFace();	//사진 아바타 삭제
-	location.href = "maincontents.htm";
+	//location.href = "maincontents.htm";
 }
 
 //------------------------------------------------------------
