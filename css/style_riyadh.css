@@ -3,7 +3,7 @@
         min-height: 83.8%;
       }
       body{
-        margin: 0 0 100px;
+        /*margin: 0 0 100px;*/
         line-height: 0.428571;
       }
       footer{
@@ -681,10 +681,10 @@ body{
 
 
 #iframe-one{
-    height: 1920px;
+    height: 1617px;
     border: none;
     position: absolute;
-    top: -306px;
+    top: 0px;
 
 }
 

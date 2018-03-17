@@ -92,7 +92,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
 		document.getElementById('iframe-one').style.display = "";
 		document.getElementById('footer').style.display = "none";
 		document.getElementsByName('iframe-one')[0].src = "Contents/PhotoPrinting/index.html";
-		document.getElementById('bmg').style.height="1600px";
+		document.getElementById('bmg').style.height="1618px";
 	}
 	//[음성인식 서비스]---
 	if(strContentsName == "RobotDance")   

@@ -230,7 +230,7 @@ console.log(parts_p);
                       }   
 
                       else{
-                      alert("Please put the Barcode scanner on the right position and try again.");
+                      //alert("Please put the Barcode scanner on the right position and try again.");
                         location.reload();
                       }                     
               });
