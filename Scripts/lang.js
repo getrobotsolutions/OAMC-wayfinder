@@ -85,11 +85,12 @@ $(document).ready(function(){
               //Change to English
               $('#change-us').click(function(){
                 // PlaySpeech("hello"); #337ab7
+
                 writeCookie("lang","english");
                 welcomeMessage="Hi. Welcome to our airport. To begin, please press one of the buttons below.";
                 lan="en-gb"; 
                 volume=1;
-                
+                $('#iframe-one').attr("src", $('#iframe-one').attr("src"));
                 $('#change-us').addClass('active');
                 $('#change-ar').removeClass('active');
 
@@ -140,7 +141,7 @@ $(document).ready(function(){
                 $('#content_scan').html("مرر تذكرة صعود الطائرة");
                 $('#content_avatar').html("الصّورة الرّمزية");
                 $('#content_selfie').text("التقاط صورة");
-               
+               $('#iframe-one').attr("src", $('#iframe-one').attr("src"));
               });
               $('#content_fly').click(function(){
                     ChangeLanguage("lan");
