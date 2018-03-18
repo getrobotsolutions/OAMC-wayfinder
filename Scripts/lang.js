@@ -85,7 +85,7 @@ ShowTime();
               //Change to English
               $('#change-us').click(function(){
                 // PlaySpeech("hello"); #337ab7
-document.getElementById("iframe-wayfinding").contentWindow.changemaplang();
+//document.getElementById("iframe-wayfinding").contentWindow.changemaplang();
                 writeCookie("lang","english");
                 welcomeMessage="Welcome to our airport, to begin, please press one of the buttons below.";
                 lan="en-gb"; 

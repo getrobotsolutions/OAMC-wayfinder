@@ -31,7 +31,7 @@ $(document).ready(function(){
     $('.part2 #icon').attr("src","photo/KFC_logo.png");
     $('.bdy #title').text("KFC");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("Well known fried chicken concept for the best taste and if you are in hurry.");
+    $('.bdy #desc').text("An American fast food restaurant chain that specializes in fried chicken");
     
 
     $("#mapBtn").attr('dir','photo/maps/aribou-Coffee.jpg');
@@ -81,7 +81,7 @@ $(document).ready(function(){
     $('.part2 #icon').attr("src","photo/Tickerdaze.png");
     $('.bdy #title').text("Tickerdaze");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("Casual dinning with sports and bubbly beverages. Enjoy matches before boarding you fligth.");
+    $('.bdy #desc').text("Casual dinning with sports and bubbly beverages. Enjoy matches before boarding you flight.");
     $("#mapBtn").attr('dir','photo/maps/passenger-terminal-building-departure(Level-02).png');
     $("#mapBtn").show();
   });
@@ -106,7 +106,7 @@ $(document).ready(function(){
 
     $('.bdy #title').text("Café Nero");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("Want to try the best coffee? Visit Café Nero and you will not regret it");
+    $('.bdy #desc').text("want to try the best coffee? Visit Café Nero and you will not regret it");
     
     $("#mapBtn").attr('dir','photo/maps/south-pier-departure(level-02).png');
     $("#mapBtn").show();
@@ -132,7 +132,7 @@ $(document).ready(function(){
     $('.part2 #icon').attr("src","photo/traveler-club.png");
     $('.bdy #title').text("Travelers Club");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("Café with relaxing seating to sip your coffee and enjoy your snacks.");
+    $('.bdy #desc').text("Café with relaxing seating to sip your coffee and enjoy your snacks");
    
   });
   $('#c12').click(function(){
