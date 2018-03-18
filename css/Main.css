@@ -20,7 +20,8 @@
 }
 
 body{
-	font-family: 'OpenSans-Light' !important;
+	/*font-family: 'OpenSans-Light' !important;*/
+  font-family: 'Bukra-Semi-Bold';
 /*font-weight: bold;*/
 }
 .footer{background-color: white;height:513px;width:1067px;}
