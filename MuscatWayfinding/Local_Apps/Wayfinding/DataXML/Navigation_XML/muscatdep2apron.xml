@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<node map="201" emsg-LANG-en="Continue%20on%20Departure%20Level" smsg-LANG-en="Take%20the%20Elevators%20to%20Departure%20Level"
+		emsg-LANG-ar="إستمر في مستوى القادمون" smsg-LANG-ar="إستخدم السلم الكهربائي إلى مستوى القادمون" ygrid="220" xgrid="324" ypoint="1943" xpoint="1320"></node>
+	<node map="216" emsg-LANG-en="Continue%20on%20Apron%20Level" smsg-LANG-en="Take%20the%20Elevators%20to%20Apron%20Level"
+		emsg-LANG-ar="إستمر في مستوى الميزانين" smsg-LANG-ar="إستخدم المصعد إلى مستوى الميزانين" ygrid="88" xgrid="181" ypoint="1446.65" xpoint="705.3"></node>
+	
+</root>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node lastupdate="03/25/2012 @ 06:08:35 PM">
+  <node inuse="true" floorsfile="DataXML/Navigation_XML/dep2zone5_Escalator.xml" floorstraveled="101,102" label="Departure - Zone 5" type="escalator" name="depesc" id="depesc" elevatordelay="60"></node>
+  <node inuse="true" floorsfile="DataXML/Navigation_XML/dep2zone5_Elevator.xml" floorstraveled="101,102" label="Departure - Zone 5" type="elevator" name="depelev" id="depelev" elevatordelay="60"></node>
+  
+  <node inuse="true" floorsfile="DataXML/Navigation_XML/con2zone6_Escalator.xml" floorstraveled="101,103" label="Concourse - Zone 6" type="escalator" name="conesc" id="conesc" elevatordelay="60"></node>
+  <!--<node inuse="true" floorsfile="DataXML/Navigation_XML/con2zone6_Elevator.xml" floorstraveled="101,103" label="Concourse - Zone 6" type="elevator" name="conelev" id="conelev" elevatordelay="60"></node>-->
+  
+ <node inuse="true" floorsfile="DataXML/Navigation_XML/concourse2zone6_Escalator.xml" floorstraveled="106,103" label="Concourse - Zone 6" type="escalator" name="conesc2" id="conesc2" elevatordelay="60"></node>
+  <node inuse="true" floorsfile="DataXML/Navigation_XML/mezz2arrival.xml" floorstraveled="105,104" label="Mezzanine - Arrival Hall" type="escalator" name="mezzesc" id="mezzesc" elevatordelay="60"></node>
+  
+  <node inuse="true" floorsfile="DataXML/Navigation_XML/arr2zone5_Escalator.xml" floorstraveled="102,104" label="Zone 5 - Arrival Hall" type="escalator" name="arresc" id="arresc" elevatordelay="60"></node>
+  
+   <node inuse="true" floorsfile="DataXML/Navigation_XML/northgroundelev.xml" floorstraveled="201,215" label="North Pier" type="elevator" name="musnorthdepgf" id="musnorthdepgf" elevatordelay="60"></node>
+  
+      <node inuse="true" floorsfile="DataXML/Navigation_XML/northgroundesc.xml" floorstraveled="201,215" label="North Pier" type="escalator" name="muselvnorthdepgf" id="muselvnorthdepgf" elevatordelay="60"></node>
+  
+  <node inuse="true" floorsfile="DataXML/Navigation_XML/mus_southpier2ground_Elevator.xml" floorstraveled="201,211" label="South Pier" type="elevator" name="mussouthdepgfelv" id="mussouthdepgfelv" elevatordelay="60"></node>
+   
+   	<node inuse="true" floorsfile="DataXML/Navigation_XML/mus_southpier2ground_Escalator.xml" floorstraveled="201,211" label="SOuth Pier" type="escalator" name="mussouthdepgfesc" id="mussouthdepgfesc" elevatordelay="60"></node>
+	
+	 <node inuse="true" floorsfile="DataXML/Navigation_XML/mus_westpier2ground_Elevator.xml" floorstraveled="201,214" label="West Pier" type="elevator" name="muswestdepgfelv" id="muswestdepgfelv" elevatordelay="60"></node>
+	
+	 <node inuse="true" floorsfile="DataXML/Navigation_XML/mus_westpier2ground_Escalator.xml" floorstraveled="201,214" label="West Pier" type="escalator" name="muswestdepgfesc" id="muswestdepgfesc" elevatordelay="60"></node>
+	
+	
+	 
+	 <!--<node inuse="true" floorsfile="DataXML/Navigation_XML/mus_hotelrooms_Elevator.xml" floorstraveled="201,207, 208, 209" label="Zone 5 - Arrival Hall" type="elevator" name="mushotelselv" id="mushotelselv" elevatordelay="60"></node>-->
+	 
+	  <node inuse="true" floorsfile="DataXML/Navigation_XML/mus_hotelrooms_Elevator2.xml" floorstraveled="201,207, 208, 209" label="Zone 5 - Arrival Hall" type="elevator" name="mushotelselv2" id="mushotelselv2" elevatordelay="60"></node>
+	
+	 <node inuse="true" floorsfile="DataXML/Navigation_XML/muscatmezz2arrival.xml" floorstraveled="205,210" label="Arrival Hall" type="escalator" name="musarrmezz" id="musarrmezz" elevatordelay="60"></node>
+	 
+	 <node inuse="true" floorsfile="DataXML/Navigation_XML/muscatdep2transfer.xml" floorstraveled="201,206" label="Departure to Transfer Area" type="elevator" name="musdeptrans" id="musdeptrans" elevatordelay="60"></node>
+	 
+	  <node inuse="true" floorsfile="DataXML/Navigation_XML/muscatdep2apron.xml" floorstraveled="201,216" label="Departure to Apron Area" type="elevator" name="musdepapron" id="musdepapron" elevatordelay="60"></node>
+	
+	
+	
+	<!--Muscat north elevators-->
+	
+	 <node inuse="true" floorsfile="DataXML/Navigation_XML/northK2groundelev.xml" floorstraveled="301,215" label="North Pier" type="elevator" name="musnorthknorthdepgf" id="musnorthknorthdepgf" elevatordelay="60"></node>
+  
+      <node inuse="true" floorsfile="DataXML/Navigation_XML/northK2groundesc.xml" floorstraveled="301,215" label="North Pier" type="escalator" name="muselnorthknorthdepgf" id="muselnorthknorthdepgf" elevatordelay="60"></node>
+  
+  <node inuse="true" floorsfile="DataXML/Navigation_XML/mus_K2southpier2ground_Elevator.xml" floorstraveled="301,211" label="South Pier" type="elevator" name="musnorthksouthdepgfelv" id="musnorthksouthdepgfelv" elevatordelay="60"></node>
+   
+   	<node inuse="true" floorsfile="DataXML/Navigation_XML/mus_K2southpier2ground_Escalator.xml" floorstraveled="301,211" label="South Pier" type="escalator" name="musnorthksouthdepgfesc" id="musnorthksouthdepgfesc" elevatordelay="60"></node>
+	
+	 <node inuse="true" floorsfile="DataXML/Navigation_XML/mus_K2westpier2ground_Elevator.xml" floorstraveled="301,214" label="West Pier" type="elevator" name="musnorthwestdepgfelv" id="musnorthwestdepgfelv" elevatordelay="60"></node>
+	
+	 <node inuse="true" floorsfile="DataXML/Navigation_XML/mus_K2westpier2ground_Escalator.xml" floorstraveled="301,214" label="West Pier" type="escalator" name="musnorthwestdepgfesc" id="musnorthwestdepgfesc" elevatordelay="60"></node>
+	 
+	 
+	  <node inuse="true" floorsfile="DataXML/Navigation_XML/muscatK2dep2transfer.xml" floorstraveled="301,206" label="Departure to Transfer Area" type="elevator" name="musnorthdeptrans" id="musnorthdeptrans" elevatordelay="60"></node>
+	 
+  <node inuse="true" floorsfile="DataXML/Navigation_XML/mus_K2hotelrooms_Elevator.xml" floorstraveled="301,207, 208, 209" label="Hotel Rooms level" type="elevator" name="musnorthkhotelselv2" id="musnorthkhotelselv2" elevatordelay="60"></node>
+	
+</node>

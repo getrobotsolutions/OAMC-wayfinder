@@ -1,0 +1,73 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<root> 
+  <!--Common Databases. Loaded for all Kiosks-->
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="1" name="settings" type="systemdata" plotting="false" label="Settings"
+		description="System Settings" database="Config.XML" nodeEditor="custom_editor/Default_Edit.swf"
+		urlencoded="::label::description::" manualedit="" groupname="" reload="0"></node>
+  <node cols="label::kioskgroup" allowedGroups="::masteradmin::admin::" autocache="false" id="7" name="kioskdata" type="userdata" plotting="true" label="kiosk data"
+		description="Kiosk%20List" database="../../Local_Apps/GlobalKioskList.XML" nodeEditor="custom_editor/Default_Edit.swf"
+		urlencoded="::label::description:::" manualedit="::id::name::label::machineName::description::kioskgroup::" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="15" name="syslanguages"
+		type="systemdata" plotting="false" label="System Languages" description="System Language Tags"
+		database="DataXML/System_XML/SysLanguage.XML" nodeEditor="custom_editor/Default_Edit.swf"
+		urlencoded="::en-txt::es-txt::pl-txt::bn-txt::cn-txt::" manualedit="" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="2" name="screen1" type="systemdata" plotting="false" label="screen 1"
+		description="Screen 1 configuration" database="DataXML/System_XML/screen1.xml" nodeEditor="custom_editor/Default_Edit.swf"
+		urlencoded="::label::msgbox::" manualedit="" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="3" name="screen2" type="systemdata" plotting="false" label="screen 2"
+		description="Screen 2 configuration" database="DataXML/System_XML/screen2.XML" nodeEditor="custom_editor/Default_Edit.swf"
+		urlencoded="::label::" manualedit="" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="4" name="screencommon" type="systemdata" plotting="false"
+		label="Screen Common" description="Screen Common to all" database="DataXML/System_XML/screenCommon.xml"
+		nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::" manualedit="" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="5" name="datamanage" type="systemdata" plotting="false" label="Data Manage"
+		description="Performs data management functions post load" database="DataXML/System_XML/datamanage.xml"
+		nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::" manualedit="" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="6" name="GlobalObjectsList" type="systemdata" plotting="false"
+		label="Global Objects List" description="GlobalObjectsList" database="../../objects/GlobalObjectsList.XML"
+		nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::" manualedit="" groupname="" reload="0"></node>
+  <node cols="label::type::inuse" allowedGroups="::masteradmin::admin::" autocache="false" id="8" name="elevatorandstairs" type="userdata" plotting="false"
+		label="Elevators and Stairs" description="Map 2 Map transition List" database="DataXML/Navigation_XML/elevatorstairs.xml"
+		nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::" manualedit="::label::elevatordelay::inuse::" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="9" name="maplist" type="systemdata" plotting="false" label="Map List"
+		description="Map%20List" database="DataXML/Navigation_XML/maplist.XML" nodeEditor="custom_editor/Default_Edit.swf"
+		urlencoded="::label::" manualedit="" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="10" name="languages" type="load" plotting="false" label="Languages"
+		description="Languages" database="DataXML/System_XML/Languages.xml" nodeEditor="custom_editor/Default_Edit.swf"
+		urlencoded="::label::" manualedit="::label::langcode::langenabled::defaultlang::" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="25" name="buildings" type="systemdata" plotting="false" label="Buildings"
+		description="Building 2 Building Exit list" database="DataXML/Navigation_XML/EntrancesExits.XML"
+		nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::entermsg::exitmsg::"
+		manualedit="" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="26" name="exitexception" type="systemdata" plotting="false"
+		label="Exit%20Exceptions" description="Building%202%20Building%20Exit%20Exceptions%20list"
+		database="DataXML/Navigation_XML/ExitsException.XML" nodeEditor="custom_editor/Default_Edit.swf"
+		urlencoded="::label::" manualedit="::label::startbuilding::endbuilding::useexit::inuse::" groupname="" reload="0"></node>
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="false" id="27" name="entryexception" type="systemdata" plotting="false"
+			label="Entry%20Exceptions" description="Building%202%20Building%20Entry%20Exceptions%20list"
+			database="DataXML/Navigation_XML/EntryException.XML" nodeEditor="custom_editor/Default_Edit.swf"
+			urlencoded="::label::" manualedit="::label::startbuilding::endbuilding::useentry::inuse::" groupname="" reload="0"></node>
+
+	
+		
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="true" id="600" name="muscatconcoursegates" type="userdata" plotting="true" label=" Muscat-Con-Gates"
+   description="" database="DataXML/Published_XML/muscatconcourseGates.xml"
+        nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::description::keywords::sublabel::"
+       manualedit="::label::description::keywords::sublabel::" groupname="MuscatDepartures" reload="0"></node>
+  
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="true" id="601" name="muscattoilets" type="userdata" plotting="true" label="Muscat-Toilets" description="" database="DataXML/Published_XML/muscatToilets.xml" nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::description::keywords::sublabel::" manualedit="::label::description::keywords::sublabel::group::" groupname="MuscatDepartures" reload="0"></node>
+  
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="true" id="602" name="muscatprayerrooms" type="userdata" plotting="true" label="Muscat-Prayer" description="" database="DataXML/Published_XML/muscatPrayerrooms.xml" nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::description::keywords::sublabel::" manualedit="::label::description::keywords::sublabel::group::" groupname="MuscatDepartures" reload="0"></node>
+  
+  <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="true" id="603" name="muscatairportservices" type="userdata" plotting="true" label="Muscat-services" description="" database="DataXML/Published_XML/muscatAirportServices.xml" nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::description::keywords::sublabel::" manualedit="::label::description::keywords::sublabel::group::" groupname="MuscatDepartures" reload="0"></node>
+  
+    <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="true" id="604" name="muscatfoodandbeverage" type="userdata" plotting="true" label="Muscat-FB" description="" database="DataXML/Published_XML/muscatFoodAndBeverage.xml" nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::description::keywords::sublabel::" manualedit="::label::description::keywords::sublabel::group::" groupname="MuscatDepartures" reload="0"></node>
+  
+    <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="true" id="605" name="muscatlounges" type="userdata" plotting="true" label="Muscat-Lounges" description="" database="DataXML/Published_XML/muscatLounges.xml" nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::description::keywords::sublabel::" manualedit="::label::description::keywords::sublabel::group::" groupname="MuscatDepartures" reload="0"></node>
+	
+	 <node cols="label-LANG::sublabel-LANG" allowedGroups="::masteradmin::admin::" autocache="true" id="606" name="muscatshopping" type="userdata" plotting="true" label="Muscat-Shopping" description="" database="DataXML/Published_XML/muscatShopping.xml" nodeEditor="custom_editor/Default_Edit.swf" urlencoded="::label::description::keywords::sublabel::" manualedit="::label::description::keywords::sublabel::group::" groupname="MuscatDepartures" reload="0"></node>
+	
+
+  
+</root>

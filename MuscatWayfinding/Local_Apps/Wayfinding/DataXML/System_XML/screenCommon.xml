@@ -1,0 +1,15 @@
+<screen>
+	<item id="1" name="backgroundimage" type="bgImage" label="Background Image" img="../../Objects/WayFinderBG.png"
+		inuse="true" />
+	<item id="3" name="exitbtn" type="sysbtn" label="Exit Button" img="" inuse="false" />
+	<item id="4" name="ScrollDown" type="sysbtn" label="ScrollDown" img="" inuse="false" />
+	<item id="5" name="ScrollUp" type="sysbtn" label="ScrollUp" img="" inuse="false" />
+	<item id="6" name="zoom2btn" type="sysbtn" label="zoom2btn" img="" inuse="false" />
+	<item id="7" name="zoomRbtn" type="sysbtn" label="zoom2btn" img="" inuse="false" />
+	<item id="8" name="langSelBtn" type="sysbtn" label="langSelBtn" img="" inuse="true" />
+	<!--item id="3" name="welcometext" type="welcomemsg" label="Welcome Text" inuse="true" txt="Select a category" />
+	<item id="4" name="listpageimage" type="listimage" label="List page image" img="../../Objects/DefaultMessage.png"
+		inuse="true" /-->
+	
+	
+</screen>

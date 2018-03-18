@@ -1,0 +1,546 @@
+<screen>
+  <!--Departures : English Buttons-->
+  <item id="001" lang="-en" spacer="60" name="searchgates" type="button" label="Search Gates"
+		  onimg="4442" offimg="4441" dataset="departuresgates" inuse="true" displaytype="style1"
+		  onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		  keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		  xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+  <item id="002" lang="-en" spacer="60" name="searchdeparturesAirportServices" type="button" label="Search Airport Services"
+		onimg="34442" offimg="34441" dataset="departuresairportservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+  <item id="003" lang="-en" spacer="60" name="searchfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="6772911242" offimg="4473924253" dataset="departuresfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+  <item id="004" lang="-en" spacer="60" name="searchshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="8919484853" offimg="5762739884" dataset="departuresshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="25" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+  <item id="005" lang="-en" spacer="60" name="searchtoilets" type="button" label="Search Toilets"
+		onimg="2093901114" offimg="4212812952" dataset="departurestoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="354" ypos="340" kioskgroup="Departures" msgbartxt=""/>
+  <item id="006" lang="-en" spacer="60" name="searchcheckindesks" type="button" label="Search Check In Desks"
+		onimg="65780812952" offimg="67236901114" dataset="departurescheckindesks" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="Alpha" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="683" ypos="340" kioskgroup="Departures" msgbartxt=""/>
+  <item id="007" lang="-en" spacer="60" name="searchlounges" type="button" label="Search Lounges"
+		onimg="3136563950" offimg="490656519" dataset="departurelounges" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="25" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+  <item id="008" lang="-en" spacer="60" name="searchprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="5238756442" offimg="84758911242" dataset="prayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="354" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+	<item id="020" lang="-en" spacer="60" name="searchprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="5238756442" offimg="84758911242" dataset="prayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="683" ypos="620" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+		
+  
+  <!--Departures Area Arabic-->
+  
+  <item id="009" lang="-ar" spacer="60" name="searchgates" type="button" label="Search Gates"
+		  onimg="14442" offimg="14441" dataset="departuresgates" inuse="true" displaytype="style1"
+		  onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		  keyboardtype="multiLang" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		  xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+  <item id="010" lang="-ar" spacer="60" name="searchdeparturesAirportServices" type="button" label="Search Airport Services"
+		onimg="24442" offimg="24441" dataset="departuresairportservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		keyboardtype="multiLang" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+  <item id="011" lang="-ar" spacer="60" name="searchfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="14316739884" offimg="18730484853" dataset="departuresfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+  <item id="012" lang="-ar" spacer="60" name="searchshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="15671390111" offimg="19034812952" dataset="departuresshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="multiLang" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="25" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+  <item id="013" lang="-ar" spacer="60" name="searchtoilets" type="button" label="Search Toilets"
+		onimg="13267563950" offimg="1129056519" dataset="departurestoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="multiLang" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="354" ypos="340" kioskgroup="Departures" msgbartxt=""/>
+  <item id="014" lang="-ar" spacer="60" name="searchcheckindesks" type="button" label="Search Check In Desks"
+		onimg="98030812952" offimg="34126901114" dataset="departurescheckindesks" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="multiLang" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="683" ypos="340" kioskgroup="Departures" msgbartxt=""/>
+  <item id="015" lang="-ar" spacer="60" name="searchlounges" type="button" label="Search Lounges"
+		onimg="13136563950" offimg="1490656519" dataset="departurelounges" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="multiLang" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="25" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+  <item id="016" lang="-ar" spacer="60" name="searchprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="537889131907" offimg="537889134267" dataset="prayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="multiLang" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="354" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Departures" msgbartxt=""/>
+	
+	<!--Concourse Arabic-->
+		
+	
+  
+  <!--Arrivals area-->
+  
+  <item id="017" lang="-en" spacer="60" name="searcharrivalsAirportServices" type="button" label="Search Airport Services"
+		onimg="34442" offimg="34441" dataset="arrivalsairportservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Arrivals" msgbartxt=""/>
+  <item id="018" lang="-en" spacer="60" name="searchfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="6772911242" offimg="4473924253" dataset="arrivalsfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Arrivals" msgbartxt=""/>
+  <item id="019" lang="-en" spacer="60" name="searchshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="8919484853" offimg="5762739884" dataset="arrivalsshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Arrivals" msgbartxt=""/>
+  <item id="020" lang="-en" spacer="60" name="searchtoilets" type="button" label="Search Toilets"
+		onimg="2093901114" offimg="4212812952" dataset="arrivalstoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="25" ypos="340" kioskgroup="Arrivals" msgbartxt=""/>
+  <item id="021" lang="-en" spacer="60" name="searchprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="5238756442" offimg="84758911242" dataset="arrivalsprayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="354" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Arrivals" msgbartxt=""/>
+  
+<!--Arrivals Arabic-->
+
+<item id="017" lang="-ar" spacer="60" name="searcharrivalsAirportServices" type="button" label="Search Airport Services"
+		onimg="24442" offimg="24441" dataset="arrivalsairportservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Arrivals" msgbartxt=""/>
+  <item id="018" lang="-ar" spacer="60" name="searchfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="14316739884" offimg="18730484853" dataset="arrivalsfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Arrivals" msgbartxt=""/>
+  <item id="019" lang="-ar" spacer="60" name="searchshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="15671390111" offimg="19034812952" dataset="arrivalsshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Arrivals" msgbartxt=""/>
+  <item id="020" lang="-ar" spacer="60" name="searchtoilets" type="button" label="Search Toilets"
+		onimg="13267563950" offimg="1129056519" dataset="arrivalstoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="25" ypos="340" kioskgroup="Arrivals" msgbartxt=""/>
+  <item id="021" lang="-ar" spacer="60" name="searchprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="537889131907" offimg="537889134267" dataset="arrivalsprayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="354" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Arrivals" msgbartxt=""/>
+  
+  <!--Concourses : English Buttons-->
+  
+  <item id="027" lang="-en" spacer="75" name="searchgates" type="button" label="Search Gates"
+		  onimg="4442" offimg="4441" dataset="concoursegates" inuse="true" displaytype="style1"
+		  onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		  keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		  xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="028" lang="-en" spacer="60" name="searchdeparturesAirportServices" type="button" label="Search Airport Services"
+		onimg="34442" offimg="34441" dataset="concourseairportservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="029" lang="-en" spacer="60" name="searchfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="6772911242" offimg="4473924253" dataset="concoursefoodbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="030" lang="-en" spacer="60" name="searchshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="8919484853" offimg="5762739884" dataset="concoursesshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="25" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="031" lang="-en" spacer="60" name="searchtoilets" type="button" label="Search Toilets"
+		onimg="2093901114" offimg="4212812952" dataset="concoursetoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="354" ypos="340" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="032" lang="-en" spacer="60" name="searchlounges" type="button" label="Search Lounges"
+		onimg="3136563950" offimg="490656519" dataset="concourselounges" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="683" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="033" lang="-en" spacer="60" name="searchprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="5238756442" offimg="84758911242" dataset="concourseprayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="25" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+		
+<!--Concourse Arabic-->		
+		
+ <item id="034" lang="-ar" spacer="75" name="searchgates" type="button" label="Search Gates"
+		  onimg="14442" offimg="14441" dataset="concoursegates" inuse="true" displaytype="style1"
+		  onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		  keyboardtype="multiLang" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		  xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="035" lang="-ar" spacer="60" name="searchdeparturesAirportServices" type="button" label="Search Airport Services"
+		onimg="24442" offimg="24441" dataset="concourseairportservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		keyboardtype="multiLang" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="036" lang="-ar" spacer="60" name="searchfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="16772911242" offimg="14473924253" dataset="concoursefoodbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="037" lang="-ar" spacer="60" name="searchshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="18919484853" offimg="15762739884" dataset="concoursesshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="multiLang" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="25" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="038" lang="-ar" spacer="60" name="searchtoilets" type="button" label="Search Toilets"
+		onimg="13267563950" offimg="1129056519" dataset="concoursetoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="multiLang" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="354" ypos="340" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="039" lang="-ar" spacer="60" name="searchlounges" type="button" label="Search Lounges"
+		onimg="13136563950" offimg="1490656519" dataset="concourselounges" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="multiLang" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="683" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  <item id="040" lang="-ar" spacer="60" name="searchprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="537889131907" offimg="537889134267" dataset="concourseprayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="multiLang" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="25" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="Concourse" msgbartxt=""/>
+  
+  <!--Muscat Departures -->
+  
+  <item id="1001" lang="-en" spacer="60" name="searchmuscatconcoursegates" type="button" label="Search Gates"
+		  onimg="4442" offimg="4441" dataset="muscatconcoursegates" inuse="true" displaytype="style1"
+		  onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		  keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		  xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		  
+  <item id="1002" lang="-en" spacer="60" name="searchmuscatairportservices" type="button" label="Search Airport Services"
+		onimg="34442" offimg="34441" dataset="muscatairportservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+  <item id="1003" lang="-en" spacer="60" name="searchmuscatfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="6772911242" offimg="4473924253" dataset="muscatfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+  <item id="1004" lang="-en" spacer="60" name="searchmuscatshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="8919484853" offimg="5762739884" dataset="muscatshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="25" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+  <item id="1005" lang="-en" spacer="60" name="searchmuscattoilets" type="button" label="Search Toilets"
+		onimg="2093901114" offimg="4212812952" dataset="muscattoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="354" ypos="340" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+ 
+		
+  <item id="1007" lang="-en" spacer="60" name="searchmuscatlounges" type="button" label="Search Lounges"
+		onimg="3136563950" offimg="490656519" dataset="muscatlounges" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="683" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+  <item id="1008" lang="-en" spacer="60" name="searchmuscatprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="5238756442" offimg="84758911242" dataset="muscatprayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="354" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+		
+	<!--Muscat Arabic -->
+	
+	 <item id="1009" lang="-ar" spacer="60" name="searchmuscatconcoursegates" type="button" label="Search Gates"
+		  onimg="14442" offimg="14441" dataset="muscatconcoursegates" inuse="true" displaytype="style1"
+		  onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		  keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		  xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		  
+  <item id="1010" lang="-ar" spacer="60" name="searchmuscatairportservices" type="button" label="Search Airport Services"
+		onimg="24442" offimg="24441" dataset="muscatairportservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+  <item id="1011" lang="-ar" spacer="60" name="searchmuscatfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="16772911242" offimg="14473924253" dataset="muscatfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+  <item id="1012" lang="-ar" spacer="60" name="searchmuscatshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="18919484853" offimg="15762739884" dataset="muscatshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="25" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+  <item id="1013" lang="-ar" spacer="60" name="searchmuscattoilets" type="button" label="Search Toilets"
+		onimg="13267563950" offimg="1129056519" dataset="muscattoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="354" ypos="340" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+ 
+		
+  <item id="1014" lang="-ar" spacer="60" name="searchmuscatlounges" type="button" label="Search Lounges"
+		onimg="13136563950" offimg="1490656519" dataset="muscatlounges" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="683" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+  <item id="1015" lang="-ar" spacer="60" name="searchmuscatprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="537889131907" offimg="537889134267" dataset="muscatprayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="354" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatDepartures" msgbartxt=""/>
+		
+	<!--Muscat Arrivals-->
+	
+	 		  
+  <item id="1016" lang="-en" spacer="60" name="searchmuscatarrivalairportservices" type="button" label="Search Airport Services"
+		onimg="34442" offimg="34441" dataset="muscatarrivalservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatArrivals" msgbartxt=""/>
+		
+  <item id="1017" lang="-en" spacer="60" name="searchmuscatarrivalfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="6772911242" offimg="4473924253" dataset="muscatarrivalfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatArrivals" msgbartxt=""/>
+		
+		<item id="1018" lang="-en" spacer="60" name="searchmuscatarrivaltoilets" type="button" label="Search Baggage Services"
+		onimg="2093901114" offimg="4212812952" dataset="muscatarrivaltoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatArrivals" msgbartxt=""/>
+		
+	<!--Muscat Arrivals-->
+	
+	<item id="1026" lang="-ar" spacer="60" name="searchmuscatarrivaltoilets" type="button" label="Search Baggage Services"
+		onimg="13267563950" offimg="1129056519" dataset="muscatarrivaltoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatArrivals" msgbartxt=""/>
+
+		  
+  <item id="1027" lang="-ar" spacer="60" name="searchmuscatarrivalairportservices" type="button" label="Search Airport Services"
+		onimg="24442" offimg="24441" dataset="muscatarrivalservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatArrivals" msgbartxt=""/>
+		
+  <item id="1028" lang="-ar" spacer="60" name="searchmuscatarrivalfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="16772911242" offimg="14473924253" dataset="muscatarrivalfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatArrivals" msgbartxt=""/>
+		
+		<!--Muscat Apron level-->
+		
+		 <item id="1028" lang="-en" spacer="60" name="searchmuscatapronservices" type="button" label="Search Airport Services"
+		onimg="34442" offimg="34441" dataset="muscatapronservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+		 <item id="1029" lang="-en" spacer="60" name="searchmuscatapronprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="5238756442" offimg="84758911242" dataset="muscatapronprayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="354" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+		 <item id="1030" lang="-en" spacer="60" name="searchmuscataprontoilets" type="button" label="Search Toilets"
+		onimg="2093901114" offimg="4212812952" dataset="muscataprontoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="354" ypos="340" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+		 <item id="1031" lang="-en" spacer="60" name="searchmuscatapronlounges" type="button" label="Search Lounges"
+		onimg="3136563950" offimg="490656519" dataset="muscatapronlounges" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="683" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+		 <item id="1032" lang="-en" spacer="60" name="searchmuscatapronconcoursegates" type="button" label="Search Gates"
+		  onimg="4442" offimg="4441" dataset="muscatapronconcoursegates" inuse="true" displaytype="style1"
+		  onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		  keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		  xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		  
+		<item id="1033" lang="-en" spacer="60" name="searchmuscatapronshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="8919484853" offimg="5762739884" dataset="muscatapronshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="25" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+		 <item id="1034" lang="-en" spacer="60" name="searchmuscatfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="6772911242" offimg="4473924253" dataset="muscatapronfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+	<!--Muscat Apron level-- Arabic-->	
+	
+	 <item id="1035" lang="-ar" spacer="60" name="searchmuscatapronservices" type="button" label="Search Airport Services"
+		onimg="24442" offimg="24441" dataset="muscatapronservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+		 <item id="1036" lang="-ar" spacer="60" name="searchmuscatapronprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="537889131907" offimg="537889134267" dataset="muscatapronprayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="354" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+		 <item id="1037" lang="-ar" spacer="60" name="searchmuscataprontoilets" type="button" label="Search Toilets"
+		onimg="13267563950" offimg="1129056519" dataset="muscataprontoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="354" ypos="340" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+		 <item id="1038" lang="-ar" spacer="60" name="searchmuscatapronlounges" type="button" label="Search Lounges"
+		onimg="13136563950" offimg="1490656519" dataset="muscatapronlounges" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="683" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+		 <item id="1039" lang="-ar" spacer="60" name="searchmuscatapronconcoursegates" type="button" label="Search Gates"
+		  onimg="14442" offimg="14441" dataset="muscatapronconcoursegates" inuse="true" displaytype="style1"
+		  onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		  keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		  xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		  
+		<item id="1040" lang="-ar" spacer="60" name="searchmuscatapronshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="18919484853" offimg="15762739884" dataset="muscatapronshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="25" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+		
+		 <item id="1041" lang="-ar" spacer="60" name="searchmuscatfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="16772911242" offimg="14473924253" dataset="muscatapronfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatApronDepartures" msgbartxt=""/>
+	
+	
+	<!--Muscat North side Departures-->
+	
+	 <item id="2001" lang="-en" spacer="60" name="searchmuscatnorthgates" type="button" label="Search Gates"
+		  onimg="4442" offimg="4441" dataset="muscatnorthgates" inuse="true" displaytype="style1"
+		  onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		  keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		  xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		  
+		  <item id="2002" lang="-en" spacer="60" name="searchmuscatnorthairportservices" type="button" label="Search Airport Services"
+		onimg="34442" offimg="34441" dataset="muscatnorthairportservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+  <item id="2003" lang="-en" spacer="60" name="searchmuscatnorthfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="6772911242" offimg="4473924253" dataset="muscatnorthfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+  <item id="2004" lang="-en" spacer="60" name="searchmuscatnorthshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="8919484853" offimg="5762739884" dataset="muscatnorthshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="25" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+  <item id="2005" lang="-en" spacer="60" name="searchmuscatnorthtoilets" type="button" label="Search Toilets"
+		onimg="2093901114" offimg="4212812952" dataset="muscatnorthtoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="354" ypos="340" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+ 
+		
+  <item id="2007" lang="-en" spacer="60" name="searchmuscatnorthlounges" type="button" label="Search Lounges"
+		onimg="3136563950" offimg="490656519" dataset="muscatnorthlounges" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="683" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+  <item id="2008" lang="-en" spacer="60" name="searchmuscatnorthprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="5238756442" offimg="84758911242" dataset="muscatnorthprayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="354" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+	<!--Muscat North side kiosks Arabic-->
+	
+	 <item id="2009" lang="-ar" spacer="60" name="searchmuscatnorthgates" type="button" label="Search Gates"
+		  onimg="14442" offimg="14441" dataset="muscatnorthgates" inuse="true" displaytype="style1"
+		  onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		  keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		  xpos="25" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		  
+  <item id="2010" lang="-ar" spacer="60" name="searchmuscatnorthairportservices" type="button" label="Search Airport Services"
+		onimg="24442" offimg="24441" dataset="muscatnorthairportservices" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel,currentairline:rlabel1,currentdestination:rlabel2,currentdeparturetime:rlabel3,currentstatus:rlabel4"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="supersearch" filterfield="currentdestination::currentairline"
+		xpos="354" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+  <item id="2011" lang="-ar" spacer="60" name="searchmuscatnorthfoodandbeverage" type="button"
+		label="Search Foodandbeverage" onimg="16772911242" offimg="14473924253" dataset="muscatnorthfoodandbeverage"
+		inuse="true" displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="alphaLocSer" keyboarddata="101::102::103::104::105::106" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords" xpos="683" ypos="200" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+  <item id="2012" lang="-ar" spacer="60" name="searchmuscatnorthshopping" type="button" label="Search Dutyfree and Shopping"
+		onimg="18919484853" offimg="15762739884" dataset="muscatnorthshopping" inuse="true"
+		displaytype="style1" onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay"
+		displaymap="label:label,sublabel:sublabel" keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch"
+		filterfield="label::sublabel::keywords::description" xpos="25" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+  <item id="2013" lang="-ar" spacer="60" name="searchmuscatnorthtoilets" type="button" label="Search Toilets"
+		onimg="13267563950" offimg="1129056519" dataset="muscatnorthtoilets" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield=""
+		rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" xpos="354" ypos="340" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+ 
+		
+  <item id="2014" lang="-ar" spacer="60" name="searchmuscatnorthlounges" type="button" label="Search Lounges"
+		onimg="13136563950" offimg="1490656519" dataset="muscatnorthlounges" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="683" ypos="340" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+  <item id="2015" lang="-ar" spacer="60" name="searchmuscatnorthprayerrooms" type="button" label="Search Prayer Rooms"
+		onimg="537889131907" offimg="537889134267" dataset="muscatnorthprayerrooms" inuse="true" displaytype="style1"
+		onitemclick="Map" singleitemautoclick="false" onbtnclick="listDisplay" displaymap="label:label,sublabel:sublabel"
+		keyboardtype="AlphaNum" keyboarddata="" filtertype="wordsearch" filterfield="label::sublabel::keywords::description"
+		xpos="354" ypos="480" rightimg="../../Objects/DefaultMessageEN-ES-AR.swf" kioskgroup="MuscatNorthkiosks" msgbartxt=""/>
+		
+	
+</screen>

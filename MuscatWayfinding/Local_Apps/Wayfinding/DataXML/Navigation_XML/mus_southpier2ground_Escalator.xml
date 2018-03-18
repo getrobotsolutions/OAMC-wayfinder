@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+	<node map="201" emsg-LANG-en="Continue%20on%20B%20Gates%20–%20Departure" smsg-LANG-en="Take%20the%20Escalator%20to%20B%20 Gates%20–%20Departure"
+		emsg-LANG-ar="إستمر في إتجاه البوابات B - المغادرون" smsg-LANG-ar="إستخدم السلم الكهربائي إلى البوابات B – مستوى المغادرون" ygrid="25" xgrid="194" ypoint="1163.3" xpoint="150.85"></node>
+		
+			<node map="211" emsg-LANG-en="Continue%20on%20B%20Gates%20Ground%20Level" smsg-LANG-en="Take%20the%20Escalator%20to%20B%20Gates%20Ground%20Level"
+		emsg-LANG-ar="يستمر في اتجاه B - طابق ارضي" smsg-LANG-ar="إستخدم السلم الكهربائي إلى البوابات B – المستوى الأرضي" ygrid="42" xgrid="87" ypoint="698.3" xpoint="338.4"></node>
+	
+</root>

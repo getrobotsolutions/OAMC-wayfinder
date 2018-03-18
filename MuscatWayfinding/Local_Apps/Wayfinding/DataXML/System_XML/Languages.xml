@@ -1,0 +1,17 @@
+﻿<root>
+	<node label="English" nativelabel="English" langcode="en" langenabled="true" langfont="Tahoma" langVOffset="0" 
+		defaultlang="true"></node>
+	<node label="Arabic" nativelabel="عربي" langcode="ar" langenabled="true" langfont="Tahoma" langVOffset="0" 
+	    defaultlang="false"></node>
+    <node label="Spanish" nativelabel="Espanol" langcode="es" langenabled="false" langfont="Arial Unicode MS" langVOffset="0" 
+		defaultlang="false"></node>
+	<node label="French" nativelabel="Francai" langcode="fr" langenabled="false" langfont="Arial Unicode MS" langVOffset="0" 
+		defaultlang="false"></node>
+	<node label="Polish" nativelabel="polski" langcode="pl" langenabled="false" langfont="Arial Unicode MS" langVOffset="0" 
+		defaultlang="false"></node>
+	<node label="Bengali" nativelabel="বাংলা" langcode="bn" langenabled="false" langfont="Arial Unicode MS" langVOffset="0" 
+		defaultlang="false"></node>
+	<node label="Chinese (traditional)" nativelabel="简化字" langcode="cn" langenabled="false" langfont="Arial Unicode MS" langVOffset="0" 
+		defaultlang="false"></node>
+	
+</root>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<node map="206" emsg-LANG-en="Continue%20on%20Transfer%20Area" smsg-LANG-en="Take%20the%20Elevators%20to%20Transfer%20Area"
+		emsg-LANG-ar="إستمر في منطقة المحولون" smsg-LANG-ar="إستخدم المصعد إلى منطقة المحولون" ygrid="156" xgrid="98" ypoint="784" xpoint="1247"></node>
+	<node map="201" emsg-LANG-en="Continue%20on%20Departure%20Level" smsg-LANG-en="Take%20the%20Elevators%20to%20Departure%20Level"
+		emsg-LANG-ar="إستمر في مستوى المغادرون" smsg-LANG-ar="إستخدم المصعد إلى مستوى المغادرون" ygrid="219" xgrid="203" ypoint="1218" xpoint="1314"></node>
+	
+</root>

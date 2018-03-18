@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node lastupdate="05/29/2008 @ 12:50:48 AM">
+
+	<node defaultfloor="true" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Departures_Zone1_2.XML"
+		file="Maps\Departures_Zone1_2.swf" label="Zone 1 & 2-Departures" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="zone12" id="101" building="Main" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Departures_Zone5.XML"
+		file="Maps\Departures_Zone5.swf" label="Zone 5-Apron Level" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="zone5" id="102" building="Main" buildingshare="" travelsec="2"></node>
+		
+		
+		
+	<node defaultfloor="true" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Departures_Zone6.XML"
+		file="Maps\Departures_Zone6.swf" label="Zone 6-Apron Level" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="zone6" id="103" building="Main" buildingshare="" travelsec="2"></node>
+		
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Departures_Arrivals_Zone4.XML"
+		file="Maps\Departures_Arrivals_Zone4.swf" label="Zone 4-Arrivals" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="zone4" id="104" building="Main" buildingshare="" travelsec="2"></node>
+
+
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Mezzanine_Level.xml"
+		file="Maps\Mezzanine_Level.swf" label="Mezzanine Level" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="mezzanine" id="105" building="Main" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Departures_Zone2.XML"
+		file="Maps\Departures_Zone2.swf" label="Zone 2-Concourse" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="zone2" id="106" building="Main" buildingshare="" travelsec="2"></node>		
+		
+	<node defaultfloor="true" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_Departures.XML"
+		file="Maps\Muscat_Departures.swf" label="Muscat Departures" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatdep" id="201" building="Muscat" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="true" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\muscatK2Departures.XML"
+		file="Maps\South_Muscat_Departures.swf" label="Muscat South side Dep" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatnorthdep" id="301" building="Muscat" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\North_Ground.XML"
+		file="Maps\Muscat_Departures_Ground_North_Pier.swf" label="North-pier-GF" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="northpiergf" id="215" building="Muscat" buildingshare="" travelsec="2"></node>
+		
+  <node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_South_pier_GF.XML"
+		file="Maps\Muscat_Departures_Ground_South_Pier.swf" label="South-pier-GF" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatspiergf" id="211" building="Muscat" buildingshare="" travelsec="2"></node>
+			
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_West_pier_GF.XML"
+		file="Maps\Muscat_Departures_Ground_West_Pier.swf" label="West-pier-GF" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatwpiergf" id="214" building="Muscat" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_Arrivals.XML"
+		file="Maps\Muscat_Arrivals.swf" label="Muscat Arrivals" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatarrivals" id="205" building="Muscat" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_Dom-International_Arrivals.XML"
+		file="Maps\Muscat_Dom-International_Arrivals.swf" label="Dom-IntArrivals" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatdomintarrivals" id="206" building="Muscat" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_Hotel_lvl_24.XML"
+		file="Maps\Muscat_Hotel_lvl_24.swf" label="Hotel-lvl24" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatlevel24" id="207" building="Muscat" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_Hotel_lvl_28.XML"
+		file="Maps\Muscat_Hotel_lvl_28.swf" label="Hotel-lvl28" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatlevel28" id="208" building="Muscat" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_Hotel_lvl_32.XML"
+		file="Maps\Muscat_Hotel_lvl_32.swf" label="Hotel-lvl32" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatlevel32" id="209" building="Muscat" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_Arrivals_Mezz.XML"
+		file="Maps\Muscat_Arrivals_Mezzanine.swf" label="Muscat Arrivals Mezzanine" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatmezzarrivals" id="210" building="Muscat" buildingshare="" travelsec="2"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_Apron_level.XML"
+		file="Maps\Muscat_Apron_level.swf" label="Muscat Apron" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="muscatapron" id="216" building="Muscat" buildingshare="" travelsec="2"></node>
+	
+	<!--<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_Departures_South_Pier.XML"
+		file="Maps\Muscat_Departures_South_Pier.swf" label="South campus" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="campusmap" id="3001" building="campus" buildingshare="campus" travelsec="5"></node>
+		
+	<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" walkingtimefile="" gridFile="Grids\Muscat_Departures_North_Pier.XML"
+		file="Maps\Muscat_Departures_North_Pier.swf" label="North campus" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="campusmapnorth" id="3002" building="campus2" buildingshare="campus2" travelsec="5"></node>-->
+	
+	<!--campus map -->
+
+      <!--<node defaultfloor="false" prefelevator="" linecolor="990000" linewidth="3" gridFile="Grids\Concourse1 - Departures.xml"
+		file="Maps\Concourse1 - Departures.swf" label="Concourse_1" displaylabel-LANG-en=""
+		displaylabel-LANG-es="" type="SWF" usekiosk="config"
+		name="campusmap" id="1002" building="campus2" buildingshare="campus2" travelsec="5"></node>-->
+
+    	
+		
+	
+	
+</node>

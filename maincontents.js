@@ -41,8 +41,10 @@ function FC_ContentsCall(strContentsName, strLanguage)
 	{
 		//location.href = "Contents/TerminalMap/index.htm";
 		document.getElementById('home-wrapper').style.display = "none";
-		document.getElementById('iframe-one').style.display = "";
-		document.getElementsByName('iframe-one')[0].src = "TerminalMap/index.htm";
+		//document.getElementById('iframe-one').style.display = "";
+		//document.getElementsByName('iframe-one')[0].src = "TerminalMap/index.htm";
+        document.getElementById('iframe-wayfinding').style.width = "1080px";
+        document.getElementById('iframe-wayfinding').style.height = "1000px";
 	}
 	if(strContentsName == "selfie")
 	{
@@ -110,6 +112,8 @@ function GoHome()
 	document.getElementById('iframe-one').style.display = "none";
 	document.getElementById('footer').style.display = "";
 	document.getElementById('bmg').style.height="1144px";
+    document.getElementById('iframe-wayfinding').style.width = "0";
+    document.getElementById('iframe-wayfinding').style.height = "0";
 
 }
 

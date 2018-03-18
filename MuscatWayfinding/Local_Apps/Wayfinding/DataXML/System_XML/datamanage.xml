@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	
+	<!-- Departures -->
+	
+	
+	<node value="undefined" database="departurestoilets" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>	
+	<node value="undefined" database="departurelounges" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="departuresfoodandbeverage" func="dbsort" pramvalues="labelSort::terminal2sort::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="prayerrooms" func="dbsort" pramvalues="labelSort::terminal2sort::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="departuresairportservices" func="dbsort" pramvalues="labelSort::terminal2sort::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="departuresshopping" func="dbsort" pramvalues="labelSort::terminal2sort::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="departurescheckindesks" func="dbsort" pramvalues="labelSort::terminal2sort::DataSetIterator.Descending | DataSetIterator.CaseIn`sensitive"></node>
+	<node value="undefined" database="muscatconcoursegates" func="dbsort" pramvalues="labelSort::terminal2sort::DataSetIterator.Descending | DataSetIterator.CaseIn`sensitive"></node>
+	
+	<!-- Arrivals -->
+	
+	<node value="undefined" database="arrivalstoilets" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="arrivalsfoodandbeverage" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="arrivalsprayerrooms" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="arrivalsairportservices" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="arrivalsshopping" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	
+	
+	<!-- Concourse -->
+	
+	<node value="undefined" database="concourseAirportServices" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="concourseFoodAndBeverage" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="concourseGates" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="concourseLounges" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="concoursePrayerrooms" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="concourseShopping" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	<node value="undefined" database="concourseToilets" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+	
+	<!--Muscat Departures-->
+			
+ 
+ <node value="undefined" database="muscattoilets" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+ <node value="undefined" database="muscatprayerrooms" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+ <node value="undefined" database="muscatairportservices" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+ <node value="undefined" database="muscatfoodandbeverage" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>
+ <node value="undefined" database="muscatlounges" func="dbsort" pramvalues="labelSort::label::DataSetIterator.Descending | DataSetIterator.CaseInsensitive"></node>			
+	
+</root>

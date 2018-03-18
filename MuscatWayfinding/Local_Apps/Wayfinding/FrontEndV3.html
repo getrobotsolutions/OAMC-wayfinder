@@ -1,0 +1,132 @@
+<!-- saved from url=(0013)about:internet -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>FrontEndV3</title>
+<style>
+body { margin: 0px; overflow:hidden; width: 100%; height:100% }
+html { margin: 0px; width: 100%; height:100% }
+</style>
+</head>
+<style type="text/css">
+<!--
+body 
+{
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<body bgcolor="#455162" onLoad="javascript:window.document.body.scroll='no';void(0);">
+<!--<button onclick="tellFlash('departuresgates','121','route');">Gate 121</button>
+<button onclick="tellFlash('departuresgates','0','route');">Gates</button>
+<button onclick="tellFlash('departuresotherservices','information desk','filter');">filter</button>
+<button onclick="tellFlash('-en','','language');">Switch to English</button>
+<button onclick="tellFlash('-ar','','language');">Switch to Arabic</button>
+<button onclick="tellFlash('','','reset');">Reset</button>
+</br>-->
+<script language="JavaScript">
+<!--
+//Flash/Javascript Communication Code START
+function fromFlash(params) {
+    switch(params.command){
+		case "CurrentPage":
+			//alert(params.value+" - "+params.language);
+			//This is a page move message. The value will be Home,ListPage or MapPage. Depending on the value, you can switch the image on the left side to what it needs to be.
+		case "RefreshPage":
+			//This command should refresh the whole html page including the flash so that it reloads fresh. This will be triggered after updates are found on the server and downloaded. The refresh command will not be given unless the system is idle.
+		default:
+		//Do nothing Unknown command
+		}
+	return true;
+}
+function tellFlash(varA, varB, cmdType) {
+    thisMovie("FrontEndV3").takeAction(varA, varB, cmdType);
+}
+function thisMovie(movieName) {
+    if (navigator.appName.indexOf("Microsoft") != -1) {
+        return window[movieName]
+    }
+    else {
+        return document[movieName]
+    }
+}
+//Flash/Javascript Communication Code END
+//Ignore all the code below. This stuff is common
+    var QueryLanguage='ar';
+    var playerWidth='1024';
+    var playerHeight='768';
+    var ver = 'FrontEndV3.swf';
+    var mapexit = 'false';
+    
+    var query = window.location.search.substring(1);
+    var parms = query.split('&');
+	if (query.indexOf('&')==-1){
+		parms = query.split('%26');
+	}
+    for (var i=0; i<parms.length; i++) {
+        var pos = parms[i].indexOf('=');
+        if (pos > 0) {
+            var key = parms[i].substring(0,pos);
+            var val = parms[i].substring(pos+1);
+            key = key.toLowerCase();
+            switch (key){
+                case "language":
+                    switch (val) {
+                        case "english":
+                            QueryLanguage = "en";
+                        break;
+                        case "spanish":
+                            QueryLanguage = "es";
+                        break;
+                        case "french":
+                            QueryLanguage = "fr";
+                        break;
+                        case "german":
+                            QueryLanguage = "de";
+                        break;
+						 case "arabic":
+                            QueryLanguage = "ar";
+                        break;
+                        default : QueryLanguage = "en";
+                    }
+                break;
+                case "playerwidth": 
+                    playerWidth = val;
+                break;
+                case "playerheight": 
+                    playerHeight = val;
+                break;
+                case "version": 
+                    if(val == "long") {
+                        ver = "FrontEndV3-Long2.swf";
+                    } else {
+                        ver = "FrontEndV3.swf";
+                    }
+                break;
+                case "exitbtn": 
+                    if(val == "true") {
+                        mapexit = "true";
+                    }
+                break;
+            }
+
+        }
+    }
+	QueryLanguage = "fr";
+	document.write('<object classid=\"clsid:d27cdb6e-ae6d-11cf-96b8-444553540000\" codebase=\"http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0\" id=\"FrontEndV3\" width=\"'+playerWidth+'\" height=\"'+playerHeight+'\" align=\"middle\" VIEWASTEXT>\n');
+	document.write('<param name=\"allowScriptAccess\" value=\"always\"/>\n');
+	document.write('<param name=\"wmode\" value=\"direct\"/>\n');
+	document.write('<param name=\"movie\" value=\"'+ver+'?thisLang='+QueryLanguage+'&mapexit='+mapexit+'\"/>\n');
+	document.write('<param name=\"quality\" value=\"high\" /><param name=\"bgcolor\" value=\"#455162\"/>\n');
+	document.write('<param name=\ menu value=false />\n');
+	document.write('<embed src='+ver+'?thisLang='+QueryLanguage+'&mapexit='+mapexit+'\" quality=\"high\" wmode=\"direct\" bgcolor=\"#455162\" width=\"'+playerWidth+'\" height=\"'+playerHeight+'\" position=\"absolute\" swLiveConnect=true id=\"FrontEndV3\" name=\"FrontEndV3\" align=\"middle\" allowScriptAccess=\"always\" type=\"application/x-shockwave-flash\" pluginspage=\"http://www.macromedia.com/go/getflashplayer\" />\n');
+	document.write('</object>\n');
+-->
+</script>
+
+</body>
+</html>

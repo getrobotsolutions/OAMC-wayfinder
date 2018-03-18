@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<node map="201" emsg-LANG-en="Continue%20on%20Departure%20Level" smsg-LANG-en="Take%20the%20Elevator%20to%20Departure%20Level"
+		emsg-LANG-ar="إستمر في مستوى المغادرون" smsg-LANG-ar="إستخدم المصعد إلى مستوى المغادرون" ygrid="217" xgrid="200" ypoint="1201.4" xpoint="1301.45" />
+	<node map="207" emsg-LANG-en="Continue%20on%20Level%2024" smsg-LANG-en="Take%20the%20Elevator%20to%20Level%2024"
+		emsg-LANG-ar="إستمر في المستوى رقم 24" smsg-LANG-ar="إستخدم المصعد الى المستوى رقم 24" ygrid="110" xgrid="137" ypoint="1095.05" xpoint="881.6" />
+	
+	<node map="208" emsg-LANG-en="Continue%20on%20Level%2028" smsg-LANG-en="Take%20the%20Elevator%20to%20Level%2028"
+		emsg-LANG-ar="إستمر في المستوى رقم 28" smsg-LANG-ar="إستخدم المصعد الى المستوى رقم 28" ygrid="115" xgrid="138" ypoint="1107.85" xpoint="921.25" />
+	
+	<node map="209" emsg-LANG-en="Continue%20on%20Level%2032" smsg-LANG-en="Take%20the%20Elevator%20to%20Hotel%20Level%2032"
+		emsg-LANG-ar="إستمر في المستوى رقم 32" smsg-LANG-ar="إستخدم المصعد الى المستوى رقم 32" ygrid="116" xgrid="133" ypoint="1061.7" xpoint="924.1" />
+	
+</root>

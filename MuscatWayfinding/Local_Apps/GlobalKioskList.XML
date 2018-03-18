@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<node lastupdate="03/12/2018 @ 07:47:58 AM">
+ 
+  <node value="undefined" kioskgroup="MuscatDepartures" iconmsg-LANG-es="Usted%20esta%20aqui" iconmsg-LANG-en="Follow%20the%20Navigator%20pathway%20to%20your%20landmark" ygrid="225" xgrid="221" ypoint="1326" xpoint="1349" map="201" type="freestanding" useprefexit="true" prefexit="" machineName="MCTNSIKR001" description="Departure%20Area" label="MCTNSIKR001" name="MCTNSIKR001" id="3001" appsname="File%20Manager::WayFinder" appsconfig="DSConfig.xml::Local_Apps\Wayfinding\Config.xml">
+  </node>
+  <node value="undefined" kioskgroup="MuscatDepartures" iconmsg-LANG-es="Usted%20esta%20aqui" iconmsg-LANG-en="Follow%20the%20Navigator%20pathway%20to%20your%20landmark" ygrid="291" xgrid="214" ypoint="1285" xpoint="1744" map="201" type="freestanding" useprefexit="true" prefexit="" machineName="MCTNSIKR002" description="Departure%20Area" label="MCTNSIKR002" name="MCTNSIKR002" id="3002" appsname="File%20Manager::WayFinder" appsconfig="DSConfig.xml::Local_Apps\Wayfinding\Config.xml">
+  </node>
+</node>
