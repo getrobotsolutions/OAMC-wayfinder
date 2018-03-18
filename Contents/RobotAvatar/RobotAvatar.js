@@ -42,12 +42,7 @@ var deletePicNor="Image/Avatar_delete_nor.png";
         del(); 	            
 	});
 
-	$('#shot').one('click', function(e){
-		e.preventDefault();
-		
-		window.external.SetVolume(1);
-    	PlaySpeech('Please look at the camera on the top of the Robot''s head.');
-	});
+	
 });
 var refreshIntervalId ;
 	function JSMain() {
@@ -98,7 +93,12 @@ var refreshIntervalId ;
 		image.src = "data:image/gif;base64," + img;
 	}
 
+	/*function PlayDirection(){
+		window.external.SetVolume(1);
+    	PlaySpeech('Please look at the camera on the top of the Robot''s head.');
+	}*/
 	function shot() {
+		/*PlayDirection();*/
 		/*window.external.SetVolume(1);
     	PlaySpeech('Please look at the camera on the top of the Robot''s head.');*/
 		

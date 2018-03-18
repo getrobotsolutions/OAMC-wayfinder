@@ -25,27 +25,32 @@ body {
 	height: 100px;
 }
 .main{    background-color: #dba41b;
-    min-height: 1150px;}
+    min-height: 1150px;     padding-top: 40px;}
 .bg {
 	margin: 0;
 	padding: 0;
 	position: absolute;
 	/*top: 200px;*/
+	margin-bottom: 50px;
 }
 .bg img{
 	width: 1080px;
+	height: 715px;
 }
 
 .canvas {
 	position: absolute;
-	left: 180px;
-	top: 660px;
+    left: 283px;
+    /* z-index: -2; */
+    top: 309px;
+    height: 394px;
+    width: 281px;
 }
 
 .frame {
 	position: absolute;
-	left: 215px;
-	top: 370px;
+	left: 225px;
+	top: 250px;
 }
 
 #frame {
@@ -56,8 +61,9 @@ body {
 
 .number {
 	position: absolute;
-	left: 370px;
-	top: 549px;
+	left: 362px;
+	/*top: 549px;*/
+	top:406px;
 }
 
 #number {
@@ -66,13 +72,14 @@ body {
 }
 
 .shot {
-	position: absolute;
-	left: 284px;
-	/*top: 474px;*/
-	top: 270px;
+	    position: absolute;
+    left: 284px;
+    /* top: 474px; */
+    top: 315px;
 }
 .shot img{
 	width: 280px;
+    height: 401px;
 }
 
 
