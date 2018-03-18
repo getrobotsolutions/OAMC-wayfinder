@@ -44,7 +44,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
 		//document.getElementById('iframe-one').style.display = "";
 		//document.getElementsByName('iframe-one')[0].src = "TerminalMap/index.htm";
         document.getElementById('iframe-wayfinding').style.width = "1080px";
-        document.getElementById('iframe-wayfinding').style.height = "1000px";
+        document.getElementById('iframe-wayfinding').style.height = "1050px";
 	}
 	if(strContentsName == "selfie")
 	{
@@ -108,10 +108,10 @@ function GoHome()
 	//if(flagPictureAvatar == "true")	DeleteRobotFace();	//사진 아바타 삭제
 	//location.href = "../../maincontents.htm";
 	document.getElementById('home-wrapper').style.display = "";
-	document.getElementById('iframe-one').src = "Contents/eat/index.htm";
+	document.getElementById('iframe-one').src = "Contents/index.htm";
 	document.getElementById('iframe-one').style.display = "none";
 	document.getElementById('footer').style.display = "";
-	document.getElementById('bmg').style.height="1144px";
+	document.getElementById('bmg').style.height="1126px";
     document.getElementById('iframe-wayfinding').style.width = "0";
     document.getElementById('iframe-wayfinding').style.height = "0";
 
