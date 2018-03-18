@@ -6,7 +6,7 @@ ShowTime();
       $('#dialog-overlay, #dialog-box').hide();   
       return false;
     });
-    var welcomeMessage= "";
+    var welcomeMessage= "اَهْلاً بِكُمْ فِي مَطَاَرْ مَسْقَطْ اَلدُوَلِيْ ، قُمْ بِإِخْتِيَارْ مَا تَوَدُ أَنْ تَسْتَعْلِمَ عَنْهُ.";
     var lan="ar-eg";
     var volume=0.4;
                 
@@ -29,9 +29,9 @@ ShowTime();
 
 
               
-                /*var welcomeMessage="مرحبا. مرحبا بكم في مطارنا. للبدء، يرجى الضغط على أحد الأزرار أدناه.";
+                var welcomeMessage="اَهْلاً بِكُمْ فِي مَطَاَرْ مَسْقَطْ اَلدُوَلِيْ ، قُمْ بِإِخْتِيَارْ مَا تَوَدُ أَنْ تَسْتَعْلِمَ عَنْهُ.";
                 var lan="ar-eg";
-                volume=0.4;*/
+                volume=0.4;
                 var welcomeMessage=" ";
 
                 $('#content_fly').hide();
@@ -57,7 +57,7 @@ ShowTime();
               else if(readCookie("lang")=="english"){
                 writeCookie("lang","english");
 
-                welcomeMessage="Hi. Welcome to our airport. To begin, please press one of the buttons below.";
+                welcomeMessage="Welcome to our airport, to begin, please press one of the buttons below.";
                 lan="en-gb"; 
                 volume=1;
                 //$('#change-us').toggleClass('active');
@@ -87,7 +87,7 @@ ShowTime();
                 // PlaySpeech("hello"); #337ab7
 
                 writeCookie("lang","english");
-                welcomeMessage="Hi. Welcome to our airport. To begin, please press one of the buttons below.";
+                welcomeMessage="Welcome to our airport, to begin, please press one of the buttons below.";
                 lan="en-gb"; 
                 volume=1;
                 $('#iframe-one').attr("src", $('#iframe-one').attr("src"));
@@ -114,9 +114,9 @@ ShowTime();
               //Change to Arabic
               $('#change-ar').click(function(){
                 var welcomeMessage=" ";
-                /*welcomeMessage="مرحبا. مرحبا بكم في مطارنا. للبدء، يرجى الضغط على أحد الأزرار أدناه.";
+                welcomeMessage="اَهْلاً بِكُمْ فِي مَطَاَرْ مَسْقَطْ اَلدُوَلِيْ ، قُمْ بِإِخْتِيَارْ مَا تَوَدُ أَنْ تَسْتَعْلِمَ عَنْهُ.";
                 lan="ar-eg";
-                volume=0.4;*/
+                volume=0.4;
                 writeCookie("lang","arabic");
                 $('#change-us').removeClass('active');
                 $('#change-ar').addClass('active');
@@ -175,8 +175,13 @@ ShowTime();
       if(readCookie("lang")=="english"){
         window.external.ChangeLanguage("en-gb");
         window.external.SetVolume(1);
-        PlaySpeech("Here is some information about the new Muscat International Airport.");
-    }
+        PlaySpeech("Learn about Muscat International Airport.");
+      }
+      else if (readCookie("lang")=="arabic") {
+          window.external.ChangeLanguage("ar-eg");
+          window.external.SetVolume(0.4);
+          PlaySpeech("مَعْلُومَاتٌ قَدْ تُهِمُكْ عَنْ مَطَارْ مَسْقَطْ اَلْجَدِيدْ");
+      }
    
 
   });

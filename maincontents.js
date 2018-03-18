@@ -166,9 +166,17 @@ function FC_LoadConfigView()
 
 function OnUserApproached()
 {	
-	window.external.RobotDanceStart(false);
-//	SetVolume(0.7);
-//	PlaySpeech("Hi, welcome to Laguna Tools, a premium manufacturer of wood working and metal working tools.");
+	if(readCookie("lang")=="english"){
+      window.external.ChangeLanguage("en-gb");
+      window.external.SetVolume(1);
+      PlaySpeech("Hi, I’m Morriya, how can I help you?");
+      
+    }
+    else if (readCookie("lang")=="arabic") {
+      window.external.ChangeLanguage("ar-eg");
+      window.external.SetVolume(0.4);
+      PlaySpeech("مَرْحَبَاً ، أَنَا مُرِيَةْ. كَيْفَ يُمْكِنُنِيْ أنْ أُسَاعِدَكْ؟ً");
+    }
 }
 
 function OnUserDisappeared()

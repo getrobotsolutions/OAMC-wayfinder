@@ -71,9 +71,9 @@
       
     	}
     	else if (readCookie("lang")=="arabic") {
-    		/*window.external.ChangeLanguage("ar-eg");
+    		window.external.ChangeLanguage("ar-eg");
     		window.external.SetVolume(0.4);
-    		PlaySpeech("حان الوقت لتبتسم.");*/
+    		PlaySpeech("اِبْتَسِمْ");
       		$('#change-us').removeClass('active');
       		$('#change-ar').addClass('active');
       		$('body').css('background-image','url(Image/photo_bg_ar.png)');
@@ -106,8 +106,16 @@
   		$('#take_photo').one('click', function(e){
 			e.preventDefault();
 			
-			window.external.SetVolume(1);
-	    	PlaySpeech('Please look at the camera on the top of the Robot''s head.');
+			if(readCookie("lang")=="english"){
+				window.external.ChangeLanguage("ar-eg");
+    			window.external.SetVolume(1);
+	    		PlaySpeech('Look at the camera on the robot’s head.');	
+			}
+			else if (readCookie("lang")=="arabic") {
+    			window.external.ChangeLanguage("ar-eg");
+    			window.external.SetVolume(0.4);
+				PlaySpeech("اُنْظُرْ إلَى اَلْكَامِيرة عَلَى رَأْسِ اَلْرَجُلِ اَلْآلِيْ");
+			}
 		});
 	});
   </script>

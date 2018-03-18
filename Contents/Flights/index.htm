@@ -113,20 +113,16 @@ thead {
     $('#status').text("Status");
     window.external.ChangeLanguage("en-gb");
     window.external.SetVolume(1);
-    PlaySpeech("Keep up to date with our flights and arrivals.");
+    PlaySpeech("Check your flight updates.");
   }
   else if (readCookie("lang")=="arabic") {
     $('#change-us').removeClass('active');
     $('#change-ar').addClass('active');
-    /*window.external.ChangeLanguage("ar-eg");
+    window.external.ChangeLanguage("ar-eg");
     window.external.SetVolume(0.4);
-    PlaySpeech("تعرف على مواعيد رحلاتنا و مواعيد الوصول أولاً بأول.");*/
+    PlaySpeech("تَحَقَقْ مِنْ تَفَاصِيلِ رِحْلَتِكْ ");
   }
-  /*else if(readCookie("lang")=="arabic"){
-    
-    responsiveVoice.speak("تعرف على مواعيد رحلاتنا و مواعيد الوصول أولاً بأول.", "Arabic Male");
-    responsiveVoice.cancel();
-  }*/
+  
 });
 function GoHome()
 {

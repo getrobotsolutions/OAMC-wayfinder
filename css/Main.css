@@ -14,6 +14,11 @@
     font-family: OpenSans-Regular;
     src: url(Fonts/OpenSans-Regular.ttf);
 }
+@font-face {
+    font-family: Bukra-Semi-Bold;
+    src: url(Fonts/29L-Bukra-Semi-Bold.OTF);
+}
+
 body{
 	font-family: 'OpenSans-Light' !important;
 /*font-weight: bold;*/
