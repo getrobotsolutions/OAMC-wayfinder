@@ -5,7 +5,17 @@
 <title>Untitled Document</title>
 
 
-
+    <script type="application/javascript">
+        UpdateSession(8);
+        $(document).ready(function() {
+            if (readCookie("lang") === "english") {
+                document.getElementById("FrontEndV32").takeAction("-en","","language");
+            }
+            else if (readCookie("lang") === "arabic") {
+                document.getElementById("FrontEndV32").takeAction("-ar","","language");
+            }
+        });
+    </script>
 </head>
 
 <body class="body" onload="init();">
@@ -14,7 +24,7 @@
 <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="1060" height="960" id="FrontEndV3" align="">
     <param name="movie" value="FrontEndV3.swf?thisLang=ar&mapexit=false">
     <param name="wmode" value="transparent">
-    <embed src="FrontEndV3.swf?thisLang=ar&mapexit=false" quality="high" width="1060" height="960" name="movie" align="" type="application/x-shockwave-flash" plug inspage="http://www.macromedia.com/go/getflashplayer">
+    <embed src="FrontEndV3.swf?thisLang=ar&mapexit=false" id="FrontEndV32" quality="high" width="1060" height="960" name="movie" align="" type="application/x-shockwave-flash" plug inspage="http://www.macromedia.com/go/getflashplayer">
     </object>
 
 
