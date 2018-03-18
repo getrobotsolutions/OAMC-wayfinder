@@ -41,6 +41,13 @@ var deletePicNor="Image/Avatar_delete_nor.png";
         deletePicNor="Image/Avatar_delete_nor_ar.png";
         del(); 	            
 	});
+
+	$('#shot').one('click', function(e){
+		e.preventDefault();
+		
+		window.external.SetVolume(1);
+    	PlaySpeech('Please look at the camera on the top of the Robot''s head.');
+	});
 });
 var refreshIntervalId ;
 	function JSMain() {
@@ -92,8 +99,8 @@ var refreshIntervalId ;
 	}
 
 	function shot() {
-		window.external.SetVolume(1);
-    	PlaySpeech('Please look at the camera on the top of the Robot''s head.');
+		/*window.external.SetVolume(1);
+    	PlaySpeech('Please look at the camera on the top of the Robot''s head.');*/
 		
 		document.getElementById('shot').style.display = "block";
 		document.getElementById('number').style.display = "";

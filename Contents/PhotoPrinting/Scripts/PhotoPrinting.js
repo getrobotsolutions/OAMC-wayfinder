@@ -68,8 +68,8 @@ function UpdateCamImage()
 var isPhotoTaken = false;
 function TakePhoto()
 {   
-    window.external.SetVolume(1);
-    PlaySpeech('Please look at the camera on the top of the Robot''s head.');
+   /* window.external.SetVolume(1);
+    PlaySpeech('Please look at the camera on the top of the Robot''s head.');*/
     isPhotoTaken = false;
     
     // 촬영 버튼 이미지 변경 & 숨김

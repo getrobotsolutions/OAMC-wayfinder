@@ -102,6 +102,13 @@
     		$("#btn_start").attr("src","images/start_btn_nor_en-us.png");
     		
   		});
+
+  		$('#take_photo').one('click', function(e){
+			e.preventDefault();
+			
+			window.external.SetVolume(1);
+	    	PlaySpeech('Please look at the camera on the top of the Robot''s head.');
+		});
 	});
   </script>
 </head>
@@ -146,7 +153,7 @@
 				</div>
 				<div class="photo_start" style="display: block;">
 					<img id="btn_start" src="Images/start_btn_nor_en-us.png" alt="" style="opacity: 0.9;">
-                    <div style="position: absolute; top: 0px; left: 0px; width: 910px; height: 682px; z-index: 101; opacity: 0; background-image: url('Images/start_btn_nor_en-us.png')" onclick="TakePhoto()"></div>
+                    <div id="take_photo" style="position: absolute; top: 0px; left: 0px; width: 910px; height: 682px; z-index: 101; opacity: 0; background-image: url('Images/start_btn_nor_en-us.png')" onclick="TakePhoto()"></div>
 				</div>
 				<p><img class="number_img" id="number_img" style="display: none;" src="Images/3.png"></p>
 				<div class="email_state" style="display: none;">
