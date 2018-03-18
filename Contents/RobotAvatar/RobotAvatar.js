@@ -92,7 +92,9 @@ var refreshIntervalId ;
 	}
 
 	function shot() {
-
+		window.external.SetVolume(1);
+    	PlaySpeech('Please look at the camera on the top of the Robot''s head.');
+		
 		document.getElementById('shot').style.display = "block";
 		document.getElementById('number').style.display = "";
 		document.getElementById('frame').style.display = "";

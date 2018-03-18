@@ -219,7 +219,7 @@ console.log(parts_p);
                   $('.scan').click(function(e) {
                       e.preventDefault();
                       var bar_code = $("#bar_code").val(); 
-                      console.log(bar_code);
+                      /*console.log(bar_code);*/
                       /*var bar_code = 'M1DELAROSA/MONDALEMR   AFYENQ MCTDXBOV 0103 327Y004F00';*/
                   //    console.log(bar_code);
                       
@@ -229,9 +229,10 @@ console.log(parts_p);
 
                       }   
 
-                      /*else{
-                        location.reload();
-                      }*/                     
+                      else{
+                        /*location.reload();*/
+                        $("#bar_code").val() = '';
+                      }                     
               });
                  
                     setTimeout(function() {
