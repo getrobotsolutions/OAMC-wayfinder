@@ -97,8 +97,8 @@ ShowTime();
                 //$('#content_term').text("Terminal A");
                  $('#content_fly').show();
                 $('#content_fly').html("PRESS HERE TO <b>START</b>");
-                $('#content_eat').text("EAT");
-                $('#content_shop').text("SHOP");
+                $('#content_eat').text("DINNING");
+                $('#content_shop').text("SHOPPING");
 
                 $('#content_info').text("INFORMATION");
                 $('#content_map').html("TERMINAL MAP");

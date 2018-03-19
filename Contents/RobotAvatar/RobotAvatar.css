@@ -111,14 +111,13 @@ footer {
 }
 #change-us, #change-ar{text-decoration: none;}
 .deltext{
-
-color: white;
+	color: white;
     position: absolute;
     top: 400px;
     right: 40px;
     font-size: 44px;
     width: 288px;
-    line-height: 41px;
+    line-height: 65px;
     text-align: center;
     }
 
