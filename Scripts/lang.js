@@ -97,7 +97,7 @@ ShowTime();
                 //$('#content_term').text("Terminal A");
                  $('#content_fly').show();
                 $('#content_fly').html("PRESS HERE TO <b>START</b>");
-                $('#content_eat').text("DINNING");
+                $('#content_eat').text("DINING");
                 $('#content_shop').text("SHOPPING");
 
                 $('#content_info').text("INFORMATION");
@@ -282,7 +282,14 @@ function formatDate(date){
                         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   var month = m_names[date.getMonth()];
   var day = date.getDate();
-
+  day = getGetOrdinal(day);
+  
   var output = (month<10 ? '0' : '') + month + ' ' +(day<10 ? '0' : '') + day+', '+ date.getFullYear() ;
   return output;
 }
+
+function getGetOrdinal(n) {
+    var s=["th","st","nd","rd"],
+    v=n%100;
+    return n+'<sup>'+(s[(v-20)%10]||s[v]||s[0])+'</sup>';
+ }
