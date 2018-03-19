@@ -81,7 +81,7 @@ UpdateSession(9);
           <div class="col-sm-6 nopadding">
             <a onclick="FC_ContentsCall('eat')" href="#" >
                     <img class="child nopadding" src="images/icon/eat-3.png">
-                    <div id="content_eat" class="icon-title" style="">مطاعم</div>
+                    <div id="content_eat" class="icon-title" style="font-size: 30px;">مطاعم</div>
                     
                 </a>
             
@@ -89,7 +89,7 @@ UpdateSession(9);
           <div class="col-sm-6 nopadding nomargin right" style="position: absolute;right: 0">
             <a onclick="FC_ContentsCall('shop')" href="#" style="position: absolute;right: 0">
                   <img class="child nopadding" src="images/icon/shop.png">
-                  <div id="content_shop" class="icon-title" style="right: 0">تسوق</div>
+                  <div id="content_shop" class="icon-title" style="right: 0;font-size: 30px;">تسوق</div>
                 </a>
               
           </div>
@@ -99,7 +99,7 @@ UpdateSession(9);
               
                   <a onclick="FC_ContentsCall('Flights','')" href="#">
                     <img class="child nopadding" src="images/icon/flight info 2.png">
-                    <div id="content_flights" class="icon-title" style="">رحلات طيران</div>
+                    <div id="content_flights" class="icon-title" style="font-size: 30px; line-height: 27px;">رحلات طيران</div>
                   </a>
               
           </div>
@@ -107,7 +107,7 @@ UpdateSession(9);
               
                   <a onclick="FC_ContentsCall('BoardingPass','')" href="#" class="right">
                     <img class="child nopadding" src="images/icon/Boarding Pass 3.png">
-                    <div id="content_scan" class="icon-title" style="right: 0px;font-size: 30px;">مسح الصعود <br> تمريرة الخاص بك</div>
+                    <div id="content_scan" class="icon-title" style="right: 0px;font-size: 30px; margin-top: -17px; line-height: 27px;">مسح الصعود <br> تمريرة الخاص بك</div>
                   </a>
               
           </div>
@@ -149,7 +149,7 @@ UpdateSession(9);
               
                 <a onclick="FC_ContentsCall('RobotAvatar', '')" href="#" class="right">
                   <img class="child nopadding" src="images/icon/RA.png" >
-                  <div id="content_avatar" class="icon-title" style="right: 0px; font-size: 30px;">>نموذج</div>
+                  <div id="content_avatar" class="icon-title" style="right: 0px;font-size: 30px; margin-top: -17px; line-height: 32px;">>نموذج</div>
                 </a>
               
           
@@ -222,7 +222,7 @@ UpdateSession(9);
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <video id="bannerVideo" class="fillWidth" autoplay="autoplay" poster="http://dummyimage.com/320x240/ffffff/fff" loop>
+          <video autoplay="autoplay"  id="bannerVideo" class="fillWidth" >
             <source src="Video/bottom_banner.mp4" type="video/mp4" />
           </video>
         </div>
@@ -303,7 +303,7 @@ UpdateSession(9);
           padding:10px; 
           margin:13px;
           color:#666; 
-          font-family:arial;
+          font-family:Bukra-Light
           font-size:11px; 
         }
 
@@ -362,7 +362,7 @@ UpdateSession(9);
           padding:10px; 
           margin:13px;
           color:#666; 
-          font-family:arial;
+          font-family:Bukra-Light;
           font-size:11px; 
         }
 
@@ -417,15 +417,19 @@ UpdateSession(9);
         .popup-close{background-color: #f5a800 !important; }
   </style>
 <script type="text/javascript">
-  
     var vid = document.getElementById("bannerVideo");
-    vid.addEventListener("timeupdate", function(){
-      // Check you time here and
-      /*if(t > 3000) //Where t = CurrentTime
-      {
-        vid.stop();// Stop the Video
-      }*/
-    });
+    vid.playbackRate = 3;
+    var interval = self.setInterval(function(){Play()},5000);
+
+    function Play(){
+          
+          setTimeout(function(){
+              vid.pause();
+              vid.currentTime = 0;
+              vid.play();
+          }, 3000);
+     };
+
 </script>
 </body>
 </html>

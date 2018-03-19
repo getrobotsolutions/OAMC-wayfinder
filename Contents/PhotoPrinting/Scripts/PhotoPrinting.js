@@ -204,14 +204,14 @@ function SendEmail()
     document.getElementsByClassName("email_state")[0].style.display = "block";    
     
     // 메일 전송에 필요한 정보
-    //var addr = message;
-    var addr = "paul@robotaisolutions.com";
+    var addr = message;
+    //var addr = "paul@robotaisolutions.com";
     var subject = "Welcome to the Muscat International Airport.";
     var body = "Email : " + message;
-    var mail_server = "smtp.gmail.com";
-    var mail_addr_sender = "amgenrobot@gmail.com";
-    var pswd = "@amgenrobot2018";
-    var port = 587;
+    var mail_server = "mctmail.omanairports.co.om";
+    var mail_addr_sender = "selfie@omanairports.com";
+    var pswd = "M(t@R0b0T8501";
+    var port = 25;
     var ssl = "true";
     /*var mail_server = "mail.getrobotsolutions.com";
     var mail_addr_sender = "tamoor@getrobotsolutions.com";

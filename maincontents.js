@@ -45,6 +45,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
 		//document.getElementsByName('iframe-one')[0].src = "TerminalMap/index.htm";
         document.getElementById('iframe-wayfinding').style.width = "1080px";
         document.getElementById('iframe-wayfinding').style.height = "1050px";
+        document.getElementById('iframe-wayfinding').contentWindow.changemaplang();
 	}
 	if(strContentsName == "selfie")
 	{
