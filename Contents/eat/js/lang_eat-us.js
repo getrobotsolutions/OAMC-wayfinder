@@ -106,7 +106,7 @@ $(document).ready(function(){
 
     $('.bdy #title').text("Café Nero");
     $('.bdy #location').text("Location:");
-    $('.bdy #desc').text("want to try the best coffee? Visit Café Nero and you will not regret it");
+    $('.bdy #desc').text("Want to try the best coffee? Visit Café Nero and you will not regret it");
     
     $("#mapBtn").attr('dir','photo/maps/south-pier-departure(level-02).png');
     $("#mapBtn").show();
