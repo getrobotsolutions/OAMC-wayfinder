@@ -108,6 +108,7 @@ ShowTime();
                 $('#content_avatar').text("CHANGE AVATAR");
                 $('#content_selfie').text("TAKE SELFIE");
                 //$('#content_dance').text("Dance");
+                  document.getElementById('iframe-wayfinding').contentWindow.changemaplang();
               
               });
 
@@ -118,6 +119,8 @@ ShowTime();
                 lan="ar-eg";
                 volume=0.4;
                 writeCookie("lang","arabic");
+
+
                 $('#change-us').removeClass('active');
                 $('#change-ar').addClass('active');
 
@@ -142,6 +145,7 @@ ShowTime();
                 $('#content_avatar').html("الصّورة الرّمزية");
                 $('#content_selfie').text("التقاط صورة");
                $('#iframe-one').attr("src", $('#iframe-one').attr("src"));
+                  document.getElementById('iframe-wayfinding').contentWindow.changemaplang();
               });
               $('#content_fly').click(function(){
                     ChangeLanguage("lan");

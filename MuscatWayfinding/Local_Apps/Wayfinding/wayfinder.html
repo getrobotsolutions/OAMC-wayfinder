@@ -6,11 +6,11 @@
 
 
     <script type="application/javascript">
-    function readCookie(name)
+         function readCookie(name)
     {
         var searchName = name + "=";
         var cookies = document.cookie.split(';');
-        for (var i=0; i<cookies.length; i++) 
+        for (var i=0; i < cookies.length; i++)
         {
             var c = cookies[i];
             while (c.charAt(0) == ' ')
@@ -20,24 +20,22 @@
         }
         return null;
     }
-        //UpdateSession(8);
+
         function changemaplang(){
-            alert("Sucess");
+
+
             if (readCookie("lang") === "english") {
+                //alert("english");
                 document.getElementById("FrontEndV32").takeAction("-en","","language");
             }
             else if (readCookie("lang") === "arabic") {
+                //alert("arabic");
                 document.getElementById("FrontEndV32").takeAction("-ar","","language");
             }
         }
-        /*$(document).ready(function() {
-            if (readCookie("lang") === "english") {
-                document.getElementById("FrontEndV32").takeAction("-en","","language");
-            }
-            else if (readCookie("lang") === "arabic") {
-                document.getElementById("FrontEndV32").takeAction("-ar","","language");
-            }
-        });*/
+
+
+
     </script>
 </head>
 
