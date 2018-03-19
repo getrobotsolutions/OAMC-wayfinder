@@ -52,7 +52,7 @@
           margin-bottom: 15px;
           font-size: 36px;
           font-weight: 700;
-          font-family: calibri;
+          font-family: Bukra-Light;
           color: darkslategray;
       }
       .img-responsive{
@@ -140,7 +140,7 @@
     .txt{
 
           font-size: 18px;
-        font-family: calibri;
+        font-family: Bukra-Light;
 
     display: inline-block;
       transform: scale(2.5, 2.5);
@@ -162,7 +162,7 @@
     .alert {
         text-align: center;
         font-size: 53px;
-        font-family: OpenSans-Regular;
+        font-family: Bukra-Regular;
         padding: 35px;
         width: 920px;
         margin-left: 16px;
@@ -174,12 +174,12 @@
     .nav>li>a {
             padding: 16px 15px;
         font-size: 17px;
-         font-family: arial;
+         font-family: Bukra-Light;
     }
 
     .explore{
        font-size: 32px;
-    font-family: calibri;
+    font-family: Bukra-Light;
     padding-top: 20px;
     background-color: #f8f8f8;
     color: darkgrey;
@@ -229,7 +229,7 @@
       top: 58px;
         width: 257px;
         height: 100px;
-            font-family: OpenSans-Regular;
+            font-family: Bukra-Regular;
             
             font-size: 40px;
             color: white;

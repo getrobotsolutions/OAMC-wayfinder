@@ -1,13 +1,13 @@
 @font-face {
-    font-family: OpenSans-Regular;
+    font-family: Bukra-Regular;
     src: url(../../css/Fonts/OpenSans-Regular.ttf);
 }
 @font-face {
-    font-family: OpenSans-Light;
+    font-family: Bukra-Light;
     src: url(../../css/Fonts/OpenSans-Light.ttf);
 }
 body{
-	font-family: 'OpenSans-Light' !important;
+	font-family: 'Bukra-Light' !important;
 /*font-weight: bold;*/
 }
 body {
