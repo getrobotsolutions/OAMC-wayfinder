@@ -62,12 +62,12 @@ UpdateSession(1);
           background-color: whitesmoke;
     height: 660px;
     margin-top: -22px;
-    margin-left: -15px;
+    /*margin-left: -15px;*/
     }
     .part2{
       background-color: #008a97;
       height: 660px;
-      width: 616px;
+      /*width: 616px;*/
       margin-top: -20px;
       padding: 15px;
     }
@@ -103,7 +103,7 @@ UpdateSession(1);
         cursor:pointer;
         background-color:#008a97;
         color:#ffffff;
-        text-align:left;
+        text-align:right;
     }
     
     #leftmenu h5 {
@@ -131,9 +131,10 @@ UpdateSession(1);
            color: #008a97;
     font-weight: bolder;
     font-size: 30px;
-    padding-left: 80px;
+    padding-right: 80px;
     text-decoration: none;
     display:block;
+    text-align: right;
     /*padding: 30px 10px 29px 80px;*/
     }
     #leftmenu > ul li a:hover {
@@ -303,7 +304,7 @@ a.button:hover {
     top: -46px;
     z-index: 1;
     width: 150px;
-    right: -10px;
+    left: -10px;
 }
 li.odd{background-color: #00c2de1f;}
 li.even{background-color: #f3ebf9;}
@@ -312,7 +313,8 @@ li.even{background-color: #f3ebf9;}
         padding: 0px 10px;
     border-radius: 5px;
 }
-
+.bdy #desc{    margin-top: 10px;
+    line-height: 35px;}
 </style>
 
 
@@ -354,6 +356,23 @@ li.even{background-color: #f3ebf9;}
     <div class="body1">
       <div class="bmg">       
             <div class="wrap" >
+              <div class="col-sm-7">
+                  <div class="part2" id="content">
+                      <div class="restau-image">
+                        <img id="icon" src="photo/plenty.png" class="icon">
+                      </div>
+                      <div class="bdy">
+                        <div id="title">بلنتي</div>
+                        <!--<div id="location"> </div>-->
+                        <div id="desc">تهتم بصحتك؟ ما عليك الا زيارتنا والاستمتاع بالطعام ونحن سنقوم بحساب السعرات الحرارية عنك.</div>
+
+                        <!--<button type="button" id="btn" class="btn btn-success" dir="">القائمة</button>-->
+
+                       <!--  <button type="button" id="mapBtn" class="btn btn-success" dir="photo/maps/passenger-terminal-building-departure(Level-02).png">الخريطة</button> -->
+                      </div>
+
+                  </div>
+               </div>
                <div class="col-sm-5">
                   <div class="part1" style="">
                     <div id="leftmenu" >
@@ -388,23 +407,7 @@ li.even{background-color: #f3ebf9;}
                   </div>
                 </div>
 
-               <div class="col-sm-6">
-                  <div class="part2" id="content">
-                      <div class="restau-image">
-                        <img id="icon" src="photo/plenty.png" class="icon">
-                      </div>
-                      <div class="bdy">
-                        <div id="title">بلنتي</div>
-                        <!--<div id="location"> </div>-->
-                        <div id="desc">تهتم بصحتك؟ ما عليك الا زيارتنا والاستمتاع بالطعام ونحن سنقوم بحساب السعرات الحرارية عنك.</div>
-
-                        <!--<button type="button" id="btn" class="btn btn-success" dir="">القائمة</button>-->
-
-                       <!--  <button type="button" id="mapBtn" class="btn btn-success" dir="photo/maps/passenger-terminal-building-departure(Level-02).png">الخريطة</button> -->
-                      </div>
-
-                  </div>
-               </div>
+               
               </div>
       </div>
   </div>

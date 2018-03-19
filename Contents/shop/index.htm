@@ -80,13 +80,14 @@
     .part1{
           
     height: 920px;
-    
-    margin-left: -15px;
+        width: 410px;
+    position: absolute;
+    right: 15px;
     }
     .part2{
         background-color:#008a97;
         height:750px;
-        width: 615px;
+        /*width: 615px;*/
         padding: 15px;
         z-index:0;
         position: absolute;
@@ -165,7 +166,7 @@
         cursor:pointer;
         background-color:#008a97;
         color:#ffffff;
-        text-align:left;
+        text-align:right;
     }
     #leftmenu h3:hover {
         /*background-color:#236b8e;*/
@@ -198,9 +199,10 @@
       font-weight: bold;
       font-size: 30px;
       /*padding-left: 80px;*/
-      padding-left: 63px;
+      padding-right : 63px;
       text-decoration:none;
       display:block;
+      text-align: right;
     }
     #leftmenu > ul li a:hover {
         text-decoration:underline;
@@ -372,7 +374,7 @@ a.button:hover {
     top: -38px;
     z-index: 1;
     width: 150px;
-    right: -10px;
+    left: -20px;
 }
 .shop-image{
   background-color: white;
@@ -387,6 +389,8 @@ li.even{background-color: #f3ebf9;}
         padding: 0px 10px;
     border-radius: 5px;
 }
+.bdy #desc{    margin-top: 10px;
+    line-height: 35px;}
 </style>
 
 
@@ -427,6 +431,22 @@ li.even{background-color: #f3ebf9;}
       <div class="bmg">       
             
             <div class="wrap" >
+               
+                <div class="col-sm-7">
+                  <div class="part2" id="content">
+                    <div class="shop-image">
+                      <img id="icon" src="photo/high-street-fashion.png" class="icon">
+                    </div>
+                      <div class="bdy">
+                        <div id="title">الازياء العصرية</div>
+                        <!--<div id="location"> </div>-->
+                        <div id="desc"><p>تمتع بمجموعة مختلفة من الملابس الأنيقة والرياضية والأحذية والساعات والحقائب</p></div>
+                        
+                       <!--  <button type="button" id="mapBtn" class="btn btn-success" dir="photo/maps/passenger-terminal-building-departure(Level-02).png">خريطة</button> -->
+                      </div>
+
+                  </div>
+               </div>
                <div class="col-sm-5">
                   <div class="part1" style="">
                       <div id="leftmenu">
@@ -451,48 +471,14 @@ li.even{background-color: #f3ebf9;}
                            <li class="odd"><a id="s7" href="#">متجر الذواقة</a></li>
                            <li class="even"><a id="s9" href="#">متجر القادمون</a></li>
                            <li class="odd"><a id="s6" href="#">مملكة الأطفال</a></li>
-
-
-
-
-
                             <li class="odd"><a id="s2" href="#">متجر مسقط</a></li>
-                            
-                            
-                            
-                            
-                            
+                          
                             <li class="odd"><a id="s8" href="#">متاجر الأجنحة</a></li>
-                            
-                            
-                            
-                            
-                               
-                            
-                            
-                            
-                            
-                            
-                            
+
                           </ul>
                       </div>
                   </div>
                 </div>
-                <div class="col-sm-7">
-                  <div class="part2" id="content">
-                    <div class="shop-image">
-                      <img id="icon" src="photo/high-street-fashion.png" class="icon">
-                    </div>
-                      <div class="bdy">
-                        <div id="title">الازياء العصرية</div>
-                        <!--<div id="location"> </div>-->
-                        <div id="desc"><p>تمتع بمجموعة مختلفة من الملابس الأنيقة والرياضية والأحذية والساعات والحقائب</p></div>
-                        
-                       <!--  <button type="button" id="mapBtn" class="btn btn-success" dir="photo/maps/passenger-terminal-building-departure(Level-02).png">خريطة</button> -->
-                      </div>
-
-                  </div>
-               </div>
               </div>     
       </div>
     </div>
