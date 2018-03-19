@@ -33,7 +33,7 @@
       $('#change-ar').removeClass('active');
       $('.title').text("Robot Avatar");
       $('#shot img').attr("src","Image/avatar_shot_nor.png");
-      $('.deltext').css({"font-size":"32px", "line-height":"32px"});
+      $('.deltext').css({"font-size":"32px", "line-height":"32px","font-family":"Bukra-Regular"});
       $('.deltext').text("If you want to delete the Avatar now press the 'DELETE' button.")
      
     $('#delete').attr('src','Image/Avatar_delete_none.png');
@@ -49,8 +49,10 @@
       $('#change-us').removeClass('active');
       $('#change-ar').addClass('active');
       $('.title').text("الصّورة الرّمزية");
-      $('.deltext').css({"font-size":"44px", "line-height":"31px"});
-      $('.deltext').text("إذا كنت ترغب في حذف الصورة الرمزية الآن اضغط على زر '' ديليت ''");
+      $('.deltext').css({"font-size":"44px", "line-height":"31px", "font-family":"Bukra-Regular"});
+      $('.deltext').text("إذا كنت ترغب في حذف <br>
+                          الصورة الرمزية الآن <br>
+                          اضغط على زر &quot;حذف&quot;");
     
       $('#shot img').attr('src','Image/avatar_shot_nor_ar.png');
       $('#delete').attr('src','Image/Avatar_delete_none_ar.png');
@@ -90,11 +92,12 @@
 	</div>
 
 	<div class="bg">
-		<h1 class="title" style="font-family:Bukra-Regular;">الصّورة الرّمزية</h1>
+		<h1 class="title" style="">الصّورة الرّمزية</h1>
 		<img src="Image/bg.png">
-		<p class="deltext" style="font-family:Bukra-Regular;">إذا كنت ترغب في حذف الصورة الرمزية الآن اضغط على زر '' ديليت ''</p>
+		<p class="deltext" style="">إذا كنت ترغب في حذف  الصورة الرمزية الآن  اضغط على زر "حذف"</p>
 	</div> 
 	
+
 	<!--<div class="home">
 		<img src="Image/Home_Button.png" onclick="Home()">
 	</div>-->

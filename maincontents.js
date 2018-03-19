@@ -337,3 +337,4 @@ $(document).ready(function(){
       	$('#content_explore').text("استكشاف تنازلات لدينا");
     }); */             
 });
+
