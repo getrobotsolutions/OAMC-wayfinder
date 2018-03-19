@@ -112,7 +112,7 @@ function GoHome()
 	document.getElementById('iframe-one').src = "Contents/index.htm";
 	document.getElementById('iframe-one').style.display = "none";
 	document.getElementById('footer').style.display = "";
-	document.getElementById('bmg').style.height="1126px";
+	document.getElementById('bmg').style.height="1124px";
     document.getElementById('iframe-wayfinding').style.width = "0";
     document.getElementById('iframe-wayfinding').style.height = "0";
 
