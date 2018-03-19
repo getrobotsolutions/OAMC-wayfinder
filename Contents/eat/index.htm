@@ -39,6 +39,20 @@ UpdateSession(1);
   <link rel="stylesheet" href="../../css/style_riyadh.css">
 
 <style>
+    .unselectable {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .noselect {
+        -webkit-touch-callout: none; /* iOS Safari */
+          -webkit-user-select: none; /* Safari */
+           -khtml-user-select: none; /* Konqueror HTML */
+             -moz-user-select: none; /* Firefox */
+              -ms-user-select: none; /* Internet Explorer/Edge */
+                  user-select: none; /* Non-prefixed version, currently
+                                        supported by Chrome and Opera */
+      }
     .bmg{
           background-image: none;
           height: 1158px;
@@ -329,7 +343,7 @@ li.even{background-color: #f3ebf9;}
   </script>
 
 </head>
-<body>
+<body class="noselect unselectable">
 
     <!--<div class="jumbotron text-center">
       <p id="currentDate"></p><br>
@@ -382,20 +396,20 @@ li.even{background-color: #f3ebf9;}
                         <img class="eat-icon" src="photo/eat-icon.png">
                         <ul class="list1">
                           
-                          <li class="even"><a id="c6" href="#">بلنتي</a></li>
-                          <li class="odd"><a id="c62" href="#">تيكرديز</a></li>
-                          <li class="even"><a id="c3" href="#">دجاج كنتاكي</a></li>
-                          <li class="odd"><a id="c5" href="#">سبايس كيتشن</a></li>
-                          <li class="even"><a id="c10" href="#">قهوة القهوجي</a></li>
-                          <li class="odd"><a id="c9" href="#">قهوة كاريبو </a></li>
-                          <li class="even"><a id="c8" href="#">قهوة نيرو</a></li>
-                          <li class="odd"><a id="c12" href="#">كيكس اند بيكس</a></li>
-                          <li class="even"><a id="c63" href="#">لونا</a></li>
-                          <li class="odd"><a id="c4" href="#">مكدونالدز</a></li>
-                          <li class="even"><a id="c11" href="#">نادي المسافرين</a></li>
-                          <li class="odd"><a id="c61" href="#">نور</a></li>                          
-                          <li class="even"><a id="c7" href="#">مزون</a></li>                         
-                          <li class="odd"><a id="c13" href="#">سي سايد بارك</a></li>
+                          <li class="even"><a id="c6" href="#" onmousedown="return false">بلنتي</a></li>
+                          <li class="odd"><a id="c62" href="#" onmousedown="return false">تيكرديز</a></li>
+                          <li class="even"><a id="c3" href="#" onmousedown="return false">دجاج كنتاكي</a></li>
+                          <li class="odd"><a id="c5" href="#" onmousedown="return false">سبايس كيتشن</a></li>
+                          <li class="even"><a id="c10" href="#" onmousedown="return false">قهوة القهوجي</a></li>
+                          <li class="odd"><a id="c9" href="#" onmousedown="return false">قهوة كاريبو </a></li>
+                          <li class="even"><a id="c8" href="#" onmousedown="return false">قهوة نيرو</a></li>
+                          <li class="odd"><a id="c12" href="#" onmousedown="return false">كيكس اند بيكس</a></li>
+                          <li class="even"><a id="c63" href="#" onmousedown="return false">لونا</a></li>
+                          <li class="odd"><a id="c4" href="#" onmousedown="return false">مكدونالدز</a></li>
+                          <li class="even"><a id="c11" href="#" onmousedown="return false">نادي المسافرين</a></li>
+                          <li class="odd"><a id="c61" href="#" onmousedown="return false">نور</a></li>                          
+                          <li class="even"><a id="c7" href="#" onmousedown="return false">مزون</a></li>                         
+                          <li class="odd"><a id="c13" href="#" onmousedown="return false">سي سايد بارك</a></li>
                           
                           
                           
