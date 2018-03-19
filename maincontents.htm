@@ -418,17 +418,17 @@ UpdateSession(9);
   </style>
 <script type="text/javascript">
     var vid = document.getElementById("bannerVideo");
-    vid.playbackRate = 3;
-    var interval = self.setInterval(function(){Play()},5000);
+    vid.playbackRate = 2;
+    var interval = self.setInterval(function(){Play()},10000);
 
     function Play(){
           
-          setTimeout(function(){
+          /*setTimeout(function(){*/
               vid.pause();
               vid.currentTime = 0;
               vid.play();
-          }, 3000);
-     };
+          /*}, 3300);*/
+     }
 
 </script>
 </body>
