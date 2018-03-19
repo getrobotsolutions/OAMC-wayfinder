@@ -222,7 +222,7 @@ UpdateSession(9);
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <video id="bannerVideo" class="fillWidth" autoplay="autoplay" poster="http://dummyimage.com/320x240/ffffff/fff" loop>
+          <video autoplay="autoplay"  id="bannerVideo" class="fillWidth" >
             <source src="Video/bottom_banner.mp4" type="video/mp4" />
           </video>
         </div>
@@ -417,15 +417,19 @@ UpdateSession(9);
         .popup-close{background-color: #f5a800 !important; }
   </style>
 <script type="text/javascript">
-  
     var vid = document.getElementById("bannerVideo");
-    vid.addEventListener("timeupdate", function(){
-      // Check you time here and
-      /*if(t > 3000) //Where t = CurrentTime
-      {
-        vid.stop();// Stop the Video
-      }*/
-    });
+    vid.playbackRate = 3;
+    var interval = self.setInterval(function(){Play()},5000);
+
+    function Play(){
+          
+          setTimeout(function(){
+              vid.pause();
+              vid.currentTime = 0;
+              vid.play();
+          }, 3000);
+     };
+
 </script>
 </body>
 </html>
