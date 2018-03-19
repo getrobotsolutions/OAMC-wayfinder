@@ -51,8 +51,7 @@ UpdateSession(9);
       <span class="col-sm-8">
          <img src="images/Logo.jpg" class="img-responsive" alt="Responsive image" style="height:auto;margin-top: -74px;width: 521px;">
       </span>
-      <span class="col-sm-4 text-right">
-        
+      <span class="col-sm-4 ">
           <div id="content_air"></div>
           <div id="content_date"></div>
           <span id="temp"></span>
@@ -245,6 +244,7 @@ UpdateSession(9);
   <style type="text/css">
         video.fillWidth
         {
+          width: 1080px !important;
           margin-left: -60px;
           width: auto;
           margin-bottom: -30px;
@@ -417,16 +417,14 @@ UpdateSession(9);
         .popup-close{background-color: #f5a800 !important; }
   </style>
 <script type="text/javascript">
-  if(document.getElementById("FrontEndV32")){
-    alert("whoa!");
-  }
+  
     var vid = document.getElementById("bannerVideo");
     vid.addEventListener("timeupdate", function(){
       // Check you time here and
-      if(t > 3000) //Where t = CurrentTime
+      /*if(t > 3000) //Where t = CurrentTime
       {
         vid.stop();// Stop the Video
-      }
+      }*/
     });
 </script>
 </body>

@@ -192,7 +192,7 @@
           padding-top: 11px;
     }
     #content_air,#content_date{
-     font-size: 40px;
+     font-size: 35px;
     color: #73787c;
     margin-right: 10px;
     height: 35px;
@@ -432,10 +432,11 @@
 .right{float: right; position: absolute;right: 0}
 
 #temp{    display: block;
-        width: 183px;
+        width: 300px;
     float: right;
     margin-right: 10px;
-    font-size: 17px;
+    font-size: 27px;
+    line-height: 26px;
     margin-top: -6px;
   }
 body{

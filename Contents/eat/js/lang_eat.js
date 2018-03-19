@@ -28,10 +28,10 @@ $(document).ready(function(){
                 
   $('#c3').click(function(){
     $('.part2 #icon').attr("src","photo/KFC_logo.png");
-    $('.bdy #title').text("دجاج كنتاكي");
+    $('.bdy #title').text("كنتاكي");
     $('.bdy #location').text("Location:");
 
-    $('.bdy #desc').text("اشهى قطع الدجاج المقلية لمن لا يملك الوقت الكافي للحاق بالطائرة.");
+    $('.bdy #desc').text("اشهى سلسلة مطاعم للوجبات السريعة");
     //$("#btn").show();
     //$("#btn").attr('dir','photo/Caribou-Coffee-Prices.png');
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
   });
               $('#c4').click(function(){
                 $('.part2 #icon').attr("src","photo/Mcdonalds.png");
-                $('.bdy #title').text("ماكدونالدز");
+                $('.bdy #title').text("مكدونالدز");
                 $('.bdy #location').text("Location:");
 
                 $('.bdy #desc').text("لمحبي البرجر والماكولات السريعة، استمتع بمذاق ماكدونالدز الشهي مع حركة  الطائرات");
@@ -66,7 +66,7 @@ $(document).ready(function(){
                 $('.bdy #title').text("بلنتي");
                 $('.bdy #location').text("Location:");
 
-                $('.bdy #desc').text("تهتم بصحتك ما عليك إلا زيارتنا والاستمتاع بالطعام ونحن سنقوم بحساب السعرات الحرارية عنك.");
+                $('.bdy #desc').text("تهتم بصحتك؟ ما عليك الا زيارتنا والاستمتاع بالطعام ونحن سنقوم بحساب السعرات الحرارية عنك.");
                 $("#mapBtn").attr('dir','photo/maps/passenger-terminal-building-departure(Level-02).png');
                 $("#mapBtn").show();
                 $('.list2').toggle();
@@ -83,7 +83,7 @@ $(document).ready(function(){
               });
               $('#c62').click(function(){
                 $('.part2 #icon').attr("src","photo/Tickerdaze.png");
-                $('.bdy #title').text("تيكردايز");
+                $('.bdy #title').text("تيكرديز");
                 $('.bdy #location').text("Location:");
 
                 $('.bdy #desc').text("شاهد المباريات مباشرة وانت تستمتع بالماكولات  والمشروبات الشهية قبل صعودك للطائرة");
@@ -103,7 +103,7 @@ $(document).ready(function(){
               });
               $('#c7').click(function(){
                 $('.part2 #icon').attr("src","photo/mazoon.png");
-                $('.bdy #title').text("مازون ");
+                $('.bdy #title').text("مزون");
                 $('.bdy #location').text("Location:");
 
                 $('.bdy #desc').text("قهوة عالمية وعالية الجودة لاجلك");
@@ -113,7 +113,7 @@ $(document).ready(function(){
               });
               $('#c8').click(function(){
                 $('.part2 #icon').attr("src","photo/caffe-nero.png");
-                $('.bdy #title').text("كافيه نيرو");
+                $('.bdy #title').text("كافي نيرو");
                 $('.bdy #location').text("Location:");
 
                 $('.bdy #desc').text("هل تريد تجربة افضل قهوة؟ قم بزيارة كافيه نيرو وستستمتع بمختلف انواع القهوة.");
@@ -123,10 +123,10 @@ $(document).ready(function(){
               });
               $('#c9').click(function(){
                 $('.part2 #icon').attr("src","photo/Caribou-Coffee.png");
-                $('.bdy #title').text("قهوة كاريبو");
+                $('.bdy #title').text("كاريبو كوفي");
                 $('.bdy #location').text("Location:");
 
-                $('.bdy #desc').text("محبي الكافيين؟ اشحن طاقتاتك بقهوة كاريبو");
+                $('.bdy #desc').text("محبي الكافيين؟ اشحن طاقتك بقهوة كاريبو");
                 
 
                 $("#mapBtn").attr('dir','photo/maps/north-pier-departure(level-02).png');
