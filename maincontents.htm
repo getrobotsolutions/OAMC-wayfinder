@@ -165,18 +165,16 @@ UpdateSession(9);
   </div>
   <footer id="footer">
 
-    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
-    <!-- Indicators -->
+    <!-- <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+   
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
           <li data-target="#myCarousel" data-slide-to="2"></li>
           <li data-target="#myCarousel" data-slide-to="3"></li>
           <li data-target="#myCarousel" data-slide-to="4"></li>
-          <!--<li data-target="#myCarousel" data-slide-to="5"></li> -->
         </ol>
 
-        <!-- Wrapper for slides -->
         <div class="carousel-inner " id="slide" role="listbox">
 
           <div class="item active">
@@ -219,25 +217,17 @@ UpdateSession(9);
             </div>
           </div>
 
-          <!--<div class="item">
-            <img class="fixed-height" src="images/6.png" width="460" height="345">
-            <div class="carousel-caption">
-              <h3></h3>
-              <p></p>
-            </div>
-          </div>-->
-
         </div>
 
-        <!-- Left and right controls 
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>-->
+    </div> -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <video id="bannerVideo" class="fillWidth" autoplay="autoplay" poster="http://dummyimage.com/320x240/ffffff/fff" loop>
+            <source src="Video/bottom_banner.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
     </div>
 
     <img src="images/bottom-line.png">
@@ -253,176 +243,191 @@ UpdateSession(9);
         
   </div>
   <style type="text/css">
- #dialog-overlay-info {
+        video.fillWidth
+        {
+          margin-left: -60px;
+          width: auto;
+          margin-bottom: -30px;
+        }
 
-  /* set it to fill the whil screen */
-  width:100%; 
-  height:100%;
-  
-  /* transparency for different browsers */
-  filter:alpha(opacity=50); 
-  -moz-opacity:0.5; 
-  -khtml-opacity: 0.5; 
-  opacity: 0.5; 
-  background:#000; 
+         #dialog-overlay-info {
 
-  /* make sure it appear behind the dialog box but above everything else */
-  position:absolute; 
-  top:0; left:0; 
-  z-index:3000; 
+            /* set it to fill the whil screen */
+            width:100%; 
+            height:100%;
+            
+            /* transparency for different browsers */
+            filter:alpha(opacity=50); 
+            -moz-opacity:0.5; 
+            -khtml-opacity: 0.5; 
+            opacity: 0.5; 
+            background:#000; 
 
-  /* hide it by default */
-  display:none;
-}
-  #dialog-box-info {
-  
-  /* css3 drop shadow */
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  
-  /* css3 border radius */
-  -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-  
-  background:#eee;
-  /* styling of the dialog box, i have a fixed dimension for this demo */ 
-  width:700px; 
-  
-  
-  /* make sure it has the highest z-index */
-  position:absolute; 
-  top: 5% !important;
-  z-index:5000; 
+            /* make sure it appear behind the dialog box but above everything else */
+            position:absolute; 
+            top:0; left:0; 
+            z-index:3000; 
 
-  /* hide it by default */
-  display:none;
-}
+            /* hide it by default */
+            display:none;
+          }
+          #dialog-box-info {
+          
+          /* css3 drop shadow */
+          -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          
+          /* css3 border radius */
+          -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+          
+          background:#eee;
+          /* styling of the dialog box, i have a fixed dimension for this demo */ 
+          width:700px; 
+          
+          
+          /* make sure it has the highest z-index */
+          position:absolute; 
+          top: 5% !important;
+          z-index:5000; 
 
-#dialog-box-info .dialog-content-info {
-  /* style the content */
-  max-height: 1650px;
-  overflow: hidden;
-  text-align:left; 
-  padding:10px; 
-  margin:13px;
-  color:#666; 
-  font-family:arial;
-  font-size:11px; 
-}
+          /* hide it by default */
+          display:none;
+        }
 
-#dialog-overlay {
+        #dialog-box-info .dialog-content-info {
+          /* style the content */
+          max-height: 1650px;
+          overflow: hidden;
+          text-align:left; 
+          padding:10px; 
+          margin:13px;
+          color:#666; 
+          font-family:arial;
+          font-size:11px; 
+        }
 
-  /* set it to fill the whil screen */
-  width:100%; 
-  height:100%;
-  
-  /* transparency for different browsers */
-  filter:alpha(opacity=50); 
-  -moz-opacity:0.5; 
-  -khtml-opacity: 0.5; 
-  opacity: 0.5; 
-  background:#000; 
+        #dialog-overlay {
 
-  /* make sure it appear behind the dialog box but above everything else */
-  position:absolute; 
-  top:0; left:0; 
-  z-index:3000; 
+          /* set it to fill the whil screen */
+          width:100%; 
+          height:100%;
+          
+          /* transparency for different browsers */
+          filter:alpha(opacity=50); 
+          -moz-opacity:0.5; 
+          -khtml-opacity: 0.5; 
+          opacity: 0.5; 
+          background:#000; 
 
-  /* hide it by default */
-  display:none;
-}
+          /* make sure it appear behind the dialog box but above everything else */
+          position:absolute; 
+          top:0; left:0; 
+          z-index:3000; 
 
-    #dialog-box {
-  
-  /* css3 drop shadow */
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  
-  /* css3 border radius */
-  -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-  
-  background:#eee;
-  /* styling of the dialog box, i have a fixed dimension for this demo */ 
-  width:750px; 
-  
-  
-  /* make sure it has the highest z-index */
-  position:absolute; 
-  top: 40% !important;
-  z-index:5000; 
+          /* hide it by default */
+          display:none;
+        }
 
-  /* hide it by default */
-  display:none;
-}
+            #dialog-box {
+          
+          /* css3 drop shadow */
+          -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+          
+          /* css3 border radius */
+          -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+          
+          background:#eee;
+          /* styling of the dialog box, i have a fixed dimension for this demo */ 
+          width:750px; 
+          
+          
+          /* make sure it has the highest z-index */
+          position:absolute; 
+          top: 40% !important;
+          z-index:5000; 
 
-#dialog-box .dialog-content {
-  /* style the content */
-  max-height: 1200px;
-  min-height: 500px;
-  overflow: hidden;
-  text-align:left; 
-  padding:10px; 
-  margin:13px;
-  color:#666; 
-  font-family:arial;
-  font-size:11px; 
-}
+          /* hide it by default */
+          display:none;
+        }
 
-a.button {
-  /* styles for button */
-  margin:10px auto 0 auto;
-  text-align:center;
-  display: block;
-  width:50px;
-  padding: 5px 10px 6px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  line-height: 1;
-  
-  /* button color */
-  background-color:#f5a800;
-  
-  /* css3 implementation :) */
-  /* rounded corner */
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  
-  /* drop shadow */
-  -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-  
-  /* text shaow */
-  text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-  border-bottom: 1px solid rgba(0,0,0,0.25);
-  position: relative;
-  cursor: pointer;
-  
-}
+        #dialog-box .dialog-content {
+          /* style the content */
+          max-height: 1200px;
+          min-height: 500px;
+          overflow: hidden;
+          text-align:left; 
+          padding:10px; 
+          margin:13px;
+          color:#666; 
+          font-family:arial;
+          font-size:11px; 
+        }
 
-a.button:hover {
-  /*background-color: #c33100;  */
-}
+        a.button {
+          /* styles for button */
+          margin:10px auto 0 auto;
+          text-align:center;
+          display: block;
+          width:50px;
+          padding: 5px 10px 6px;
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+          line-height: 1;
+          
+          /* button color */
+          background-color:#f5a800;
+          
+          /* css3 implementation :) */
+          /* rounded corner */
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          
+          /* drop shadow */
+          -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+          -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+          
+          /* text shaow */
+          text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+          border-bottom: 1px solid rgba(0,0,0,0.25);
+          position: relative;
+          cursor: pointer;
+          
+        }
 
-/* extra styling */
-#dialog-box .dialog-content p {
-  font-weight:700; margin:0;
-}
+        a.button:hover {
+          /*background-color: #c33100;  */
+        }
 
-#dialog-box .dialog-content ul {
-  margin:10px 0 10px 20px; 
-  padding:0; 
-  height:50px;
-}
-#dialog-message{text-align: center;position: relative;
-    top: 186px;}
-.popup-close{background-color: #f5a800 !important; }
+        /* extra styling */
+        #dialog-box .dialog-content p {
+          font-weight:700; margin:0;
+        }
+
+        #dialog-box .dialog-content ul {
+          margin:10px 0 10px 20px; 
+          padding:0; 
+          height:50px;
+        }
+        #dialog-message{text-align: center;position: relative;
+            top: 186px;}
+        .popup-close{background-color: #f5a800 !important; }
   </style>
 <script type="text/javascript">
   if(document.getElementById("FrontEndV32")){
     alert("whoa!");
   }
+    var vid = document.getElementById("bannerVideo");
+    vid.addEventListener("timeupdate", function(){
+      // Check you time here and
+      if(t > 3000) //Where t = CurrentTime
+      {
+        vid.stop();// Stop the Video
+      }
+    });
 </script>
 </body>
 </html>
