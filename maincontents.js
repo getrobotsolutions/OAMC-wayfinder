@@ -242,19 +242,19 @@ function OnJoystickControlled(strPara){
 		if(readCookie("lang")=="english"){
 	        window.external.ChangeLanguage("en-gb");
 	        SetVolume(1);
-	        window.external.PlaySpeech("Have a great day!");
+	        window.external.PlaySpeech("Hi, I’m Morriya, how can I help you?");
 	    }
     	else if (readCookie("lang")=="arabic") {
     		window.external.ChangeLanguage("ar-eg");
 	        SetVolume(1);
-	        window.external.PlaySpeech("");
+	        window.external.PlaySpeech("مَرْحَبَاً ، أَنَا مُرِيَةْ. كَيْفَ يُمْكِنُنِيْ أنْ أُسَاعِدَكْ؟");
     	}
 	}
 	if(btn_info[1] == '1'){
 		if(readCookie("lang")=="english"){
 	        window.external.ChangeLanguage("en-gb");
 	        SetVolume(1);
-	        window.external.PlaySpeech("If you have a camera, please take a picture, I love to have my picture taken.");
+	        window.external.PlaySpeech("اَهْلاً ، كَيْفَ يُمْكِنُنِي أَنْ أُسَاعِدَكَ؟");
 	    }
 	    else if (readCookie("lang")=="arabic") {
     		window.external.ChangeLanguage("ar-eg");
@@ -262,7 +262,7 @@ function OnJoystickControlled(strPara){
 	        window.external.PlaySpeech("");
     	}
 	}
-	if(btn_info[2] == '1'){
+	/*if(btn_info[2] == '1'){
 		if(readCookie("lang")=="english"){
 			window.external.ChangeLanguage("en-gb");
 			SetVolume(1);
@@ -286,7 +286,7 @@ function OnJoystickControlled(strPara){
 	        window.external.PlaySpeech("");
 	    }
 		
-	}
+	}*/
 
 	if(btn_info[4] == '1'){
 		SetHeadYaw(-35, 23);       
