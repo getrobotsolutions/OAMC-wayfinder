@@ -108,25 +108,25 @@
     $('.bdy #desc').text("هل انت في عجلة على رحلتك؟ اشتري وجبة خفيفة أو كتاب للقراءة في طريقك إلى البوابة الخاصة بك.");
   });
   $('#s15').click(function(){
-    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.part2 #icon').attr("src","photo/Suq Of Oman.png");
     $('.bdy #title').text("سوق عمان");
 
     $('.bdy #desc').text("عش أجواء الأسواق العمانية التقليدية واقتني الهدايا التذكارية والمنتاجات المختلفة من سوق عمان");
   });
   $('#s16').click(function(){
-    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.part2 #icon').attr("src","photo/be_relax.png");
     $('.bdy #title').text("بي ريلاكس");
 
     $('.bdy #desc').text("اعد النشاط والحيوية لنفسك وقم بتجربة خدمات الإسترخاء والتدليك المتوفرة");
   });
   $('#s17').click(function(){
-    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.part2 #icon').attr("src","photo/Gallery Argan.png");
     $('.bdy #title').text("جاليري أرجان");
 
     $('.bdy #desc').text("الحلي البراقة التي ستأسرناظريك ستجدينها في متجر جاليري أرجان ");
   });
   $('#s18').click(function(){
-    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.part2 #icon').attr("src","photo/Muscat Pharmacy.jpg");
     $('.bdy #title').text("صيدلية مسقط");
 
     $('.bdy #desc').text("المنتجات الطبية والأدوية الصحية تتوفر لكم في صيدلية مسقط");

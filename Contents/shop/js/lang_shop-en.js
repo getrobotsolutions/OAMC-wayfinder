@@ -112,25 +112,25 @@
     $('.bdy #desc').text("In a hurry to catch a flight? Grab a snack or book to read on your way to your gate. ");
   });
   $('#s15').click(function(){
-    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.part2 #icon').attr("src","photo/Suq Of Oman.png");
     $('.bdy #title').text("Souq of Oman");
 
     $('.bdy #desc').text("Experience the traditional souqs of Oman in the heart of the airport and check out the local and traditional fine collectables and souvenirs.");
   });
   $('#s16').click(function(){
-    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.part2 #icon').attr("src","photo/be_relax.png");
     $('.bdy #title').text("Be relax");
 
     $('.bdy #desc').text("The airport spa for a massage, manicure, padicure and beauty care before your flight. ");
   });
   $('#s17').click(function(){
-    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.part2 #icon').attr("src","photo/Gallery Argan.png");
     $('.bdy #title').text("Gallery Argan");
 
     $('.bdy #desc').text("The most eye-catching jewellary designs.");
   });
   $('#s18').click(function(){
-    $('.part2 #icon').attr("src","photo/blank.png");
+    $('.part2 #icon').attr("src","photo/Muscat Pharmacy.jpg");
     $('.bdy #title').text("Muscat Pharmacy");
 
     $('.bdy #desc').text("Your store to get range of pharmacitals products, baby care and health products.");

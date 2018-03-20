@@ -208,10 +208,10 @@ function SendEmail()
     //var addr = "paul@robotaisolutions.com";
     var subject = "Welcome to the Muscat International Airport.";
     var body = "Email : " + message;
-    var mail_server = "mctmail.omanairports.co.om";
-    var mail_addr_sender = "selfie@omanairports.com";
-    var pswd = "M(t@R0b0T8501";
-    var port = 25;
+    var mail_server = "smtp.gmail.com";
+    var mail_addr_sender = "ict.muscatairport@gmail.com";
+    var pswd = "123456789K";
+    var port = 587;
     var ssl = "true";
     /*var mail_server = "mail.getrobotsolutions.com";
     var mail_addr_sender = "tamoor@getrobotsolutions.com";

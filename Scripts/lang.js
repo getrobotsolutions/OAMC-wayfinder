@@ -14,9 +14,9 @@ ShowTime();
                 //$('#content_air').text("");
                 $('#content_fly').text("اضغط هنا للبدء");
 
-                $('#content_eat').html("مطاعم");
+                $('#content_eat').html("المطاعم");
 
-                $('#content_shop').text("تسوق");
+                $('#content_shop').text("التسوق");
                 $('#content_info').html("المعلومات");
                 $('#content_map').html("خريطة المبنى");
                 $('#content_flights').html("معلومات الرحلات");
@@ -43,9 +43,9 @@ ShowTime();
                 $('#content_fly').text("اضغط هنا للبدء");
 
 
-                $('#content_eat').html("مطاعم");
+                $('#content_eat').html("المطاعم");
 
-                $('#content_shop').text("تسوق");
+                $('#content_shop').text("التسوق");
                 $('#content_info').html("المعلومات");
                 $('#content_map').html("خريطة المبنى");
                 $('#content_flights').html("معلومات الرحلات");
@@ -135,9 +135,9 @@ ShowTime();
                 //$('#content_air').text("");
                 $('#content_fly').text("اضغط هنا للبدء");
 
-                $('#content_eat').html("مطاعم");
+                $('#content_eat').html("المطاعم");
 
-                $('#content_shop').text("تسوق");
+                $('#content_shop').text("التسوق");
                 $('#content_info').html("المعلومات");
                 $('#content_map').html("خريطة المبنى");
                 $('#content_flights').html("معلومات الرحلات");
