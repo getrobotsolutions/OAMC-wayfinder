@@ -239,26 +239,54 @@ function OnJoystickControlled(strPara){
 
 
 	if(btn_info[0] == '1'){
-        window.external.ChangeLanguage("en-gb");
-        SetVolume(1);
-        window.external.PlaySpeech("Can't wait to see you on the 20th of March!");
+		if(readCookie("lang")=="english"){
+	        window.external.ChangeLanguage("en-gb");
+	        SetVolume(1);
+	        window.external.PlaySpeech("Have a great day!");
+	    }
+    	else if (readCookie("lang")=="arabic") {
+    		window.external.ChangeLanguage("ar-eg");
+	        SetVolume(1);
+	        window.external.PlaySpeech("");
+    	}
 	}
 	if(btn_info[1] == '1'){
-        window.external.ChangeLanguage("ar-eg");
-        SetVolume(0.4);
-        window.external.PlaySpeech("نحنُ سُعداءٌ بإنضِمامِنا إلى مطاراتْ عُمْان");
+		if(readCookie("lang")=="english"){
+	        window.external.ChangeLanguage("en-gb");
+	        SetVolume(1);
+	        window.external.PlaySpeech("If you have a camera, please take a picture, I love to have my picture taken.");
+	    }
+	    else if (readCookie("lang")=="arabic") {
+    		window.external.ChangeLanguage("ar-eg");
+	        SetVolume(1);
+	        window.external.PlaySpeech("");
+    	}
 	}
-	/*if(btn_info[2] == '1'){
-		window.external.ChangeLanguage("en-gb");
-		SetVolume(1);
-		window.external.PlaySpeech("Good evening your excellence's, and our distinguished guests.");
+	if(btn_info[2] == '1'){
+		if(readCookie("lang")=="english"){
+			window.external.ChangeLanguage("en-gb");
+			SetVolume(1);
+			window.external.PlaySpeech("I've never been on an airplane, it must be so fun to fly.");
+		}
+		else if (readCookie("lang")=="arabic") {
+			window.external.ChangeLanguage("ar-eg");
+	        SetVolume(1);
+	        window.external.PlaySpeech("");
+	    }
 	}
 	if(btn_info[3] == '1'){
-		window.external.ChangeLanguage("ar-eg");
-		SetVolume(1);
-		window.external.PlaySpeech("طبعاً ، تفضلْ دكتورْ مُؤمنْ");
+		if(readCookie("lang")=="english"){
+			window.external.ChangeLanguage("en-gb");
+			SetVolume(1);
+			window.external.PlaySpeech("Hello, my name is Morriya, it's great to meet you");
+		}
+		else if (readCookie("lang")=="arabic") {
+			window.external.ChangeLanguage("ar-eg");
+	        SetVolume(1);
+	        window.external.PlaySpeech("");
+	    }
 		
-	}*/
+	}
 
 	if(btn_info[4] == '1'){
 		SetHeadYaw(-35, 23);       
