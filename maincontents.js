@@ -273,20 +273,11 @@ function OnJoystickControlled(strPara){
 	        SetVolume(1);
 	        window.external.PlaySpeech("");
 	    }
-	}
-	if(btn_info[3] == '1'){
-		if(readCookie("lang")=="english"){
-			window.external.ChangeLanguage("en-gb");
-			SetVolume(1);
-			window.external.PlaySpeech("Hello, my name is Morriya, it's great to meet you");
-		}
-		else if (readCookie("lang")=="arabic") {
-			window.external.ChangeLanguage("ar-eg");
-	        SetVolume(1);
-	        window.external.PlaySpeech("");
-	    }
-		
 	}*/
+	if(btn_info[3] == '1'){
+		GoHome();
+		
+	}
 
 	if(btn_info[4] == '1'){
 		SetHeadYaw(-35, 23);       
