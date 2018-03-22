@@ -115,6 +115,7 @@ function GoHome()
 	document.getElementById('bmg').style.height="1124px";
     document.getElementById('iframe-wayfinding').style.width = "0";
     document.getElementById('iframe-wayfinding').style.height = "0";
+    window.external.StopCamViewer();
 
 }
 
@@ -242,7 +243,8 @@ function OnJoystickControlled(strPara){
 		if(readCookie("lang")=="english"){
 	        window.external.ChangeLanguage("en-gb");
 	        SetVolume(1);
-	        window.external.PlaySpeech("Hi, I’m Morriya, how can I help you?");
+	        window.external.PlaySpeech("bye, bye. Enjoy your flight.");
+	        //window.external.PlaySpeech("Hi, I’m Morriya, how can I help you?");
 	    }
     	else if (readCookie("lang")=="arabic") {
     		window.external.ChangeLanguage("ar-eg");
