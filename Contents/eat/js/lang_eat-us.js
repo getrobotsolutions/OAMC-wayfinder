@@ -104,7 +104,7 @@ $(document).ready(function(){
   $('#c8').click(function(){
     $('.part2 #icon').attr("src","photo/caffe-nero.png");
 
-    $('.bdy #title').text("Café Nero");
+    $('.bdy #title').text("Caffé Nero");
     $('.bdy #location').text("Location:");
     $('.bdy #desc').text("Want to try the best coffee? Visit Café Nero and you will not regret it");
     
